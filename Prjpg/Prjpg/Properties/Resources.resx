@@ -145,4 +145,25 @@
   <data name="Newake_Font_Demo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Newake-Font-Demo.otf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="icon__Book_Open_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon _Book Open_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon__Book_Open__1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon _Book Open_-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon__Home_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon _Home_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon__Person_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon _Person_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon__Person_Support_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon _Person Support_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon__Power_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon _Power_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon__Text_Bullet_List_Square_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon _Text Bullet List Square_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
