@@ -144,5 +144,8 @@
   <ItemGroup>
     <None Include="Resources\icon _Text Bullet List Square_.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
