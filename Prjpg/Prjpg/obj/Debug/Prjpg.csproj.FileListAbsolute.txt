@@ -23,10 +23,11 @@ C:\Users\Lab_ETESP\Documents\GitHub\desktop\Prjpg\Prjpg\bin\Debug\Prjpg.exe.conf
 C:\Users\Lab_ETESP\Documents\GitHub\desktop\Prjpg\Prjpg\bin\Debug\Prjpg.exe
 C:\Users\Lab_ETESP\Documents\GitHub\desktop\Prjpg\Prjpg\bin\Debug\Prjpg.pdb
 C:\Users\Lab_ETESP\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.csprojAssemblyReference.cache
-C:\Users\Lab_ETESP\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.Form1.resources
 C:\Users\Lab_ETESP\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.FormPrincipal.resources
 C:\Users\Lab_ETESP\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.Properties.Resources.resources
 C:\Users\Lab_ETESP\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.csproj.GenerateResource.cache
 C:\Users\Lab_ETESP\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.csproj.CoreCompileInputs.cache
 C:\Users\Lab_ETESP\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.exe
 C:\Users\Lab_ETESP\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.pdb
+C:\Users\Lab_ETESP\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.FormLogin.resources
+C:\Users\Lab_ETESP\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.FormInicial.resources
