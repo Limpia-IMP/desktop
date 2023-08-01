@@ -16,5 +16,17 @@ namespace Prjpg
         {
             InitializeComponent();
         }
+
+        private void PictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            FormLogin Login = new FormLogin();
+            Login.Show();
+            this.Hide();
+        }
     }
 }

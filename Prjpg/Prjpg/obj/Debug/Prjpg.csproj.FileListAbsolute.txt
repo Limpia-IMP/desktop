@@ -30,4 +30,5 @@ C:\Users\Lab_ETESP\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.csproj.C
 C:\Users\Lab_ETESP\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.exe
 C:\Users\Lab_ETESP\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.pdb
 C:\Users\Lab_ETESP\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.FormLogin.resources
+C:\Users\Lab_ETESP\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.FormPrincTest.resources
 C:\Users\Lab_ETESP\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.FormInicial.resources

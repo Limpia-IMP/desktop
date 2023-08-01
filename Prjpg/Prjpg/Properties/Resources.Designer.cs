@@ -63,6 +63,26 @@ namespace Prjpg.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Ellipse_16 {
+            get {
+                object obj = ResourceManager.GetObject("Ellipse_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ellipse_16_1 {
+            get {
+                object obj = ResourceManager.GetObject("Ellipse_16_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon__Book_Open_ {
             get {
                 object obj = ResourceManager.GetObject("icon__Book_Open_", resourceCulture);
@@ -126,6 +146,16 @@ namespace Prjpg.Properties {
         internal static System.Drawing.Bitmap icon__Text_Bullet_List_Square_ {
             get {
                 object obj = ResourceManager.GetObject("icon__Text_Bullet_List_Square_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imp {
+            get {
+                object obj = ResourceManager.GetObject("imp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

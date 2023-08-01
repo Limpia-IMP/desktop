@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -11,19 +10,11 @@ using System.Windows.Forms;
 
 namespace Prjpg
 {
-    public partial class FormLogin : Form
+    public partial class FormPrincTest : Form
     {
-        public FormLogin()
+        public FormPrincTest()
         {
             InitializeComponent();
-        }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            FormPrincipal Principal = new FormPrincipal();
-            Principal.Show();
-            this.Hide();
-
         }
     }
 }
