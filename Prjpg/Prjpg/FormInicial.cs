@@ -28,5 +28,10 @@ namespace Prjpg
             Login.Show();
             this.Hide();
         }
+
+        private void FormInicial_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

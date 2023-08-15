@@ -32,3 +32,17 @@ C:\Users\Lab_ETESP\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.pdb
 C:\Users\Lab_ETESP\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.FormLogin.resources
 C:\Users\Lab_ETESP\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.FormPrincTest.resources
 C:\Users\Lab_ETESP\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.FormInicial.resources
+C:\Users\DELL\Documents\GitHub\desktop\Prjpg\Prjpg\bin\Debug\Prjpg.exe.config
+C:\Users\DELL\Documents\GitHub\desktop\Prjpg\Prjpg\bin\Debug\Prjpg.exe
+C:\Users\DELL\Documents\GitHub\desktop\Prjpg\Prjpg\bin\Debug\Prjpg.pdb
+C:\Users\DELL\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.csproj.AssemblyReference.cache
+C:\Users\DELL\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.csproj.SuggestedBindingRedirects.cache
+C:\Users\DELL\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.FormInicial.resources
+C:\Users\DELL\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.FormPrincipal.resources
+C:\Users\DELL\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.FormLogin.resources
+C:\Users\DELL\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.FormPrincTest.resources
+C:\Users\DELL\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.Properties.Resources.resources
+C:\Users\DELL\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.csproj.GenerateResource.cache
+C:\Users\DELL\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.exe
+C:\Users\DELL\Documents\GitHub\desktop\Prjpg\Prjpg\obj\Debug\Prjpg.pdb

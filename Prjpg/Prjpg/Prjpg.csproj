@@ -65,7 +65,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Conectar.cs" />
     <Compile Include="FormInicial.cs">
       <SubType>Form</SubType>
     </Compile>
