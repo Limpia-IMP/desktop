@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Limpia_DesktopTeste
 {
@@ -24,19 +20,19 @@ namespace Limpia_DesktopTeste
             id = "";
         }
 
-        public int Login() {
-            int aff;
+        public String Login()
+        {
+            String aff;
             cone.Open();
             SqlCommand sqlCommand = cone.CreateCommand();
             SqlCommand comand = sqlCommand;
-            comand.CommandType = CommandType.Text;
-            comand.Parameters.AddWithValue("@id", Id);
-            comand.Parameters.AddWithValue("@senha", Senha);
-            comand.CommandText = "select * from tblFunc where (@id=idfunc and @senha=senha)";
-            aff = comand.ExecuteNonQuery();
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(comand);
-            da.Fill(dt);
+
+            SqlCommand test = new SqlCommand("login_contratante", cone);
+            test.CommandType = CommandType.StoredProcedure;
+            test.Parameters.AddWithValue("@email", Id).Value = id;
+            test.Parameters.AddWithValue("@senha", Senha).Value = senha;
+            SqlDataReader rdr = test.ExecuteReader();
+            aff = rdr.ToString();
             cone.Close();
             return aff;
         }

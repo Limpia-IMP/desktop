@@ -38,8 +38,8 @@ namespace Limpia_DesktopTeste
             String id = txtID.Text;
             banco.Senha = senha;
             banco.Id = id;
-            int chck = banco.Login();
-            if (chck >= 1)
+            String chck = banco.Login();
+            if (chck == "Login efetuado com sucesso")
             {
                 principal form = new principal();
                 form.Show();

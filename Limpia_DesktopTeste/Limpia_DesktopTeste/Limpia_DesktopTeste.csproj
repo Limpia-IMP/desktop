@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Limpia_DesktopTeste</RootNamespace>
     <AssemblyName>Limpia_DesktopTeste</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Banco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Banco.Designer.cs">
+      <DependentUpon>Banco.cs</DependentUpon>
+    </Compile>
     <Compile Include="BtnLimpia\btnPrincipal.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     <Compile Include="trabalhos.Designer.cs">
       <DependentUpon>trabalhos.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Banco.resx">
+      <DependentUpon>Banco.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="cursos.resx">
       <DependentUpon>cursos.cs</DependentUpon>
     </EmbeddedResource>
