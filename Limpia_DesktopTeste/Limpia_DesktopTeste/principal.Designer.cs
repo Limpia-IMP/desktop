@@ -36,7 +36,6 @@
             System.Windows.Forms.Button btnLogout;
             System.Windows.Forms.Button btnPromoOfertas;
             this.panelChildForm = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblMenu = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Button();
@@ -47,6 +46,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnFecharTela = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             btnTrabalhos = new System.Windows.Forms.Button();
             btnSuporte = new System.Windows.Forms.Button();
             btnPerfil = new System.Windows.Forms.Button();
@@ -60,6 +63,7 @@
             this.sidebar2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnTrabalhos
@@ -179,24 +183,13 @@
             // panelChildForm
             // 
             this.panelChildForm.BackColor = System.Drawing.Color.Cornsilk;
-            this.panelChildForm.Controls.Add(this.label1);
+            this.panelChildForm.Controls.Add(this.panel1);
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(195, 0);
             this.panelChildForm.Margin = new System.Windows.Forms.Padding(2);
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Size = new System.Drawing.Size(811, 590);
             this.panelChildForm.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Berlin Sans FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 19);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 24);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "-> Avisos - ADM";
             // 
             // panel3
             // 
@@ -330,6 +323,59 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Sebs";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btnFecharTela);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(811, 40);
+            this.panel1.TabIndex = 1;
+            // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(59)))), ((int)(((byte)(106)))));
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(721, 0);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.button2.Size = new System.Drawing.Size(45, 40);
+            this.button2.TabIndex = 2;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // btnFecharTela
+            // 
+            this.btnFecharTela.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnFecharTela.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
+            this.btnFecharTela.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFecharTela.Font = new System.Drawing.Font("Berlin Sans FB", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFecharTela.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(59)))), ((int)(((byte)(106)))));
+            this.btnFecharTela.Location = new System.Drawing.Point(766, 0);
+            this.btnFecharTela.Name = "btnFecharTela";
+            this.btnFecharTela.Size = new System.Drawing.Size(45, 40);
+            this.btnFecharTela.TabIndex = 1;
+            this.btnFecharTela.Text = "X";
+            this.btnFecharTela.UseVisualStyleBackColor = true;
+            this.btnFecharTela.Click += new System.EventHandler(this.btnFecharTela_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Berlin Sans FB", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(59)))), ((int)(((byte)(106)))));
+            this.label1.Location = new System.Drawing.Point(345, 2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 32);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Limpia";
+            // 
             // principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -337,11 +383,11 @@
             this.ClientSize = new System.Drawing.Size(1006, 590);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.sidebar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "principal";
             this.Text = "principal";
             this.Load += new System.EventHandler(this.Principal_Load);
             this.panelChildForm.ResumeLayout(false);
-            this.panelChildForm.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -350,13 +396,14 @@
             this.sidebar2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Panel panelChildForm;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lblMenu;
         private System.Windows.Forms.Button btnHome;
@@ -367,5 +414,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnFecharTela;
+        private System.Windows.Forms.Label label1;
     }
 }

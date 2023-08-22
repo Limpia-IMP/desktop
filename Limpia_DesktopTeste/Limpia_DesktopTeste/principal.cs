@@ -88,5 +88,9 @@ namespace Limpia_DesktopTeste
 
         }
 
+        private void btnFecharTela_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -15,7 +15,7 @@ namespace Limpia_DesktopTeste
     {
         ClsBanco banco = new ClsBanco();
 
-        SqlConnection cone = new SqlConnection(@"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=MENTALIA; Data Source=" + Environment.MachineName + "\\SQLEXPRESS");
+       // SqlConnection cone = new SqlConnection(@"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=MENTALIA; Data Source=" + Environment.MachineName + "\\SQLEXPRESS");
         public login()
         {
             InitializeComponent();
@@ -38,8 +38,12 @@ namespace Limpia_DesktopTeste
             String id = txtID.Text;
             banco.Senha = senha;
             banco.Id = id;
-            int chck = banco.Login();
-            if (chck >= 1)
+
+            principal form = new principal();
+            form.Show();
+            this.Hide();
+            //int chck = banco.Login();
+            /* if (chck >= 1)
             {
                 principal form = new principal();
                 form.Show();
@@ -48,9 +52,9 @@ namespace Limpia_DesktopTeste
             else
             {
                 MessageBox.Show("Os dados inseridos estão incorretos");
-            }
+            }*/
 
-            
+
         }
     }
 }
