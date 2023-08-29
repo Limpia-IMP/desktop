@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Limpia_DesktopTeste
 {
     class ClsBanco
     {
-        SqlConnection cone = new SqlConnection(@"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLEXPRESS");
+        //SqlConnection cone = new SqlConnection(@"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLEXPRESS");
         private string senha;
 
         public string Senha { get => senha; set => senha = value; }
@@ -23,22 +19,45 @@ namespace Limpia_DesktopTeste
             senha = "";
             id = "";
         }
+        public LoginResult Login()
+        {
+            using (SqlConnection connection = new SqlConnection(@"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLEXPRESS"))
+            using (SqlCommand cmd = new SqlCommand("login_contratante", connection))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@email", id);
+                cmd.Parameters.AddWithValue("@senha", senha); // Consider hashing this
 
-        public int Login() {
-            int aff;
-            cone.Open();
-            SqlCommand sqlCommand = cone.CreateCommand();
-            SqlCommand comand = sqlCommand;
-            comand.CommandType = CommandType.Text;
-            comand.Parameters.AddWithValue("@id", Id);
-            comand.Parameters.AddWithValue("@senha", Senha);
-            comand.CommandText = "select * from tblFunc where (@id=idfunc and @senha=senha)";
-            aff = comand.ExecuteNonQuery();
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(comand);
-            da.Fill(dt);
-            cone.Close();
-            return aff;
+                connection.Open();
+                using (SqlDataReader rdr = cmd.ExecuteReader())
+                {
+                    if (rdr.Read())
+                    {
+                        string message = rdr["message"].ToString();
+                        return new LoginResult
+                        {
+                            IsSuccessful = message == "Login efetuado com sucesso",
+                            Message = message
+                        };
+                    }
+                    else
+                    {
+                        return new LoginResult
+                        {
+                            IsSuccessful = false,
+                            Message = "Erro desconhecido."
+                        };
+                    }
+                }
+            }
         }
+
+        public class LoginResult
+        {
+            public bool IsSuccessful { get; set; }
+            public string Message { get; set; }
+        }
+
+        
     }
 }
