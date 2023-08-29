@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Limpia_DesktopTeste.ClsBanco;
 
 namespace Limpia_DesktopTeste
 {
@@ -15,42 +16,52 @@ namespace Limpia_DesktopTeste
     {
         ClsBanco banco = new ClsBanco();
 
-        SqlConnection cone = new SqlConnection(@"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=MENTALIA; Data Source=" + Environment.MachineName + "\\SQLEXPRESS");
+       
         public login()
         {
             InitializeComponent();
-            
+
         }
 
         private void BtnVoltar_Click(object sender, EventArgs e)
         {
-                inicial form = new inicial();
-                form.Show();
-                this.Hide();
-            
+            inicial form = new inicial();
+            form.Show();
+            this.Hide();
+
         }
 
         private void BtnContinuar_Click(object sender, EventArgs e)
         {
-
-
-            String senha = txtSenha.Text;
-            String id = txtID.Text;
-            banco.Senha = senha;
-            banco.Id = id;
-            String chck = banco.Login();
-            if (chck == "Login efetuado com sucesso")
+            if (string.IsNullOrEmpty(txtID.Text) || string.IsNullOrEmpty(txtSenha.Text))
             {
-                principal form = new principal();
-                form.Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Os dados inseridos estão incorretos");
+                MessageBox.Show("Por favor, insira tanto o ID quanto a senha.");
+                return;
             }
 
-            
+            banco.Id = txtID.Text;
+            banco.Senha = txtSenha.Text;
+
+            try
+            {
+                LoginResult result = banco.Login();
+
+                if (result.IsSuccessful)
+                {
+                    principal form = new principal();
+                    form.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show(result.Message);
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the actual exception for diagnostics. Implement a logger if you haven't.
+                MessageBox.Show("Ocorreu um erro ao tentar fazer o login. Tente novamente mais tarde.");
+            }
         }
     }
-}
+    }
