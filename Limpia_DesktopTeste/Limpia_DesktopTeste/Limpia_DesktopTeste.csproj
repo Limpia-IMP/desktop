@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Limpia_DesktopTeste</RootNamespace>
     <AssemblyName>Limpia_DesktopTeste</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
@@ -146,6 +146,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LimpezaDomestica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LimpezaExecutiva.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cozinha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onibus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quarto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sala.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quintal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banheiro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casa.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
