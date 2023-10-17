@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -22,7 +23,7 @@ namespace Limpia_DesktopTeste
         public LoginResult Login()
         {
             using (SqlConnection connection = new SqlConnection(@"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLEXPRESS"))
-            using (SqlCommand cmd = new SqlCommand("login_contratante", connection))
+            using (SqlCommand cmd = new SqlCommand("login_funcionario", connection))
             {
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@email", id);
@@ -58,6 +59,26 @@ namespace Limpia_DesktopTeste
             public string Message { get; set; }
         }
 
-        
+        public class Promo
+        {
+            public string nome { get; set; }
+            public string descricao { get; set; }
+        }
+        public List<Promo> Promo_Ofertas() {
+            using (SqlConnection connection = new SqlConnection(@"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLEXPRESS"))
+            using (SqlCommand cmd = new SqlCommand("select * from tblpromo", connection))
+            {
+                
+                    connection.Open();
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        var list = new List<Promo>();
+                        while (reader.Read())
+                            list.Add(new Promo { nome = reader.GetString(3), descricao = reader.GetString(4) });
+                    return list;
+                    }
+                
+            }
+        }
     }
 }

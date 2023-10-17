@@ -85,7 +85,6 @@ C:\Users\DELL\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\o
 C:\Users\DELL\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.csproj.CoreCompileInputs.cache
 C:\Users\DELL\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.exe
 C:\Users\DELL\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.pdb
-C:\Users\Lab_ETESP\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.Banco.resources
 C:\Users\Lab 23T\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\bin\Debug\Limpia_DesktopTeste.exe.config
 C:\Users\Lab 23T\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\bin\Debug\Limpia_DesktopTeste.exe
 C:\Users\Lab 23T\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\bin\Debug\Limpia_DesktopTeste.pdb

@@ -15,35 +15,25 @@ namespace Limpia_DesktopTeste
     {
         ClsBanco banco = new ClsBanco();
 
-       // SqlConnection cone = new SqlConnection(@"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=MENTALIA; Data Source=" + Environment.MachineName + "\\SQLEXPRESS");
         public login()
         {
             InitializeComponent();
-            
         }
 
         private void BtnVoltar_Click(object sender, EventArgs e)
         {
-                inicial form = new inicial();
-                form.Show();
-                this.Hide();
-            
+            inicial form = new inicial();
+            form.Show();
+            this.Hide();
         }
 
         private void BtnContinuar_Click(object sender, EventArgs e)
         {
+            banco.Senha = txtSenha.Text;
+            banco.Id = txtID.Text;
 
-
-            String senha = txtSenha.Text;
-            String id = txtID.Text;
-            banco.Senha = senha;
-            banco.Id = id;
-
-            principal form = new principal();
-            form.Show();
-            this.Hide();
-            //int chck = banco.Login();
-            /* if (chck >= 1)
+            ClsBanco.LoginResult result = banco.Login();
+            if (result.IsSuccessful)
             {
                 principal form = new principal();
                 form.Show();
@@ -51,10 +41,8 @@ namespace Limpia_DesktopTeste
             }
             else
             {
-                MessageBox.Show("Os dados inseridos estão incorretos");
-            }*/
-
-
+                MessageBox.Show(result.Message);
+            }
         }
     }
 }

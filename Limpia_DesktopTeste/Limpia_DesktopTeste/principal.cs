@@ -59,6 +59,7 @@ namespace Limpia_DesktopTeste
         private void btnHome_Click(object sender, EventArgs e)
         {
             /*parei aqui por preguiça pq não fui feito pra essa vida*/
+            /*tem q trabalhar sebss!!!!*/
         }
 
         private void btnPromoOfertas_Click_1(object sender, EventArgs e)
