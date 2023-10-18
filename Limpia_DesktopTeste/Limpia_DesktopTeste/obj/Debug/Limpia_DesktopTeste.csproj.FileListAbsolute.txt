@@ -71,7 +71,6 @@ C:\Users\DELL\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\b
 C:\Users\DELL\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\bin\Debug\Limpia_DesktopTeste.exe
 C:\Users\DELL\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\bin\Debug\Limpia_DesktopTeste.pdb
 C:\Users\DELL\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.csproj.AssemblyReference.cache
-C:\Users\DELL\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.csproj.SuggestedBindingRedirects.cache
 C:\Users\DELL\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.cursos.resources
 C:\Users\DELL\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.inicial.resources
 C:\Users\DELL\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.login.resources
@@ -119,3 +118,4 @@ C:\Users\Lab ETESP\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTe
 C:\Users\Lab ETESP\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.csproj.CoreCompileInputs.cache
 C:\Users\Lab ETESP\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.exe
 C:\Users\Lab ETESP\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.pdb
+C:\Users\DELL\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.Promo_Oferta_Dialog.resources
