@@ -22,7 +22,7 @@ namespace Limpia_DesktopTeste
         }
         public LoginResult Login()
         {
-            using (SqlConnection connection = new SqlConnection(@"Password=12345; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLSERVER2022")) // SEBASTIAN MUDA DE SQLEXPRESS PARA SQLSERVER2022 E A BEATRIZ O CONTRÁRIO
+            using (SqlConnection connection = new SqlConnection(@"Password=12345; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLSERVER2022")) // SEBASTIAN MUDA DE SQLEXPRESS PARA SQLSERVER2022 E A BEATRIZ O CONTRÁRIO (SENHA TBM!!)
             using (SqlCommand cmd = new SqlCommand("login_funcionario", connection))
             {
                 cmd.CommandType = CommandType.StoredProcedure;
