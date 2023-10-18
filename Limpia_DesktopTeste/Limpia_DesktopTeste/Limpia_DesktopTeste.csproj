@@ -87,6 +87,12 @@
     <Compile Include="promo_ofertas.Designer.cs">
       <DependentUpon>promo_ofertas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Promo_Oferta_Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Promo_Oferta_Dialog.Designer.cs">
+      <DependentUpon>Promo_Oferta_Dialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="suporte.cs">
       <SubType>Form</SubType>
@@ -117,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="promo_ofertas.resx">
       <DependentUpon>promo_ofertas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Promo_Oferta_Dialog.resx">
+      <DependentUpon>Promo_Oferta_Dialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
