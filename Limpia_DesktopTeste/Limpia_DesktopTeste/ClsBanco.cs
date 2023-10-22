@@ -65,7 +65,7 @@ namespace Limpia_DesktopTeste
             public string descricao { get; set; }
         }
         public List<Promo> Promo_Ofertas() {
-            using (SqlConnection connection = new SqlConnection(@"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLEXPRESS"))
+            using (SqlConnection connection = new SqlConnection(@"Password=12345; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLSERVER2022"))
             using (SqlCommand cmd = new SqlCommand("select * from tblpromo", connection))
             {
                 
