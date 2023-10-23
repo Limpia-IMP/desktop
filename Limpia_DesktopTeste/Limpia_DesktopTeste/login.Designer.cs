@@ -158,17 +158,16 @@
             this.txtID.Multiline = true;
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(120, 26);
-            this.txtID.TabIndex = 6;
+            this.txtID.TabIndex = 1;
             // 
             // txtSenha
             // 
             this.txtSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSenha.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.Location = new System.Drawing.Point(452, 223);
-            this.txtSenha.Multiline = true;
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(120, 26);
-            this.txtSenha.TabIndex = 7;
+            this.txtSenha.Size = new System.Drawing.Size(120, 28);
+            this.txtSenha.TabIndex = 2;
             // 
             // btnContinuar
             // 
@@ -186,7 +185,7 @@
             this.btnContinuar.Margin = new System.Windows.Forms.Padding(2);
             this.btnContinuar.Name = "btnContinuar";
             this.btnContinuar.Size = new System.Drawing.Size(123, 48);
-            this.btnContinuar.TabIndex = 6;
+            this.btnContinuar.TabIndex = 3;
             this.btnContinuar.Text = "Continuar";
             this.btnContinuar.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(12)))), ((int)(((byte)(42)))));
             this.btnContinuar.UseVisualStyleBackColor = false;

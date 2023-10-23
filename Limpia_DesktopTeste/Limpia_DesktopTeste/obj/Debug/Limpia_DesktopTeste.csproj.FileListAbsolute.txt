@@ -119,3 +119,21 @@ C:\Users\Lab ETESP\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTe
 C:\Users\Lab ETESP\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.exe
 C:\Users\Lab ETESP\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.pdb
 C:\Users\DELL\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.Promo_Oferta_Dialog.resources
+D:\TCC - Repositórios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\bin\Debug\Limpia_DesktopTeste.exe.config
+D:\TCC - Repositórios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\bin\Debug\Limpia_DesktopTeste.exe
+D:\TCC - Repositórios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\bin\Debug\Limpia_DesktopTeste.pdb
+D:\TCC - Repositórios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.csproj.AssemblyReference.cache
+D:\TCC - Repositórios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.cursos.resources
+D:\TCC - Repositórios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.inicial.resources
+D:\TCC - Repositórios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.login.resources
+D:\TCC - Repositórios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.perfil.resources
+D:\TCC - Repositórios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.principal.resources
+D:\TCC - Repositórios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.promo_ofertas.resources
+D:\TCC - Repositórios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.Promo_Oferta_Dialog.resources
+D:\TCC - Repositórios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.Properties.Resources.resources
+D:\TCC - Repositórios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.suporte.resources
+D:\TCC - Repositórios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.trabalhos.resources
+D:\TCC - Repositórios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.csproj.GenerateResource.cache
+D:\TCC - Repositórios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.csproj.CoreCompileInputs.cache
+D:\TCC - Repositórios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.exe
+D:\TCC - Repositórios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.pdb
