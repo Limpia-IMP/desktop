@@ -33,6 +33,7 @@ namespace Limpia_DesktopTeste
             banco.Id = txtID.Text;
 
             ClsBanco.LoginResult result = banco.Login();
+
             if (result.IsSuccessful)
             {
                 principal form = new principal();

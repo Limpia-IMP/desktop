@@ -16,5 +16,10 @@ namespace Limpia_DesktopTeste
         {
             InitializeComponent();
         }
+
+        private void suporte_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
