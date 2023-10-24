@@ -100,6 +100,12 @@
     <Compile Include="suporte.Designer.cs">
       <DependentUpon>suporte.cs</DependentUpon>
     </Compile>
+    <Compile Include="suporte_personalizado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="suporte_personalizado.Designer.cs">
+      <DependentUpon>suporte_personalizado.cs</DependentUpon>
+    </Compile>
     <Compile Include="trabalhos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +145,9 @@
     </Compile>
     <EmbeddedResource Include="suporte.resx">
       <DependentUpon>suporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="suporte_personalizado.resx">
+      <DependentUpon>suporte_personalizado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="trabalhos.resx">
       <DependentUpon>trabalhos.cs</DependentUpon>

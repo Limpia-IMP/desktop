@@ -98,5 +98,10 @@ namespace Limpia_DesktopTeste
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void panelChildForm_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

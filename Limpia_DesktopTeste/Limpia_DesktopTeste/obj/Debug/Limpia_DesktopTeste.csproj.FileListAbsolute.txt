@@ -137,3 +137,4 @@ D:\TCC - Repositórios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug
 D:\TCC - Repositórios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.csproj.CoreCompileInputs.cache
 D:\TCC - Repositórios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.exe
 D:\TCC - Repositórios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.pdb
+C:\Users\DELL\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.suporte_personalizado.resources

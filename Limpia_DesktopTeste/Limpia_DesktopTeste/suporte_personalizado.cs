@@ -10,13 +10,14 @@ using System.Windows.Forms;
 
 namespace Limpia_DesktopTeste
 {
-    public partial class suporte : Form
+    public partial class suporte_personalizado : Form
     {
-        public suporte()
+        public suporte_personalizado()
         {
             InitializeComponent();
         }
-        private void suporte_Load(object sender, EventArgs e)
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
             SetRoundedEdges(panel1, 30); // 30 é o raio. Ajuste conforme sua necessidade.
         }
@@ -34,14 +35,20 @@ namespace Limpia_DesktopTeste
             path.CloseFigure();
             panel.Region = new System.Drawing.Region(path);
         }
-        private void panel1_Paint(object sender, PaintEventArgs e)
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnSuporte_Click(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            suporte_personalizado form = new suporte_personalizado();
+
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            suporte form = new suporte();
             form.Show();
             this.Hide();
         }
