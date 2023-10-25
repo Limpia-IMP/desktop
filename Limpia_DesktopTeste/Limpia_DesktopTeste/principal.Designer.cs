@@ -196,7 +196,6 @@
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Size = new System.Drawing.Size(1081, 726);
             this.panelChildForm.TabIndex = 1;
-            this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
             // panel1
             // 
@@ -312,7 +311,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // sidebar
             // 
@@ -333,7 +331,6 @@
             this.sidebar.Name = "sidebar";
             this.sidebar.Size = new System.Drawing.Size(260, 726);
             this.sidebar.TabIndex = 0;
-            this.sidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // sidebar2
             // 
@@ -347,7 +344,6 @@
             this.sidebar2.Name = "sidebar2";
             this.sidebar2.Size = new System.Drawing.Size(260, 98);
             this.sidebar2.TabIndex = 0;
-            this.sidebar2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // pictureBox3
             // 
@@ -403,6 +399,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "principal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "principal";
             this.Load += new System.EventHandler(this.Principal_Load);
             this.panelChildForm.ResumeLayout(false);

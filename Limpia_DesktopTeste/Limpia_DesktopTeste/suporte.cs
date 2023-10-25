@@ -12,6 +12,7 @@ namespace Limpia_DesktopTeste
 {
     public partial class suporte : Form
     {
+        public principal FormularioPai { get; set; }
         public suporte()
         {
             InitializeComponent();
@@ -41,9 +42,11 @@ namespace Limpia_DesktopTeste
 
         private void btnSuporte_Click(object sender, EventArgs e)
         {
-            suporte_personalizado form = new suporte_personalizado();
-            form.Show();
-            this.Hide();
+            suporte_personalizado suportePers = new suporte_personalizado();
+            suportePers.FormularioPai = this.FormularioPai;  // Copia a referência do formulário principal
+            FormularioPai.openChildForm(suportePers);
+
         }
+
     }
 }
