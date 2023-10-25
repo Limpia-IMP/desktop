@@ -139,3 +139,6 @@ D:\TCC - Repositórios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug
 D:\TCC - Repositórios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.pdb
 C:\Users\DELL\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.suporte_personalizado.resources
 C:\Users\DELL\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.home.resources
+C:\Users\Lab_ETESP\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.home.resources
+C:\Users\Lab_ETESP\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.Promo_Oferta_Dialog.resources
+C:\Users\Lab_ETESP\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.suporte_personalizado.resources

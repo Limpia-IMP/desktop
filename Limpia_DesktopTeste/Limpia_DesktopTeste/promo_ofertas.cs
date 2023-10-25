@@ -14,6 +14,8 @@ namespace Limpia_DesktopTeste
 
         
     {
+       
+
         ClsBanco banco = new ClsBanco();
         public promo_ofertas()
         {
@@ -24,23 +26,55 @@ namespace Limpia_DesktopTeste
         private void Promo_ofertas_Load(object sender, EventArgs e)
         {
             var promo = banco.Promo_Ofertas();
-            
-            foreach(Control control in this.Controls)
+
+
+            foreach (Control control in this.Controls)
             {
                 control.Visible = false;
             }
 
-            for(int i = 0; i < promo.Count; i++)
+            for (int i = 0; i < promo.Count && i < this.Controls.Count; i++)
             {
                 var current = promo[i];
-                this.Controls[i].Visible = true;
-                //descricao
-                this.Controls[i].Controls[0].Text = current.descricao;
-                //nome
-                this.Controls[i].Controls[1].Text = current.nome;
+                var control = this.Controls[i];
+
+                control.Visible = true;
+
+                if (control is Panel panel)
+                {
+                    if (panel.Controls.Count >= 2)
+                    {
+                        // Considerando que o primeiro controle é uma Label para descrição
+                        if (panel.Controls[0] is Label lblDesc)
+                        {
+                            lblDesc.Text = current.descricao;
+                        }
+
+                        // E o segundo controle é uma Label para o nome
+                        if (panel.Controls[1] is Label lblName)
+                        {
+                            lblName.Text = current.nome;
+                        }
+
+                        // Atribuir o idpromo ao painel para uso posterior
+                        panel.Name = current.idpromo;
+                    }
+                }
             }
-                
-            
+
+
+        }
+
+        private void Panel2_Click(object sender, EventArgs e)
+        {
+            if (sender is Panel clickedPanel)
+            {
+                ClsBanco promo = new ClsBanco();
+                promo.IdPromo = clickedPanel.Name;
+
+                Promo_Oferta_Dialog form = new Promo_Oferta_Dialog();
+                form.Show();
+            }
         }
     }
 }
