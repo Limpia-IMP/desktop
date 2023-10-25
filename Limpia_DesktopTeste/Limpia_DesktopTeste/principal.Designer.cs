@@ -50,15 +50,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
             btnTrabalhos = new System.Windows.Forms.Button();
             btnSuporte = new System.Windows.Forms.Button();
             btnPerfil = new System.Windows.Forms.Button();
@@ -198,15 +189,6 @@
             // panelChildForm
             // 
             this.panelChildForm.BackColor = System.Drawing.Color.Cornsilk;
-            this.panelChildForm.Controls.Add(this.panel9);
-            this.panelChildForm.Controls.Add(this.panel10);
-            this.panelChildForm.Controls.Add(this.panel11);
-            this.panelChildForm.Controls.Add(this.panel6);
-            this.panelChildForm.Controls.Add(this.panel5);
-            this.panelChildForm.Controls.Add(this.panel7);
-            this.panelChildForm.Controls.Add(this.panel8);
-            this.panelChildForm.Controls.Add(this.panel4);
-            this.panelChildForm.Controls.Add(this.panel2);
             this.panelChildForm.Controls.Add(this.panel1);
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(260, 0);
@@ -411,78 +393,6 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Sebs";
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel2.Location = new System.Drawing.Point(111, 109);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(236, 136);
-            this.panel2.TabIndex = 2;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel4.Location = new System.Drawing.Point(396, 109);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(236, 136);
-            this.panel4.TabIndex = 3;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel5.Location = new System.Drawing.Point(690, 109);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(236, 136);
-            this.panel5.TabIndex = 3;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel6.Location = new System.Drawing.Point(690, 293);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(236, 136);
-            this.panel6.TabIndex = 6;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel7.Location = new System.Drawing.Point(396, 293);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(236, 136);
-            this.panel7.TabIndex = 5;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel8.Location = new System.Drawing.Point(111, 293);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(236, 136);
-            this.panel8.TabIndex = 4;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel9.Location = new System.Drawing.Point(690, 476);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(236, 136);
-            this.panel9.TabIndex = 9;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel10.Location = new System.Drawing.Point(396, 476);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(236, 136);
-            this.panel10.TabIndex = 8;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel11.Location = new System.Drawing.Point(111, 476);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(236, 136);
-            this.panel11.TabIndex = 7;
-            // 
             // principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -526,14 +436,5 @@
         private System.Windows.Forms.Button btnMinimizar;
         private System.Windows.Forms.Button btnFecharTela;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel2;
     }
 }

@@ -18,7 +18,7 @@ namespace Limpia_DesktopTeste
         }
         private void Principal_Load(object sender, EventArgs e)
         {
-
+            openChildForm(new home());
         }
 
         private Form activeForm = null;
@@ -58,6 +58,7 @@ namespace Limpia_DesktopTeste
 
         private void btnHome_Click(object sender, EventArgs e)
         {
+            openChildForm(new home());
             /*parei aqui por preguiça pq não fui feito pra essa vida*/
             /*tem q trabalhar sebss!!!!*/
         }
