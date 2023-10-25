@@ -45,5 +45,10 @@ namespace Limpia_DesktopTeste
                 MessageBox.Show(result.Message);
             }
         }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

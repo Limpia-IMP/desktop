@@ -12,6 +12,8 @@ namespace Limpia_DesktopTeste
 {
     public partial class suporte_personalizado : Form
     {
+        public principal FormularioPai { get; set; }
+
         public suporte_personalizado()
         {
             InitializeComponent();
@@ -49,8 +51,8 @@ namespace Limpia_DesktopTeste
         private void btnVoltar_Click(object sender, EventArgs e)
         {
             suporte form = new suporte();
-            form.Show();
-            this.Hide();
+            FormularioPai.openChildForm(form);
         }
+
     }
 }

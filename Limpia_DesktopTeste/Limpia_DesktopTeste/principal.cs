@@ -22,7 +22,7 @@ namespace Limpia_DesktopTeste
         }
 
         private Form activeForm = null;
-        private void openChildForm(Form childForm)
+        public void openChildForm(Form childForm)
         {
             if (activeForm != null)
                 activeForm.Close();
@@ -43,7 +43,9 @@ namespace Limpia_DesktopTeste
 
         private void btnSuporte_Click(object sender, EventArgs e)
         {
-            openChildForm(new suporte());
+            suporte formSuporte = new suporte();
+            formSuporte.FormularioPai = this;  // 'this' se refere ao FormPrincipal
+            openChildForm(formSuporte);
         }
 
         private void btnPerfil_Click(object sender, EventArgs e)
@@ -75,34 +77,14 @@ namespace Limpia_DesktopTeste
             this.Hide();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btnFecharTela_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void panelChildForm_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
