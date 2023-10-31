@@ -52,6 +52,8 @@ namespace Limpia_DesktopTeste
         {
             suporte form = new suporte();
             FormularioPai.openChildForm(form);
+            form.FormularioPai = this.FormularioPai;
+            this.Close();
         }
 
     }

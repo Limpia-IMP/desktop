@@ -45,6 +45,7 @@ namespace Limpia_DesktopTeste
             suporte_personalizado suportePers = new suporte_personalizado();
             suportePers.FormularioPai = this.FormularioPai;  // Copia a referência do formulário principal
             FormularioPai.openChildForm(suportePers);
+            this.Close();
 
         }
 
