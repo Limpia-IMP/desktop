@@ -36,5 +36,10 @@ namespace Limpia_DesktopTeste
 
             txtDescricaoPromo.Text = promoOfertas[idInt].descricao;
         }
+
+        private void Promo_Oferta_Dialog_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -23,7 +23,7 @@ namespace Limpia_DesktopTeste
         }
         public LoginResult Login()
         {
-            using (SqlConnection connection = new SqlConnection(@"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLEXPRESS")) // SEBASTIAN MUDA DE SQLEXPRESS PARA SQLSERVER2022 E A BEATRIZ O CONTRÁRIO (SENHA TBM!!)
+            using (SqlConnection connection = new SqlConnection(@"Password=12345; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLSERVER2022")) // SEBASTIAN MUDA DE SQLEXPRESS PARA SQLSERVER2022 E A BEATRIZ O CONTRÁRIO (SENHA TBM!!)
             using (SqlCommand cmd = new SqlCommand("login_funcionario", connection))
             {
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -53,7 +53,6 @@ namespace Limpia_DesktopTeste
                 }
             }
         }
-
         public class LoginResult
         {
             public bool IsSuccessful { get; set; }
@@ -70,10 +69,9 @@ namespace Limpia_DesktopTeste
             public string validade { get; set; }
         }
         public List<Promo> Promo_Ofertas() {
-            using (SqlConnection connection = new SqlConnection(@"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLEXPRESS"))
+            using (SqlConnection connection = new SqlConnection(@"Password=12345; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLSERVER2022"))
             using (SqlCommand cmd = new SqlCommand("select * from tblpromo", connection))
             {
-                
                     connection.Open();
                     using (var reader = cmd.ExecuteReader())
                     {
@@ -82,12 +80,9 @@ namespace Limpia_DesktopTeste
                             list.Add(new Promo { nome = reader.GetString(3), descricao = reader.GetString(4), idpromo = reader.GetInt32(0).ToString() });
                     return list;
                     }
-                
             }
         }
 
         private string idPromo = "";
-
-        
     }
 }

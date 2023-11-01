@@ -11,8 +11,6 @@ using System.Windows.Forms;
 namespace Limpia_DesktopTeste
 {
     public partial class promo_ofertas : Form
-
-        
     {
        
 
@@ -61,8 +59,6 @@ namespace Limpia_DesktopTeste
                     }
                 }
             }
-
-
         }
 
         private void Panel2_Click(object sender, EventArgs e)
@@ -75,6 +71,11 @@ namespace Limpia_DesktopTeste
                 Promo_Oferta_Dialog form = new Promo_Oferta_Dialog();
                 form.Show();
             }
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

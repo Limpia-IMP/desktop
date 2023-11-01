@@ -56,5 +56,9 @@ namespace Limpia_DesktopTeste
             this.Close();
         }
 
+        private void suporte_personalizado_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

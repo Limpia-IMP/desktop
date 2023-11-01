@@ -63,9 +63,9 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(515, 40);
+            this.panel1.Size = new System.Drawing.Size(687, 49);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -73,10 +73,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(229, 12);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(305, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 16);
+            this.label1.Size = new System.Drawing.Size(53, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cursos";
             // 
@@ -85,10 +84,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(28, 52);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(37, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 16);
+            this.label2.Size = new System.Drawing.Size(140, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Resumo da Oferta:";
             // 
@@ -97,10 +95,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(28, 145);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(37, 178);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 16);
+            this.label3.Size = new System.Drawing.Size(58, 19);
             this.label3.TabIndex = 3;
             this.label3.Text = "Título: ";
             // 
@@ -109,28 +106,29 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(28, 180);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(37, 222);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 16);
+            this.label4.Size = new System.Drawing.Size(141, 19);
             this.label4.TabIndex = 5;
             this.label4.Text = "Disponível durante";
             // 
             // dtInicioPromo
             // 
             this.dtInicioPromo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtInicioPromo.Location = new System.Drawing.Point(138, 180);
+            this.dtInicioPromo.Location = new System.Drawing.Point(184, 222);
+            this.dtInicioPromo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtInicioPromo.Name = "dtInicioPromo";
-            this.dtInicioPromo.Size = new System.Drawing.Size(59, 20);
+            this.dtInicioPromo.Size = new System.Drawing.Size(77, 22);
             this.dtInicioPromo.TabIndex = 6;
             this.dtInicioPromo.Value = new System.DateTime(2023, 10, 18, 16, 30, 40, 0);
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(213, 180);
+            this.dateTimePicker1.Location = new System.Drawing.Point(284, 222);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(59, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(77, 22);
             this.dateTimePicker1.TabIndex = 7;
             this.dateTimePicker1.Value = new System.DateTime(2023, 10, 18, 16, 30, 40, 0);
             // 
@@ -140,10 +138,9 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(199, 182);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(265, 224);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(13, 16);
+            this.label5.Size = new System.Drawing.Size(15, 19);
             this.label5.TabIndex = 8;
             this.label5.Text = "-";
             // 
@@ -152,10 +149,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label6.Location = new System.Drawing.Point(28, 217);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(37, 267);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 16);
+            this.label6.Size = new System.Drawing.Size(64, 19);
             this.label6.TabIndex = 9;
             this.label6.Text = "Público:";
             // 
@@ -164,9 +160,11 @@
             this.grpPublicoPromo.Controls.Add(this.rdoTodos);
             this.grpPublicoPromo.Controls.Add(this.rdoPrestador);
             this.grpPublicoPromo.Controls.Add(this.rdoContratante);
-            this.grpPublicoPromo.Location = new System.Drawing.Point(77, 206);
+            this.grpPublicoPromo.Location = new System.Drawing.Point(103, 254);
+            this.grpPublicoPromo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grpPublicoPromo.Name = "grpPublicoPromo";
-            this.grpPublicoPromo.Size = new System.Drawing.Size(195, 30);
+            this.grpPublicoPromo.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpPublicoPromo.Size = new System.Drawing.Size(260, 37);
             this.grpPublicoPromo.TabIndex = 10;
             this.grpPublicoPromo.TabStop = false;
             // 
@@ -174,9 +172,10 @@
             // 
             this.rdoTodos.AutoSize = true;
             this.rdoTodos.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoTodos.Location = new System.Drawing.Point(145, 11);
+            this.rdoTodos.Location = new System.Drawing.Point(193, 14);
+            this.rdoTodos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdoTodos.Name = "rdoTodos";
-            this.rdoTodos.Size = new System.Drawing.Size(48, 16);
+            this.rdoTodos.Size = new System.Drawing.Size(62, 19);
             this.rdoTodos.TabIndex = 2;
             this.rdoTodos.TabStop = true;
             this.rdoTodos.Text = "Todos";
@@ -186,9 +185,10 @@
             // 
             this.rdoPrestador.AutoSize = true;
             this.rdoPrestador.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoPrestador.Location = new System.Drawing.Point(84, 11);
+            this.rdoPrestador.Location = new System.Drawing.Point(112, 14);
+            this.rdoPrestador.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdoPrestador.Name = "rdoPrestador";
-            this.rdoPrestador.Size = new System.Drawing.Size(63, 16);
+            this.rdoPrestador.Size = new System.Drawing.Size(81, 19);
             this.rdoPrestador.TabIndex = 1;
             this.rdoPrestador.TabStop = true;
             this.rdoPrestador.Text = "Prestador";
@@ -198,9 +198,10 @@
             // 
             this.rdoContratante.AutoSize = true;
             this.rdoContratante.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoContratante.Location = new System.Drawing.Point(6, 10);
+            this.rdoContratante.Location = new System.Drawing.Point(8, 12);
+            this.rdoContratante.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdoContratante.Name = "rdoContratante";
-            this.rdoContratante.Size = new System.Drawing.Size(72, 16);
+            this.rdoContratante.Size = new System.Drawing.Size(91, 19);
             this.rdoContratante.TabIndex = 0;
             this.rdoContratante.TabStop = true;
             this.rdoContratante.Text = "Contratante";
@@ -211,10 +212,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label7.Location = new System.Drawing.Point(28, 257);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(37, 316);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 16);
+            this.label7.Size = new System.Drawing.Size(100, 19);
             this.label7.TabIndex = 11;
             this.label7.Text = "Responsável:";
             // 
@@ -223,10 +223,9 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label8.Location = new System.Drawing.Point(28, 288);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(37, 354);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(49, 16);
+            this.label8.Size = new System.Drawing.Size(62, 19);
             this.label8.TabIndex = 13;
             this.label8.Text = "Código:";
             // 
@@ -235,10 +234,9 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label9.Location = new System.Drawing.Point(28, 320);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(37, 394);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(48, 16);
+            this.label9.Size = new System.Drawing.Size(61, 19);
             this.label9.TabIndex = 15;
             this.label9.Text = "Região:";
             // 
@@ -251,9 +249,10 @@
             "Norte",
             "Nordeste",
             "Centro-Oeste"});
-            this.comboBox1.Location = new System.Drawing.Point(81, 318);
+            this.comboBox1.Location = new System.Drawing.Point(108, 391);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(191, 21);
+            this.comboBox1.Size = new System.Drawing.Size(253, 24);
             this.comboBox1.TabIndex = 16;
             // 
             // btnEditarPromo
@@ -261,9 +260,10 @@
             this.btnEditarPromo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
             this.btnEditarPromo.FlatAppearance.BorderSize = 0;
             this.btnEditarPromo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditarPromo.Location = new System.Drawing.Point(331, 236);
+            this.btnEditarPromo.Location = new System.Drawing.Point(441, 290);
+            this.btnEditarPromo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEditarPromo.Name = "btnEditarPromo";
-            this.btnEditarPromo.Size = new System.Drawing.Size(71, 23);
+            this.btnEditarPromo.Size = new System.Drawing.Size(95, 28);
             this.btnEditarPromo.TabIndex = 18;
             this.btnEditarPromo.Text = "Editar";
             this.btnEditarPromo.UseVisualStyleBackColor = false;
@@ -271,33 +271,37 @@
             // txtDescricaoPromo
             // 
             this.txtDescricaoPromo.Enabled = false;
-            this.txtDescricaoPromo.Location = new System.Drawing.Point(31, 71);
+            this.txtDescricaoPromo.Location = new System.Drawing.Point(41, 87);
+            this.txtDescricaoPromo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDescricaoPromo.Name = "txtDescricaoPromo";
-            this.txtDescricaoPromo.Size = new System.Drawing.Size(241, 20);
+            this.txtDescricaoPromo.Size = new System.Drawing.Size(320, 22);
             this.txtDescricaoPromo.TabIndex = 19;
             // 
             // txtTituloPromo
             // 
             this.txtTituloPromo.Enabled = false;
-            this.txtTituloPromo.Location = new System.Drawing.Point(79, 143);
+            this.txtTituloPromo.Location = new System.Drawing.Point(105, 176);
+            this.txtTituloPromo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTituloPromo.Name = "txtTituloPromo";
-            this.txtTituloPromo.Size = new System.Drawing.Size(193, 20);
+            this.txtTituloPromo.Size = new System.Drawing.Size(256, 22);
             this.txtTituloPromo.TabIndex = 20;
             // 
             // txtResponsavelPromo
             // 
             this.txtResponsavelPromo.Enabled = false;
-            this.txtResponsavelPromo.Location = new System.Drawing.Point(110, 255);
+            this.txtResponsavelPromo.Location = new System.Drawing.Point(147, 314);
+            this.txtResponsavelPromo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtResponsavelPromo.Name = "txtResponsavelPromo";
-            this.txtResponsavelPromo.Size = new System.Drawing.Size(162, 20);
+            this.txtResponsavelPromo.Size = new System.Drawing.Size(215, 22);
             this.txtResponsavelPromo.TabIndex = 21;
             // 
             // txtCodigoPromo
             // 
             this.txtCodigoPromo.Enabled = false;
-            this.txtCodigoPromo.Location = new System.Drawing.Point(82, 288);
+            this.txtCodigoPromo.Location = new System.Drawing.Point(109, 354);
+            this.txtCodigoPromo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCodigoPromo.Name = "txtCodigoPromo";
-            this.txtCodigoPromo.Size = new System.Drawing.Size(190, 20);
+            this.txtCodigoPromo.Size = new System.Drawing.Size(252, 22);
             this.txtCodigoPromo.TabIndex = 22;
             // 
             // btnInativarPromo
@@ -305,9 +309,10 @@
             this.btnInativarPromo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btnInativarPromo.FlatAppearance.BorderSize = 0;
             this.btnInativarPromo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInativarPromo.Location = new System.Drawing.Point(428, 236);
+            this.btnInativarPromo.Location = new System.Drawing.Point(571, 290);
+            this.btnInativarPromo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnInativarPromo.Name = "btnInativarPromo";
-            this.btnInativarPromo.Size = new System.Drawing.Size(75, 23);
+            this.btnInativarPromo.Size = new System.Drawing.Size(100, 28);
             this.btnInativarPromo.TabIndex = 23;
             this.btnInativarPromo.Text = "Inativar";
             this.btnInativarPromo.UseVisualStyleBackColor = false;
@@ -316,18 +321,18 @@
             // 
             this.pictureBox1.BackgroundImage = global::Limpia_DesktopTeste.Properties.Resources.banheiro;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(303, 71);
+            this.pictureBox1.Location = new System.Drawing.Point(404, 87);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 134);
+            this.pictureBox1.Size = new System.Drawing.Size(267, 165);
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
             // Promo_Oferta_Dialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(515, 362);
+            this.ClientSize = new System.Drawing.Size(687, 446);
             this.Controls.Add(this.btnInativarPromo);
             this.Controls.Add(this.txtCodigoPromo);
             this.Controls.Add(this.txtResponsavelPromo);
@@ -349,9 +354,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Promo_Oferta_Dialog";
             this.Text = "Promo_Oferta_Dialog";
+            this.Load += new System.EventHandler(this.Promo_Oferta_Dialog_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.grpPublicoPromo.ResumeLayout(false);
