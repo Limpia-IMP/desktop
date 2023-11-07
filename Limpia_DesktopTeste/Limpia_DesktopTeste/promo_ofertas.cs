@@ -20,7 +20,6 @@ namespace Limpia_DesktopTeste
             InitializeComponent();
         }
 
-
         private void Promo_ofertas_Load(object sender, EventArgs e)
         {
             var promo = banco.Promo_Ofertas();
@@ -74,6 +73,11 @@ namespace Limpia_DesktopTeste
         }
 
         private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
