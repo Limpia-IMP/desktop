@@ -7,7 +7,7 @@ namespace Limpia_DesktopTeste
 {
     class ClsBanco
     {
-        private static string SQL_STRING = @"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLEXPRESS"; // SEBASTIAN MUDA DE SQLEXPRESS PARA SQLSERVER2022 E A BEATRIZ O CONTRÁRIO (SENHA TBM!!);
+        private static string SQL_STRING = @"Password=12345; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLSERVER2022"; // SEBASTIAN MUDA DE SQLEXPRESS PARA SQLSERVER2022 E A BEATRIZ O CONTRÁRIO (SENHA TBM!!);
 
         //SqlConnection cone = new SqlConnection(@"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLEXPRESS");
         private string senha;
@@ -86,5 +86,11 @@ namespace Limpia_DesktopTeste
         }
 
         private string idPromo = "";
+
+        public class Promo_Oferta {         
+        public string titulo { get; set; }
+        public string descricao { get; set;}
+        public string idpromo { get; set;}
+        }
     }
 }

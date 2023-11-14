@@ -14,6 +14,9 @@ namespace Limpia_DesktopTeste
     public partial class Promo_Oferta_Dialog : Form
     {
         public principal FormularioPai { get; set; }
+
+        ClsBanco clsBanco = new ClsBanco();
+
         public Promo_Oferta_Dialog()
         {
             InitializeComponent();
@@ -45,6 +48,11 @@ namespace Limpia_DesktopTeste
             FormularioPai.openChildForm(form);
             form.FormularioPai = this.FormularioPai;
             this.Close();
+        }
+
+        private void Promo_Oferta_Dialog_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
