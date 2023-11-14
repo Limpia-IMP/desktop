@@ -52,7 +52,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5.SuspendLayout();
@@ -364,17 +364,17 @@
             this.label1.Text = "Limpeza Doméstica";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label11
+            // lblTitulo
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Berlin Sans FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(60, 41);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(174, 31);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "Limpeza Sala";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Berlin Sans FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.White;
+            this.lblTitulo.Location = new System.Drawing.Point(60, 41);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(174, 31);
+            this.lblTitulo.TabIndex = 6;
+            this.lblTitulo.Text = "Limpeza Sala";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label12
             // 
@@ -387,7 +387,6 @@
             this.label12.TabIndex = 6;
             this.label12.Text = "1 Hora";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // panel2
             // 
@@ -395,14 +394,12 @@
             this.panel2.BackgroundImage = global::Limpia_DesktopTeste.Properties.Resources.sala;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.label11);
+            this.panel2.Controls.Add(this.lblTitulo);
             this.panel2.Location = new System.Drawing.Point(31, 41);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(295, 151);
             this.panel2.TabIndex = 6;
-            this.panel2.Click += new System.EventHandler(this.Panel2_Click);
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // promo_ofertas
             // 
@@ -421,7 +418,7 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "promo_ofertas";
-            this.Text = "promo_ofertas";
+            this.Text = "Promo_Ofertas";
             this.Load += new System.EventHandler(this.Promo_ofertas_Load);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -471,7 +468,7 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel2;
     }

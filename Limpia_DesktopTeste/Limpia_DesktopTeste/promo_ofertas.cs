@@ -12,8 +12,6 @@ namespace Limpia_DesktopTeste
 {
     public partial class promo_ofertas : Form
     {
-       
-
         ClsBanco banco = new ClsBanco();
         public promo_ofertas()
         {
@@ -58,28 +56,6 @@ namespace Limpia_DesktopTeste
                     }
                 }
             }
-        }
-
-        private void Panel2_Click(object sender, EventArgs e)
-        {
-            if (sender is Panel clickedPanel)
-            {
-                ClsBanco promo = new ClsBanco();
-                promo.IdPromo = clickedPanel.Name;
-
-                Promo_Oferta_Dialog form = new Promo_Oferta_Dialog();
-                form.Show();
-            }
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
