@@ -400,7 +400,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(295, 151);
             this.panel2.TabIndex = 6;
-            this.panel2.Click += new System.EventHandler(this.panel2_Click);
             // 
             // promo_ofertas
             // 
