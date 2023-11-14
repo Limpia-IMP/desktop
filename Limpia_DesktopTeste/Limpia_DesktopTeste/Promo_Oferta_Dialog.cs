@@ -25,7 +25,7 @@ namespace Limpia_DesktopTeste
         public void CarregarDados()
         {
             txtTituloPromo.Text = promocaoAtual.nome;
-            dtpValidade.Value = (promocaoAtual.validade);
+            dtpValidade.Value = (promocaoAtual.validade_inic);
             txtDescricaoPromo.Text = promocaoAtual.descricao;
         }
 
