@@ -12,6 +12,8 @@ namespace Limpia_DesktopTeste
 {
     public partial class promo_ofertas : Form
     {
+        public principal FormularioPai { get; set; }
+
         ClsBanco banco = new ClsBanco();
         public promo_ofertas()
         {
@@ -55,6 +57,21 @@ namespace Limpia_DesktopTeste
                         panel.Name = current.idpromo;
                     }
                 }
+            }
+        }
+
+        private void panel2_Click(object sender, EventArgs e)
+        {
+            if (sender is Panel clickedPanel)
+            {
+                ClsBanco promo = new ClsBanco();
+                promo.IdPromo = clickedPanel.Name;
+
+
+                Promo_Oferta_Dialog promo_Oferta_Dialog = new Promo_Oferta_Dialog();
+                promo_Oferta_Dialog.FormularioPai = this.FormularioPai;  // Copia a referência do formulário principal
+                FormularioPai.openChildForm(promo_Oferta_Dialog);
+                this.Close();
             }
         }
     }

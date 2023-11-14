@@ -140,7 +140,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "suporte_personalizado";
             this.Text = "suporte_personalizado";
-            this.Load += new System.EventHandler(this.suporte_personalizado_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

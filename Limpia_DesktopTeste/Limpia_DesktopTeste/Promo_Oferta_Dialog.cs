@@ -13,6 +13,7 @@ namespace Limpia_DesktopTeste
 {
     public partial class Promo_Oferta_Dialog : Form
     {
+        public principal FormularioPai { get; set; }
         public Promo_Oferta_Dialog()
         {
             InitializeComponent();
@@ -37,9 +38,13 @@ namespace Limpia_DesktopTeste
             txtDescricaoPromo.Text = promoOfertas[idInt].descricao;
         }
 
-        private void Promo_Oferta_Dialog_Load(object sender, EventArgs e)
+        private void btnVoltar_Click(object sender, EventArgs e)
         {
 
+            promo_ofertas form = new promo_ofertas();
+            FormularioPai.openChildForm(form);
+            form.FormularioPai = this.FormularioPai;
+            this.Close();
         }
     }
 }

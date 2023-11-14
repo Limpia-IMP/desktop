@@ -46,7 +46,6 @@ namespace Limpia_DesktopTeste
             suportePers.FormularioPai = this.FormularioPai;  // Copia a referência do formulário principal
             FormularioPai.openChildForm(suportePers);
             this.Close();
-
         }
 
     }

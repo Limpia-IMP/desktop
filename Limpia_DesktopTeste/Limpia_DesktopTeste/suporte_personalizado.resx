@@ -121,7 +121,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJ4AAACfCAYAAAAI2WDeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAM9JJREFUeF7tnfuXZUd135lRT0/39PRMv5/T8+rpGUmjkUYaIfSWjAHLAhwZI8le
+        DwAACw8BkvkDpQAAM9JJREFUeF7tnfuXZUd135lRT0/39PRMv5/T8+rpGUmjkUYaIfSWjAHLAhwZI8le
         iR0hHOIEkIAYByNj2bKQgDiAUbxwMCCZJAbBsi3bGK04WZHMJCbBWIOJY3vBDxODQT+OkP4A8v1s7X1z
         +kz1vXXvPef27VbXWt91+lFVpx7f2nvXrsd52WYNBw8eHBNOCncJ9wuPHjp06CnhrOOc8IME4v/E/QOl
         +4hwr3CzcNKz3wpb4cXgxLgXsjhxUqSqAhD2Kb0LQvLOMS/CVngpBDr88OHDEA3JtJb06hUg4juELYm4
@@ -354,7 +354,7 @@ It was popularised in the 1960s with the release of Letraset sheets containing L
   <data name="btnVoltar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACIAAAAbCAYAAAAZMl2nAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAA85JREFUSEvFVt9Lk1EY3uY2l9tcm1sDW7l+qDl/FCjeJl0FUReRXVcEQdDfYBF0
+        DwAACw8BkvkDpQAAA85JREFUSEvFVt9Lk1EY3uY2l9tcm1sDW7l+qDl/FCjeJl0FUReRXVcEQdDfYBF0
         EeGFYRQlWhLWKOvWWyG86UJBwwsRRFD8gXP+QAR1Pc/53vMx9VOnpj3w8J5z3nPO93zved/zfbaDIJPJ
         PCWl+38gIjTYtotrX8C6OHhPU4Zzgn19ff0ZFmUjlU6nQ7D7FrO2tnbf2MKADO8JO+ZmR4JIjY+P18Pn
         Ah1qVm6gaAeEPJB9FAzX7tgWCfTTvb29V+ErBD2gk/PAXOBoaGhwLi8vP5TtFMS3IyxFJJPJ6/AV+/3+

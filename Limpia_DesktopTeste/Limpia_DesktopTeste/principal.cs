@@ -67,7 +67,9 @@ namespace Limpia_DesktopTeste
 
         private void btnPromoOfertas_Click_1(object sender, EventArgs e)
         {
-            openChildForm(new promo_ofertas());
+            promo_ofertas formPromo = new promo_ofertas();
+            formPromo.FormularioPai = this;  // 'this' se refere ao FormPrincipal
+            openChildForm(formPromo);
         }
 
         private void btnLogout_Click(object sender, EventArgs e)

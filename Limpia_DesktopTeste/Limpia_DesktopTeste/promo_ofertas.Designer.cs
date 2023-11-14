@@ -400,13 +400,14 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(295, 151);
             this.panel2.TabIndex = 6;
+            this.panel2.Click += new System.EventHandler(this.panel2_Click);
             // 
             // promo_ofertas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1060, 678);
+            this.ClientSize = new System.Drawing.Size(1104, 726);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel2);

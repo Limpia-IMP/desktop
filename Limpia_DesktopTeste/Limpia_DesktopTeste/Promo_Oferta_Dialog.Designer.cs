@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Promo_Oferta_Dialog));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,8 +51,9 @@
             this.txtResponsavelPromo = new System.Windows.Forms.TextBox();
             this.txtCodigoPromo = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnInativarPromo = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.btnEditarPromo = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
+            this.btnInativarPromo = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.grpPublicoPromo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,6 +62,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
+            this.panel1.Controls.Add(this.btnVoltar);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -108,9 +111,9 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label4.Location = new System.Drawing.Point(37, 222);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(141, 19);
+            this.label4.Size = new System.Drawing.Size(145, 19);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Disponível durante";
+            this.label4.Text = "Disponível durante:";
             // 
             // dtInicioPromo
             // 
@@ -302,6 +305,25 @@
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
+            // btnEditarPromo
+            // 
+            this.btnEditarPromo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
+            this.btnEditarPromo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
+            this.btnEditarPromo.BorderColor = System.Drawing.Color.White;
+            this.btnEditarPromo.BorderRadius = 40;
+            this.btnEditarPromo.BorderSize = 0;
+            this.btnEditarPromo.FlatAppearance.BorderSize = 0;
+            this.btnEditarPromo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditarPromo.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarPromo.ForeColor = System.Drawing.Color.Black;
+            this.btnEditarPromo.Location = new System.Drawing.Point(404, 268);
+            this.btnEditarPromo.Name = "btnEditarPromo";
+            this.btnEditarPromo.Size = new System.Drawing.Size(115, 40);
+            this.btnEditarPromo.TabIndex = 25;
+            this.btnEditarPromo.Text = "Editar";
+            this.btnEditarPromo.TextColor = System.Drawing.Color.Black;
+            this.btnEditarPromo.UseVisualStyleBackColor = false;
+            // 
             // btnInativarPromo
             // 
             this.btnInativarPromo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
@@ -321,24 +343,17 @@
             this.btnInativarPromo.TextColor = System.Drawing.Color.Black;
             this.btnInativarPromo.UseVisualStyleBackColor = false;
             // 
-            // btnEditarPromo
+            // btnVoltar
             // 
-            this.btnEditarPromo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.btnEditarPromo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.btnEditarPromo.BorderColor = System.Drawing.Color.White;
-            this.btnEditarPromo.BorderRadius = 40;
-            this.btnEditarPromo.BorderSize = 0;
-            this.btnEditarPromo.FlatAppearance.BorderSize = 0;
-            this.btnEditarPromo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditarPromo.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarPromo.ForeColor = System.Drawing.Color.Black;
-            this.btnEditarPromo.Location = new System.Drawing.Point(404, 268);
-            this.btnEditarPromo.Name = "btnEditarPromo";
-            this.btnEditarPromo.Size = new System.Drawing.Size(115, 40);
-            this.btnEditarPromo.TabIndex = 25;
-            this.btnEditarPromo.Text = "Editar";
-            this.btnEditarPromo.TextColor = System.Drawing.Color.Black;
-            this.btnEditarPromo.UseVisualStyleBackColor = false;
+            this.btnVoltar.FlatAppearance.BorderSize = 0;
+            this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
+            this.btnVoltar.Location = new System.Drawing.Point(5, 2);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(46, 46);
+            this.btnVoltar.TabIndex = 3;
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // Promo_Oferta_Dialog
             // 
@@ -369,7 +384,6 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Promo_Oferta_Dialog";
             this.Text = "Promo_Oferta_Dialog";
-            this.Load += new System.EventHandler(this.Promo_Oferta_Dialog_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.grpPublicoPromo.ResumeLayout(false);
@@ -406,5 +420,6 @@
         private System.Windows.Forms.TextBox txtCodigoPromo;
         private BtnLimpia.btnPrincipal btnInativarPromo;
         private BtnLimpia.btnPrincipal btnEditarPromo;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }
