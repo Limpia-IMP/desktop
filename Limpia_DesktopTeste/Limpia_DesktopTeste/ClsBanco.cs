@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 
 namespace Limpia_DesktopTeste
 {
-    class ClsBanco
+    public class ClsBanco
     {
         private static string SQL_STRING = @"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLEXPRESS"; // SEBASTIAN MUDA DE SQLEXPRESS PARA SQLSERVER2022 E A BEATRIZ O CONTRÁRIO (SENHA TBM!!);
 
@@ -14,8 +14,7 @@ namespace Limpia_DesktopTeste
 
         public string Senha { get => senha; set => senha = value; }
         public string Id { get => id; set => id = value; }
-        public string IdPromo { get => idPromo; set => idPromo = value; }
-
+  
         private string id;
 
         public ClsBanco()
@@ -63,13 +62,18 @@ namespace Limpia_DesktopTeste
 
         public class Promo
         {
-            public string nome { get; set; }
-            public string descricao { get; set; }
+            private string idPromo = "";
+            private string name = "";
+            private string desc = "";
+            private DateTime valid = DateTime.Now;
 
-            public string idpromo { get; set; }
+            public string nome { get => name ; set => name = value; }
+            public string descricao { get => desc; set => desc = value; }
+            public string idpromo { get => idPromo; set => idPromo = value; }
 
-            public string validade { get; set; }
+            public DateTime validade { get => valid; set => valid = value; }
         }
+
         public List<Promo> Promo_Ofertas() {
             using (SqlConnection connection = new SqlConnection(SQL_STRING))
             using (SqlCommand cmd = new SqlCommand("select * from tblpromo", connection))
@@ -79,12 +83,10 @@ namespace Limpia_DesktopTeste
                 {
                     var list = new List<Promo>();
                     while (reader.Read())
-                        list.Add(new Promo { nome = reader.GetString(3), descricao = reader.GetString(4), idpromo = reader.GetInt32(0).ToString() });
+                        list.Add(new Promo { nome = reader.GetString(3), descricao = reader.GetString(4), idpromo = reader.GetInt32(0).ToString(), validade = reader.GetDateTime(5) });
                     return list;
                 }
             }
         }
-
-        private string idPromo = "";
     }
 }

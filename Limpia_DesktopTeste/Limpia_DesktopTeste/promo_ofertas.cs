@@ -32,6 +32,7 @@ namespace Limpia_DesktopTeste
 
             for (int i = 0; i < promo.Count && i < this.Controls.Count; i++)
             {
+                int iAtual = i;
                 var current = promo[i];
                 var control = this.Controls[i];
 
@@ -57,22 +58,19 @@ namespace Limpia_DesktopTeste
                         panel.Name = current.idpromo;
                     }
                 }
-            }
-        }
 
-        private void panel2_Click(object sender, EventArgs e)
-        {
-            if (sender is Panel clickedPanel)
-            {
-                ClsBanco promo = new ClsBanco();
-                promo.IdPromo = clickedPanel.Name;
+                control.Click += (ee, s) =>
+                {
+                    var promocaoAtual = promo[iAtual];
 
-
-                Promo_Oferta_Dialog promo_Oferta_Dialog = new Promo_Oferta_Dialog();
-                promo_Oferta_Dialog.FormularioPai = this.FormularioPai;  // Copia a referência do formulário principal
-                FormularioPai.openChildForm(promo_Oferta_Dialog);
-                this.Close();
-            }
+                    Promo_Oferta_Dialog promo_Oferta_Dialog = new Promo_Oferta_Dialog();
+                    promo_Oferta_Dialog.promocaoAtual = promocaoAtual;
+                    promo_Oferta_Dialog.CarregarDados();
+                    promo_Oferta_Dialog.FormularioPai = this.FormularioPai;  // Copia a referência do formulário principal
+                    FormularioPai.openChildForm(promo_Oferta_Dialog);
+                    this.Close();
+                };
+            } 
         }
     }
 }
