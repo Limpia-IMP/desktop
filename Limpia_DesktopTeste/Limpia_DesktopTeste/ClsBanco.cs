@@ -7,6 +7,8 @@ namespace Limpia_DesktopTeste
 {
     class ClsBanco
     {
+        private static string SQL_STRING = @"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLEXPRESS"; // SEBASTIAN MUDA DE SQLEXPRESS PARA SQLSERVER2022 E A BEATRIZ O CONTRÁRIO (SENHA TBM!!);
+
         //SqlConnection cone = new SqlConnection(@"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLEXPRESS");
         private string senha;
 
@@ -23,7 +25,7 @@ namespace Limpia_DesktopTeste
         }
         public LoginResult Login()
         {
-            using (SqlConnection connection = new SqlConnection(@"Password=12345; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLSERVER2022")) // SEBASTIAN MUDA DE SQLEXPRESS PARA SQLSERVER2022 E A BEATRIZ O CONTRÁRIO (SENHA TBM!!)
+            using (SqlConnection connection = new SqlConnection(SQL_STRING))
             using (SqlCommand cmd = new SqlCommand("login_funcionario", connection))
             {
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -69,17 +71,17 @@ namespace Limpia_DesktopTeste
             public string validade { get; set; }
         }
         public List<Promo> Promo_Ofertas() {
-            using (SqlConnection connection = new SqlConnection(@"Password=12345; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLSERVER2022"))
+            using (SqlConnection connection = new SqlConnection(SQL_STRING))
             using (SqlCommand cmd = new SqlCommand("select * from tblpromo", connection))
             {
-                    connection.Open();
-                    using (var reader = cmd.ExecuteReader())
-                    {
-                        var list = new List<Promo>();
-                        while (reader.Read())
-                            list.Add(new Promo { nome = reader.GetString(3), descricao = reader.GetString(4), idpromo = reader.GetInt32(0).ToString() });
+                connection.Open();
+                using (var reader = cmd.ExecuteReader())
+                {
+                    var list = new List<Promo>();
+                    while (reader.Read())
+                        list.Add(new Promo { nome = reader.GetString(3), descricao = reader.GetString(4), idpromo = reader.GetInt32(0).ToString() });
                     return list;
-                    }
+                }
             }
         }
 
