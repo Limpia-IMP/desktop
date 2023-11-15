@@ -12,13 +12,16 @@ namespace Limpia_DesktopTeste
 {
     public partial class principal : Form
     {
+        public ClsEmail clsEmail;
         public principal()
         {
             InitializeComponent();
+            clsEmail = new ClsEmail();
         }
         private void Principal_Load(object sender, EventArgs e)
         {
             openChildForm(new home());
+            clsEmail.ConnectAndAuthenticate();
         }
 
         private Form activeForm = null;
@@ -45,6 +48,7 @@ namespace Limpia_DesktopTeste
         {
             suporte formSuporte = new suporte();
             formSuporte.FormularioPai = this;  // 'this' se refere ao FormPrincipal
+            formSuporte.emailClient = clsEmail;
             openChildForm(formSuporte);
         }
 

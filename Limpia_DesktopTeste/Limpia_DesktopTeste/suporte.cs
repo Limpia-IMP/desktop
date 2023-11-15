@@ -12,14 +12,35 @@ namespace Limpia_DesktopTeste
 {
     public partial class suporte : Form
     {
+        public ClsEmail emailClient;
         public principal FormularioPai { get; set; }
+
         public suporte()
         {
             InitializeComponent();
         }
+
         private void suporte_Load(object sender, EventArgs e)
         {
             SetRoundedEdges(panel1, 30); // 30 é o raio. Ajuste conforme sua necessidade.
+            var (emailFrom, emailSubjects) = emailClient.FetchEmailsWithSubject("_Duvida");
+            DisplayEmails(emailFrom, emailSubjects);
+        }
+
+        public void DisplayEmails(List<string> emailFrom, List<string> emailSubjects)
+        {
+            // Exemplo de como exibir os assuntos dos e-mails
+            // Isso deve ser ajustado conforme o número de e-mails e labels disponíveis
+            var labelsF = new List<Label> { lblFrom1, lblFrom2, lblFrom3, lblFrom4, lblFrom5, lblFrom6, lblFrom7, lblFrom8, lblFrom9 };
+            for (int i = 0; i < emailFrom.Count && i < labelsF.Count; i++)
+            {
+                labelsF[i].Text = emailFrom[i];
+            }
+            var labelsA = new List<Label> { lblAssunto1, lblAssunto2, lblAssunto3, lblAssunto4, lblAssunto5, lblAssunto6, lblAssunto7, lblAssunto8, lblAssunto9 };
+            for (int i = 0; i < emailSubjects.Count && i < labelsA.Count; i++)
+            {
+                labelsA[i].Text = emailSubjects[i];
+            }
         }
         public void SetRoundedEdges(Panel panel, int radius)
         {
@@ -34,10 +55,6 @@ namespace Limpia_DesktopTeste
             path.AddArc(new Rectangle(0, panel.Height - radius, radius, radius), 90, 90);
             path.CloseFigure();
             panel.Region = new System.Drawing.Region(path);
-        }
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void btnSuporte_Click(object sender, EventArgs e)

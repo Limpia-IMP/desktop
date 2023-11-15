@@ -55,5 +55,10 @@ namespace Limpia_DesktopTeste
             form.FormularioPai = this.FormularioPai;
             this.Close();
         }
+
+        private void suporte_personalizado_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

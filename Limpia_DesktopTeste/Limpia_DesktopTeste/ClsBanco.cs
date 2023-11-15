@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 
+// Criar uma nova instância do ImapClient
+
+
 namespace Limpia_DesktopTeste
 {
     public class ClsBanco
@@ -102,10 +105,11 @@ namespace Limpia_DesktopTeste
 
         private string idPromo = "";
 
-        public class Promo_Oferta {         
-        public string titulo { get; set; }
-        public string descricao { get; set;}
-        public string idpromo { get; set;}
+        public class Suporte {
+            public string idDuvida { get; set; }
+            public string titulo { get; set; }
+            public string descricao { get; set;}
+        
         }
     }
 }
