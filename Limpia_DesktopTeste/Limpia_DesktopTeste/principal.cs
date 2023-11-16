@@ -13,7 +13,7 @@ namespace Limpia_DesktopTeste
     public partial class principal : Form
     {
 
-        Carregando carregando = new Carregando();
+        
         public principal()
         {
             InitializeComponent();
@@ -46,6 +46,8 @@ namespace Limpia_DesktopTeste
 
         private void btnSuporte_Click(object sender, EventArgs e)
         {
+            Carregando carregando = new Carregando();
+            Cursor = Cursors.WaitCursor;
             carregando.FormularioPai = this;
             carregando.janela = "Suporte1";
             openChildForm(carregando);

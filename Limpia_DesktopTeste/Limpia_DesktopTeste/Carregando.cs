@@ -51,8 +51,10 @@ namespace Limpia_DesktopTeste
                 form.from = emailFrom[btn];
                 form.uId = emailUids[btn];
             }
-
+            clsEmail.Disconnect();
+            FormularioPai.Cursor = Cursors.Default;
             FormularioPai.openChildForm(form);
+            
         }
 
         private void CarregarSuporte()
@@ -63,27 +65,24 @@ namespace Limpia_DesktopTeste
             form.FormularioPai = this.FormularioPai;  // 'this' se refere ao FormPrincipal
             form.emailFrom = emailName;
             form.emailSubjects = emailSubjects;
+            clsEmail.Disconnect();
+            FormularioPai.Cursor = Cursors.Default;
             FormularioPai.openChildForm(form);
         }
 
         private async void Carregando_Load(object sender, EventArgs e)
         {
-            await RunProgressAsync();
-            
-        }
-
-        private async Task RunProgressAsync()
-        {
             this.Cursor = Cursors.WaitCursor;
             switch (janela)
-                    {
-                        case "Suporte1":
-                            CarregarSuporte();
-                            break;
-                        case "Suporte2":
-                            CarregarSuportePers();
-                            break;
-                    }
+            {
+                case "Suporte1":
+                    CarregarSuporte();
+                    break;
+                case "Suporte2":
+                    CarregarSuportePers();
+                    break;
+            }
+
         }
 
     }
