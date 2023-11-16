@@ -34,15 +34,15 @@ namespace Limpia_DesktopTeste
             {
                 switch (button.Name)
                 {
-                    case "btn1": btn = 1; break;
-                    case "btn2": btn = 2; break;
-                    case "btn3": btn = 3; break;
-                    case "btn4": btn = 4; break;
-                    case "btn5": btn = 5; break;
-                    case "btn6": btn = 6; break;
-                    case "btn7": btn = 7; break;
-                    case "btn8": btn = 8; break;
-                    case "btn9": btn = 9; break;
+                    case "btn1": btn = 0; break;
+                    case "btn2": btn = 1; break;
+                    case "btn3": btn = 2; break;
+                    case "btn4": btn = 3; break;
+                    case "btn5": btn = 4; break;
+                    case "btn6": btn = 5; break;
+                    case "btn7": btn = 6; break;
+                    case "btn8": btn = 7; break;
+                    case "btn9": btn = 8; break;
                 }
                 
                 form.name = emailName[btn];

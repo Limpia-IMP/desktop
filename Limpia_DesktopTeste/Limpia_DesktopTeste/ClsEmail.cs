@@ -109,6 +109,15 @@ namespace Limpia_DesktopTeste
             inbox.AddFlags(uid, MessageFlags.Seen, true);
         }
 
+        public void MarkEmailAsTrash(UniqueId uid)
+        {
+            if(!client.IsConnected || !client.IsAuthenticated) return;
+            var inbox = client.Inbox;
+            inbox.Open(FolderAccess.ReadWrite);
+
+            inbox.AddFlags(uid, MessageFlags.Deleted, true);
+        }
+
         public void Disconnect()
         {
             if (client.IsConnected)

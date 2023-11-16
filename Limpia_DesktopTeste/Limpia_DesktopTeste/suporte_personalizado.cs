@@ -26,6 +26,7 @@ namespace Limpia_DesktopTeste
         public suporte_personalizado()
         {
             InitializeComponent();
+            clsEmail = new ClsEmail();
             
         }
         private void suporte_personalizado_Load(object sender, EventArgs e)
@@ -77,7 +78,7 @@ namespace Limpia_DesktopTeste
 
             if (result == DialogResult.Yes)
             {
-
+                clsEmail.ConnectAndAuthenticate();
                 string reply = txtResposta.Text;
                 clsEmail.SendReply(from, subject, reply, uId);
                 clsEmail.MarkEmailAsRead(uId);
@@ -86,6 +87,18 @@ namespace Limpia_DesktopTeste
             }
         }
 
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Tem certeza que deseja excluir essa dúvida?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                clsEmail.ConnectAndAuthenticate();
+                clsEmail.MarkEmailAsTrash(uId);
+
+                Voltar();
+            }
+        }
     }
 }
 

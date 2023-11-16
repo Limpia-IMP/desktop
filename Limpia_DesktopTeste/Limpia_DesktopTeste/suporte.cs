@@ -25,7 +25,30 @@ namespace Limpia_DesktopTeste
         private void suporte_Load(object sender, EventArgs e)
         {
             SetRoundedEdges(panel1, 30); // 30 é o raio. Ajuste conforme sua necessidade.
-            
+            var labelsF = new List<Label> { lblFrom1, lblFrom2, lblFrom3, lblFrom4, lblFrom5, lblFrom6, lblFrom7, lblFrom8, lblFrom9 };
+            var labelsA = new List<Label> { lblAssunto1, lblAssunto2, lblAssunto3, lblAssunto4, lblAssunto5, lblAssunto6, lblAssunto7, lblAssunto8, lblAssunto9 };
+            var buttons = new List<Button> { btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9 };
+
+            if (emailFrom.Count < 9)
+            {
+                // O índice deve começar em 'emailFrom.Count', não em 'emailFrom.Count + 1'
+                // E deve ser menor que 9, já que as listas são indexadas de 0 a 8
+                for (int i = emailFrom.Count; i < 9; i++)
+                {
+                    labelsF[i].Hide();
+                    labelsA[i].Hide();
+                    buttons[i].Hide();
+                }
+            }
+            else
+            {
+                for (int i = emailFrom.Count; i < 9; i++)
+                {
+                    labelsF[i].Show();
+                    labelsA[i].Show();
+                    buttons[i].Show();
+                }
+            }
             DisplayEmails();
         }
 
