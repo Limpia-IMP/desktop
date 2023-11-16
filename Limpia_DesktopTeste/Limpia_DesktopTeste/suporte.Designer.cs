@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblAssunto9 = new System.Windows.Forms.Label();
+            this.lblAssunto8 = new System.Windows.Forms.Label();
+            this.lblAssunto7 = new System.Windows.Forms.Label();
+            this.lblAssunto6 = new System.Windows.Forms.Label();
+            this.lblAssunto5 = new System.Windows.Forms.Label();
             this.lblAssunto4 = new System.Windows.Forms.Label();
             this.lblAssunto3 = new System.Windows.Forms.Label();
             this.lblAssunto2 = new System.Windows.Forms.Label();
@@ -41,22 +46,17 @@
             this.lblFrom4 = new System.Windows.Forms.Label();
             this.lblFrom3 = new System.Windows.Forms.Label();
             this.lblFrom2 = new System.Windows.Forms.Label();
-            this.btnPrincipal9 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
-            this.btnPrincipal8 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
-            this.btnPrincipal7 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
-            this.btnPrincipal6 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
-            this.btnPrincipal5 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
-            this.btnPrincipal4 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
-            this.btnPrincipal3 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
-            this.btnPrincipal2 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
-            this.btnSuporte = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
+            this.btn9 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
+            this.btn8 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
+            this.btn7 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
+            this.btn6 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
+            this.btn5 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
+            this.btn4 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
+            this.btn3 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
+            this.btn2 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
+            this.btn1 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.lblFrom1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.lblAssunto5 = new System.Windows.Forms.Label();
-            this.lblAssunto6 = new System.Windows.Forms.Label();
-            this.lblAssunto7 = new System.Windows.Forms.Label();
-            this.lblAssunto8 = new System.Windows.Forms.Label();
-            this.lblAssunto9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,21 +80,76 @@
             this.panel1.Controls.Add(this.lblFrom4);
             this.panel1.Controls.Add(this.lblFrom3);
             this.panel1.Controls.Add(this.lblFrom2);
-            this.panel1.Controls.Add(this.btnPrincipal9);
-            this.panel1.Controls.Add(this.btnPrincipal8);
-            this.panel1.Controls.Add(this.btnPrincipal7);
-            this.panel1.Controls.Add(this.btnPrincipal6);
-            this.panel1.Controls.Add(this.btnPrincipal5);
-            this.panel1.Controls.Add(this.btnPrincipal4);
-            this.panel1.Controls.Add(this.btnPrincipal3);
-            this.panel1.Controls.Add(this.btnPrincipal2);
-            this.panel1.Controls.Add(this.btnSuporte);
+            this.panel1.Controls.Add(this.btn9);
+            this.panel1.Controls.Add(this.btn8);
+            this.panel1.Controls.Add(this.btn7);
+            this.panel1.Controls.Add(this.btn6);
+            this.panel1.Controls.Add(this.btn5);
+            this.panel1.Controls.Add(this.btn4);
+            this.panel1.Controls.Add(this.btn3);
+            this.panel1.Controls.Add(this.btn2);
+            this.panel1.Controls.Add(this.btn1);
             this.panel1.Controls.Add(this.lblFrom1);
             this.panel1.Location = new System.Drawing.Point(67, 68);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(702, 453);
             this.panel1.TabIndex = 0;
+            // 
+            // lblAssunto9
+            // 
+            this.lblAssunto9.AutoSize = true;
+            this.lblAssunto9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAssunto9.Location = new System.Drawing.Point(116, 412);
+            this.lblAssunto9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAssunto9.Name = "lblAssunto9";
+            this.lblAssunto9.Size = new System.Drawing.Size(446, 19);
+            this.lblAssunto9.TabIndex = 27;
+            this.lblAssunto9.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
+            // 
+            // lblAssunto8
+            // 
+            this.lblAssunto8.AutoSize = true;
+            this.lblAssunto8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAssunto8.Location = new System.Drawing.Point(116, 363);
+            this.lblAssunto8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAssunto8.Name = "lblAssunto8";
+            this.lblAssunto8.Size = new System.Drawing.Size(446, 19);
+            this.lblAssunto8.TabIndex = 26;
+            this.lblAssunto8.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
+            // 
+            // lblAssunto7
+            // 
+            this.lblAssunto7.AutoSize = true;
+            this.lblAssunto7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAssunto7.Location = new System.Drawing.Point(116, 314);
+            this.lblAssunto7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAssunto7.Name = "lblAssunto7";
+            this.lblAssunto7.Size = new System.Drawing.Size(446, 19);
+            this.lblAssunto7.TabIndex = 25;
+            this.lblAssunto7.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
+            // 
+            // lblAssunto6
+            // 
+            this.lblAssunto6.AutoSize = true;
+            this.lblAssunto6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAssunto6.Location = new System.Drawing.Point(116, 265);
+            this.lblAssunto6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAssunto6.Name = "lblAssunto6";
+            this.lblAssunto6.Size = new System.Drawing.Size(446, 19);
+            this.lblAssunto6.TabIndex = 24;
+            this.lblAssunto6.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
+            // 
+            // lblAssunto5
+            // 
+            this.lblAssunto5.AutoSize = true;
+            this.lblAssunto5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAssunto5.Location = new System.Drawing.Point(116, 216);
+            this.lblAssunto5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAssunto5.Name = "lblAssunto5";
+            this.lblAssunto5.Size = new System.Drawing.Size(446, 19);
+            this.lblAssunto5.TabIndex = 23;
+            this.lblAssunto5.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
             // 
             // lblAssunto4
             // 
@@ -111,7 +166,7 @@
             // 
             this.lblAssunto3.AutoSize = true;
             this.lblAssunto3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto3.Location = new System.Drawing.Point(116, 116);
+            this.lblAssunto3.Location = new System.Drawing.Point(116, 118);
             this.lblAssunto3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAssunto3.Name = "lblAssunto3";
             this.lblAssunto3.Size = new System.Drawing.Size(446, 19);
@@ -122,7 +177,7 @@
             // 
             this.lblAssunto2.AutoSize = true;
             this.lblAssunto2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto2.Location = new System.Drawing.Point(116, 68);
+            this.lblAssunto2.Location = new System.Drawing.Point(116, 69);
             this.lblAssunto2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAssunto2.Name = "lblAssunto2";
             this.lblAssunto2.Size = new System.Drawing.Size(446, 19);
@@ -133,7 +188,7 @@
             // 
             this.lblAssunto1.AutoSize = true;
             this.lblAssunto1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto1.Location = new System.Drawing.Point(116, 20);
+            this.lblAssunto1.Location = new System.Drawing.Point(116, 19);
             this.lblAssunto1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAssunto1.Name = "lblAssunto1";
             this.lblAssunto1.Size = new System.Drawing.Size(446, 19);
@@ -228,192 +283,198 @@
             this.lblFrom2.TabIndex = 11;
             this.lblFrom2.Text = "Dúvida 2";
             // 
-            // btnPrincipal9
+            // btn9
             // 
-            this.btnPrincipal9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.btnPrincipal9.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.btnPrincipal9.BorderColor = System.Drawing.Color.Aqua;
-            this.btnPrincipal9.BorderRadius = 32;
-            this.btnPrincipal9.BorderSize = 0;
-            this.btnPrincipal9.FlatAppearance.BorderSize = 0;
-            this.btnPrincipal9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrincipal9.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrincipal9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnPrincipal9.Location = new System.Drawing.Point(578, 407);
-            this.btnPrincipal9.Margin = new System.Windows.Forms.Padding(2);
-            this.btnPrincipal9.Name = "btnPrincipal9";
-            this.btnPrincipal9.Size = new System.Drawing.Size(112, 32);
-            this.btnPrincipal9.TabIndex = 10;
-            this.btnPrincipal9.Text = "veja mais...";
-            this.btnPrincipal9.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnPrincipal9.UseVisualStyleBackColor = false;
+            this.btn9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
+            this.btn9.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
+            this.btn9.BorderColor = System.Drawing.Color.Aqua;
+            this.btn9.BorderRadius = 32;
+            this.btn9.BorderSize = 0;
+            this.btn9.FlatAppearance.BorderSize = 0;
+            this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn9.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btn9.Location = new System.Drawing.Point(578, 405);
+            this.btn9.Margin = new System.Windows.Forms.Padding(2);
+            this.btn9.Name = "btn9";
+            this.btn9.Size = new System.Drawing.Size(112, 32);
+            this.btn9.TabIndex = 10;
+            this.btn9.Text = "veja mais...";
+            this.btn9.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btn9.UseVisualStyleBackColor = false;
             // 
-            // btnPrincipal8
+            // btn8
             // 
-            this.btnPrincipal8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.btnPrincipal8.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.btnPrincipal8.BorderColor = System.Drawing.Color.Aqua;
-            this.btnPrincipal8.BorderRadius = 32;
-            this.btnPrincipal8.BorderSize = 0;
-            this.btnPrincipal8.FlatAppearance.BorderSize = 0;
-            this.btnPrincipal8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrincipal8.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrincipal8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnPrincipal8.Location = new System.Drawing.Point(578, 361);
-            this.btnPrincipal8.Margin = new System.Windows.Forms.Padding(2);
-            this.btnPrincipal8.Name = "btnPrincipal8";
-            this.btnPrincipal8.Size = new System.Drawing.Size(112, 32);
-            this.btnPrincipal8.TabIndex = 9;
-            this.btnPrincipal8.Text = "veja mais...";
-            this.btnPrincipal8.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnPrincipal8.UseVisualStyleBackColor = false;
+            this.btn8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
+            this.btn8.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
+            this.btn8.BorderColor = System.Drawing.Color.Aqua;
+            this.btn8.BorderRadius = 32;
+            this.btn8.BorderSize = 0;
+            this.btn8.FlatAppearance.BorderSize = 0;
+            this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn8.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btn8.Location = new System.Drawing.Point(578, 356);
+            this.btn8.Margin = new System.Windows.Forms.Padding(2);
+            this.btn8.Name = "btn8";
+            this.btn8.Size = new System.Drawing.Size(112, 32);
+            this.btn8.TabIndex = 9;
+            this.btn8.Text = "veja mais...";
+            this.btn8.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btn8.UseVisualStyleBackColor = false;
             // 
-            // btnPrincipal7
+            // btn7
             // 
-            this.btnPrincipal7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.btnPrincipal7.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.btnPrincipal7.BorderColor = System.Drawing.Color.Aqua;
-            this.btnPrincipal7.BorderRadius = 32;
-            this.btnPrincipal7.BorderSize = 0;
-            this.btnPrincipal7.FlatAppearance.BorderSize = 0;
-            this.btnPrincipal7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrincipal7.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrincipal7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnPrincipal7.Location = new System.Drawing.Point(578, 311);
-            this.btnPrincipal7.Margin = new System.Windows.Forms.Padding(2);
-            this.btnPrincipal7.Name = "btnPrincipal7";
-            this.btnPrincipal7.Size = new System.Drawing.Size(112, 32);
-            this.btnPrincipal7.TabIndex = 8;
-            this.btnPrincipal7.Text = "veja mais...";
-            this.btnPrincipal7.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnPrincipal7.UseVisualStyleBackColor = false;
+            this.btn7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
+            this.btn7.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
+            this.btn7.BorderColor = System.Drawing.Color.Aqua;
+            this.btn7.BorderRadius = 32;
+            this.btn7.BorderSize = 0;
+            this.btn7.FlatAppearance.BorderSize = 0;
+            this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn7.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btn7.Location = new System.Drawing.Point(578, 307);
+            this.btn7.Margin = new System.Windows.Forms.Padding(2);
+            this.btn7.Name = "btn7";
+            this.btn7.Size = new System.Drawing.Size(112, 32);
+            this.btn7.TabIndex = 8;
+            this.btn7.Text = "veja mais...";
+            this.btn7.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btn7.UseVisualStyleBackColor = false;
+            this.btn7.Click += new System.EventHandler(this.btnSuporte_Click);
             // 
-            // btnPrincipal6
+            // btn6
             // 
-            this.btnPrincipal6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.btnPrincipal6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.btnPrincipal6.BorderColor = System.Drawing.Color.Aqua;
-            this.btnPrincipal6.BorderRadius = 32;
-            this.btnPrincipal6.BorderSize = 0;
-            this.btnPrincipal6.FlatAppearance.BorderSize = 0;
-            this.btnPrincipal6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrincipal6.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrincipal6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnPrincipal6.Location = new System.Drawing.Point(578, 261);
-            this.btnPrincipal6.Margin = new System.Windows.Forms.Padding(2);
-            this.btnPrincipal6.Name = "btnPrincipal6";
-            this.btnPrincipal6.Size = new System.Drawing.Size(112, 32);
-            this.btnPrincipal6.TabIndex = 7;
-            this.btnPrincipal6.Text = "veja mais...";
-            this.btnPrincipal6.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnPrincipal6.UseVisualStyleBackColor = false;
+            this.btn6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
+            this.btn6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
+            this.btn6.BorderColor = System.Drawing.Color.Aqua;
+            this.btn6.BorderRadius = 32;
+            this.btn6.BorderSize = 0;
+            this.btn6.FlatAppearance.BorderSize = 0;
+            this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn6.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btn6.Location = new System.Drawing.Point(578, 258);
+            this.btn6.Margin = new System.Windows.Forms.Padding(2);
+            this.btn6.Name = "btn6";
+            this.btn6.Size = new System.Drawing.Size(112, 32);
+            this.btn6.TabIndex = 7;
+            this.btn6.Text = "veja mais...";
+            this.btn6.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btn6.UseVisualStyleBackColor = false;
+            this.btn6.Click += new System.EventHandler(this.btnSuporte_Click);
             // 
-            // btnPrincipal5
+            // btn5
             // 
-            this.btnPrincipal5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.btnPrincipal5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.btnPrincipal5.BorderColor = System.Drawing.Color.Aqua;
-            this.btnPrincipal5.BorderRadius = 32;
-            this.btnPrincipal5.BorderSize = 0;
-            this.btnPrincipal5.FlatAppearance.BorderSize = 0;
-            this.btnPrincipal5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrincipal5.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrincipal5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnPrincipal5.Location = new System.Drawing.Point(578, 210);
-            this.btnPrincipal5.Margin = new System.Windows.Forms.Padding(2);
-            this.btnPrincipal5.Name = "btnPrincipal5";
-            this.btnPrincipal5.Size = new System.Drawing.Size(112, 32);
-            this.btnPrincipal5.TabIndex = 6;
-            this.btnPrincipal5.Text = "veja mais...";
-            this.btnPrincipal5.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnPrincipal5.UseVisualStyleBackColor = false;
+            this.btn5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
+            this.btn5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
+            this.btn5.BorderColor = System.Drawing.Color.Aqua;
+            this.btn5.BorderRadius = 32;
+            this.btn5.BorderSize = 0;
+            this.btn5.FlatAppearance.BorderSize = 0;
+            this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn5.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btn5.Location = new System.Drawing.Point(578, 209);
+            this.btn5.Margin = new System.Windows.Forms.Padding(2);
+            this.btn5.Name = "btn5";
+            this.btn5.Size = new System.Drawing.Size(112, 32);
+            this.btn5.TabIndex = 6;
+            this.btn5.Text = "veja mais...";
+            this.btn5.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btn5.UseVisualStyleBackColor = false;
+            this.btn5.Click += new System.EventHandler(this.btnSuporte_Click);
             // 
-            // btnPrincipal4
+            // btn4
             // 
-            this.btnPrincipal4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.btnPrincipal4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.btnPrincipal4.BorderColor = System.Drawing.Color.Aqua;
-            this.btnPrincipal4.BorderRadius = 32;
-            this.btnPrincipal4.BorderSize = 0;
-            this.btnPrincipal4.FlatAppearance.BorderSize = 0;
-            this.btnPrincipal4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrincipal4.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrincipal4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnPrincipal4.Location = new System.Drawing.Point(578, 159);
-            this.btnPrincipal4.Margin = new System.Windows.Forms.Padding(2);
-            this.btnPrincipal4.Name = "btnPrincipal4";
-            this.btnPrincipal4.Size = new System.Drawing.Size(112, 32);
-            this.btnPrincipal4.TabIndex = 5;
-            this.btnPrincipal4.Text = "veja mais...";
-            this.btnPrincipal4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnPrincipal4.UseVisualStyleBackColor = false;
+            this.btn4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
+            this.btn4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
+            this.btn4.BorderColor = System.Drawing.Color.Aqua;
+            this.btn4.BorderRadius = 32;
+            this.btn4.BorderSize = 0;
+            this.btn4.FlatAppearance.BorderSize = 0;
+            this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn4.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btn4.Location = new System.Drawing.Point(578, 160);
+            this.btn4.Margin = new System.Windows.Forms.Padding(2);
+            this.btn4.Name = "btn4";
+            this.btn4.Size = new System.Drawing.Size(112, 32);
+            this.btn4.TabIndex = 5;
+            this.btn4.Text = "veja mais...";
+            this.btn4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btn4.UseVisualStyleBackColor = false;
+            this.btn4.Click += new System.EventHandler(this.btnSuporte_Click);
             // 
-            // btnPrincipal3
+            // btn3
             // 
-            this.btnPrincipal3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.btnPrincipal3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.btnPrincipal3.BorderColor = System.Drawing.Color.Aqua;
-            this.btnPrincipal3.BorderRadius = 32;
-            this.btnPrincipal3.BorderSize = 0;
-            this.btnPrincipal3.FlatAppearance.BorderSize = 0;
-            this.btnPrincipal3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrincipal3.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrincipal3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnPrincipal3.Location = new System.Drawing.Point(578, 109);
-            this.btnPrincipal3.Margin = new System.Windows.Forms.Padding(2);
-            this.btnPrincipal3.Name = "btnPrincipal3";
-            this.btnPrincipal3.Size = new System.Drawing.Size(112, 32);
-            this.btnPrincipal3.TabIndex = 4;
-            this.btnPrincipal3.Text = "veja mais...";
-            this.btnPrincipal3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnPrincipal3.UseVisualStyleBackColor = false;
+            this.btn3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
+            this.btn3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
+            this.btn3.BorderColor = System.Drawing.Color.Aqua;
+            this.btn3.BorderRadius = 32;
+            this.btn3.BorderSize = 0;
+            this.btn3.FlatAppearance.BorderSize = 0;
+            this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn3.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btn3.Location = new System.Drawing.Point(578, 111);
+            this.btn3.Margin = new System.Windows.Forms.Padding(2);
+            this.btn3.Name = "btn3";
+            this.btn3.Size = new System.Drawing.Size(112, 32);
+            this.btn3.TabIndex = 4;
+            this.btn3.Text = "veja mais...";
+            this.btn3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btn3.UseVisualStyleBackColor = false;
+            this.btn3.Click += new System.EventHandler(this.btnSuporte_Click);
             // 
-            // btnPrincipal2
+            // btn2
             // 
-            this.btnPrincipal2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.btnPrincipal2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.btnPrincipal2.BorderColor = System.Drawing.Color.Aqua;
-            this.btnPrincipal2.BorderRadius = 32;
-            this.btnPrincipal2.BorderSize = 0;
-            this.btnPrincipal2.FlatAppearance.BorderSize = 0;
-            this.btnPrincipal2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrincipal2.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrincipal2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnPrincipal2.Location = new System.Drawing.Point(578, 61);
-            this.btnPrincipal2.Margin = new System.Windows.Forms.Padding(2);
-            this.btnPrincipal2.Name = "btnPrincipal2";
-            this.btnPrincipal2.Size = new System.Drawing.Size(112, 32);
-            this.btnPrincipal2.TabIndex = 3;
-            this.btnPrincipal2.Text = "veja mais...";
-            this.btnPrincipal2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnPrincipal2.UseVisualStyleBackColor = false;
+            this.btn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
+            this.btn2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
+            this.btn2.BorderColor = System.Drawing.Color.Aqua;
+            this.btn2.BorderRadius = 32;
+            this.btn2.BorderSize = 0;
+            this.btn2.FlatAppearance.BorderSize = 0;
+            this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn2.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btn2.Location = new System.Drawing.Point(578, 62);
+            this.btn2.Margin = new System.Windows.Forms.Padding(2);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(112, 32);
+            this.btn2.TabIndex = 3;
+            this.btn2.Text = "veja mais...";
+            this.btn2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Click += new System.EventHandler(this.btnSuporte_Click);
             // 
-            // btnSuporte
+            // btn1
             // 
-            this.btnSuporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.btnSuporte.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.btnSuporte.BorderColor = System.Drawing.Color.Aqua;
-            this.btnSuporte.BorderRadius = 32;
-            this.btnSuporte.BorderSize = 0;
-            this.btnSuporte.FlatAppearance.BorderSize = 0;
-            this.btnSuporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSuporte.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSuporte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnSuporte.Location = new System.Drawing.Point(578, 12);
-            this.btnSuporte.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSuporte.Name = "btnSuporte";
-            this.btnSuporte.Size = new System.Drawing.Size(112, 32);
-            this.btnSuporte.TabIndex = 2;
-            this.btnSuporte.Text = "veja mais...";
-            this.btnSuporte.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnSuporte.UseVisualStyleBackColor = false;
-            this.btnSuporte.Click += new System.EventHandler(this.btnSuporte_Click);
+            this.btn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
+            this.btn1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
+            this.btn1.BorderColor = System.Drawing.Color.Aqua;
+            this.btn1.BorderRadius = 32;
+            this.btn1.BorderSize = 0;
+            this.btn1.FlatAppearance.BorderSize = 0;
+            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn1.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btn1.Location = new System.Drawing.Point(578, 12);
+            this.btn1.Margin = new System.Windows.Forms.Padding(2);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(112, 32);
+            this.btn1.TabIndex = 2;
+            this.btn1.Text = "veja mais...";
+            this.btn1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.btnSuporte_Click);
             // 
             // lblFrom1
             // 
             this.lblFrom1.AutoSize = true;
             this.lblFrom1.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFrom1.Location = new System.Drawing.Point(15, 20);
+            this.lblFrom1.Location = new System.Drawing.Point(15, 19);
             this.lblFrom1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFrom1.Name = "lblFrom1";
             this.lblFrom1.Size = new System.Drawing.Size(62, 18);
@@ -430,61 +491,6 @@
             this.label10.Size = new System.Drawing.Size(104, 24);
             this.label10.TabIndex = 1;
             this.label10.Text = "-> Suporte";
-            // 
-            // lblAssunto5
-            // 
-            this.lblAssunto5.AutoSize = true;
-            this.lblAssunto5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto5.Location = new System.Drawing.Point(116, 215);
-            this.lblAssunto5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAssunto5.Name = "lblAssunto5";
-            this.lblAssunto5.Size = new System.Drawing.Size(446, 19);
-            this.lblAssunto5.TabIndex = 23;
-            this.lblAssunto5.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
-            // 
-            // lblAssunto6
-            // 
-            this.lblAssunto6.AutoSize = true;
-            this.lblAssunto6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto6.Location = new System.Drawing.Point(116, 268);
-            this.lblAssunto6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAssunto6.Name = "lblAssunto6";
-            this.lblAssunto6.Size = new System.Drawing.Size(446, 19);
-            this.lblAssunto6.TabIndex = 24;
-            this.lblAssunto6.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
-            // 
-            // lblAssunto7
-            // 
-            this.lblAssunto7.AutoSize = true;
-            this.lblAssunto7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto7.Location = new System.Drawing.Point(116, 318);
-            this.lblAssunto7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAssunto7.Name = "lblAssunto7";
-            this.lblAssunto7.Size = new System.Drawing.Size(446, 19);
-            this.lblAssunto7.TabIndex = 25;
-            this.lblAssunto7.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
-            // 
-            // lblAssunto8
-            // 
-            this.lblAssunto8.AutoSize = true;
-            this.lblAssunto8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto8.Location = new System.Drawing.Point(116, 368);
-            this.lblAssunto8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAssunto8.Name = "lblAssunto8";
-            this.lblAssunto8.Size = new System.Drawing.Size(446, 19);
-            this.lblAssunto8.TabIndex = 26;
-            this.lblAssunto8.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
-            // 
-            // lblAssunto9
-            // 
-            this.lblAssunto9.AutoSize = true;
-            this.lblAssunto9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto9.Location = new System.Drawing.Point(116, 414);
-            this.lblAssunto9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAssunto9.Name = "lblAssunto9";
-            this.lblAssunto9.Size = new System.Drawing.Size(446, 19);
-            this.lblAssunto9.TabIndex = 27;
-            this.lblAssunto9.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
             // 
             // suporte
             // 
@@ -510,15 +516,15 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblFrom1;
         private System.Windows.Forms.Label lblFrom2;
-        private BtnLimpia.btnPrincipal btnPrincipal9;
-        private BtnLimpia.btnPrincipal btnPrincipal8;
-        private BtnLimpia.btnPrincipal btnPrincipal7;
-        private BtnLimpia.btnPrincipal btnPrincipal6;
-        private BtnLimpia.btnPrincipal btnPrincipal5;
-        private BtnLimpia.btnPrincipal btnPrincipal4;
-        private BtnLimpia.btnPrincipal btnPrincipal3;
-        private BtnLimpia.btnPrincipal btnPrincipal2;
-        private BtnLimpia.btnPrincipal btnSuporte;
+        private BtnLimpia.btnPrincipal btn9;
+        private BtnLimpia.btnPrincipal btn8;
+        private BtnLimpia.btnPrincipal btn7;
+        private BtnLimpia.btnPrincipal btn6;
+        private BtnLimpia.btnPrincipal btn5;
+        private BtnLimpia.btnPrincipal btn4;
+        private BtnLimpia.btnPrincipal btn3;
+        private BtnLimpia.btnPrincipal btn2;
+        private BtnLimpia.btnPrincipal btn1;
         private System.Windows.Forms.Label lblFrom3;
         private System.Windows.Forms.Label lblFrom7;
         private System.Windows.Forms.Label lblFrom6;

@@ -12,9 +12,9 @@ namespace Limpia_DesktopTeste
 {
     public partial class suporte : Form
     {
-        public ClsEmail emailClient;
+        public ClsEmail clsEmail;
         public principal FormularioPai { get; set; }
-
+        int btn = 0;
         public suporte()
         {
             InitializeComponent();
@@ -23,8 +23,6 @@ namespace Limpia_DesktopTeste
         private void suporte_Load(object sender, EventArgs e)
         {
             SetRoundedEdges(panel1, 30); // 30 é o raio. Ajuste conforme sua necessidade.
-            var (emailFrom, emailSubjects) = emailClient.FetchEmailsWithSubject("_Duvida");
-            DisplayEmails(emailFrom, emailSubjects);
         }
 
         public void DisplayEmails(List<string> emailFrom, List<string> emailSubjects)
@@ -59,8 +57,56 @@ namespace Limpia_DesktopTeste
 
         private void btnSuporte_Click(object sender, EventArgs e)
         {
+            Button button = sender as Button;
             suporte_personalizado suportePers = new suporte_personalizado();
             suportePers.FormularioPai = this.FormularioPai;  // Copia a referência do formulário principal
+            
+
+            if (button != null)
+            {
+                
+                switch (button.Name)
+                {
+                    case "btn1":
+                        btn = 0;
+                        break;
+
+                    case "btn2":
+                        btn = 1;
+                        break;
+
+                    case "btn3":
+                        btn = 2;
+                        break;
+
+                    case "btn4":
+                        btn = 3;
+                        break;
+
+                    case "btn5":
+                        btn = 4;
+                        break;
+
+                    case "btn6":
+                        btn = 5;
+                        break;
+
+                    case "btn7":
+                        btn = 6;
+                        break;
+
+                    case "btn8":
+                        btn = 7;
+                        break;
+
+                    case "btn9":
+                        btn = 8;
+                        break;
+                }
+                suportePers.num = btn;
+                suportePers.clsEmail = clsEmail;
+            }
+            
             FormularioPai.openChildForm(suportePers);
             this.Close();
         }

@@ -13,10 +13,23 @@ namespace Limpia_DesktopTeste
     public partial class suporte_personalizado : Form
     {
         public principal FormularioPai { get; set; }
+        public ClsEmail clsEmail;
+        public int num;
 
         public suporte_personalizado()
         {
             InitializeComponent();
+            
+        }
+        private void suporte_personalizado_Load(object sender, EventArgs e)
+        {
+            var (emailFrom, emailSubjects, emailText) = clsEmail.FetchEmail("_Duvida");
+            DisplayEmails(emailFrom, emailSubjects, emailText);
+        }
+        private void DisplayEmails(List<string> emailFrom, List<string> emailSubjects, List<string> emailText)
+        {
+            lblTitulo.Text = emailSubjects[num] + " - " + emailFrom[num];
+            lblTexto.Text = emailText[num];
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -53,12 +66,9 @@ namespace Limpia_DesktopTeste
             suporte form = new suporte();
             FormularioPai.openChildForm(form);
             form.FormularioPai = this.FormularioPai;
+            var (emailFrom, emailSubjects, emailText) = clsEmail.FetchEmail("_Duvida");
+            form.DisplayEmails(emailFrom, emailSubjects);
             this.Close();
-        }
-
-        private void suporte_personalizado_Load(object sender, EventArgs e)
-        {
-
-        }
+        }       
     }
 }

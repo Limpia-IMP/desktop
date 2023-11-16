@@ -21,7 +21,7 @@ namespace Limpia_DesktopTeste
         private void Principal_Load(object sender, EventArgs e)
         {
             openChildForm(new home());
-            clsEmail.ConnectAndAuthenticate();
+            
         }
 
         private Form activeForm = null;
@@ -47,8 +47,11 @@ namespace Limpia_DesktopTeste
         private void btnSuporte_Click(object sender, EventArgs e)
         {
             suporte formSuporte = new suporte();
+            clsEmail.ConnectAndAuthenticate();
+            var (emailFrom, emailSubjects, emailText) = clsEmail.FetchEmail("_Duvida");
             formSuporte.FormularioPai = this;  // 'this' se refere ao FormPrincipal
-            formSuporte.emailClient = clsEmail;
+            formSuporte.DisplayEmails(emailFrom, emailSubjects);
+            formSuporte.clsEmail = clsEmail;
             openChildForm(formSuporte);
         }
 

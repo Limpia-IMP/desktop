@@ -68,6 +68,37 @@ namespace Limpia_DesktopTeste
             return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(namePart.Replace('.', ' ').Replace('_', ' '));
         }
 
+        public (List<string> From, List<string> Subject, List<String> Text) FetchEmail(string subjectKeyword)
+        {
+            var emailFrom = new List<string>();
+            var emailSubjects = new List<string>();
+            var emailText = new List<string>();
+
+            if (!client.IsConnected)
+                return (emailFrom, emailSubjects, emailText);
+
+            var inbox = client.Inbox;
+            inbox.Open(FolderAccess.ReadOnly);
+
+            var query = SearchQuery.SubjectContains(subjectKeyword);
+            var uids = inbox.Search(query);
+
+            foreach (var uid in uids)
+            {
+                var message = inbox.GetMessage(uid);
+                string fromEmail = message.From.Mailboxes.FirstOrDefault()?.Address ?? "Desconhecido";
+                string fromName = ExtractNameFromEmail(fromEmail);
+                string subject = message.Subject.Replace("_Duvida", "");
+                string text = message.TextBody;
+                emailFrom.Add(fromName);
+                emailSubjects.Add(subject);
+                emailText.Add(text);
+            }
+
+            inbox.Close();
+            return (emailFrom, emailSubjects, emailText);
+        }
+
         public void Disconnect()
         {
             if (client.IsConnected)
