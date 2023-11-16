@@ -12,11 +12,11 @@ namespace Limpia_DesktopTeste
 {
     public partial class principal : Form
     {
-        public ClsEmail clsEmail;
+
+        Carregando carregando = new Carregando();
         public principal()
         {
             InitializeComponent();
-            clsEmail = new ClsEmail();
         }
         private void Principal_Load(object sender, EventArgs e)
         {
@@ -28,7 +28,7 @@ namespace Limpia_DesktopTeste
         public void openChildForm(Form childForm)
         {
             if (activeForm != null)
-                activeForm.Close();
+                activeForm.Hide();
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -36,7 +36,7 @@ namespace Limpia_DesktopTeste
             panelChildForm.Controls.Add(childForm);
             panelChildForm.Tag = childForm;
             childForm.BringToFront();
-            childForm.Show();                    
+            childForm.Show();
         }
 
         private void btnTrabalhos_Click(object sender, EventArgs e)
@@ -46,14 +46,10 @@ namespace Limpia_DesktopTeste
 
         private void btnSuporte_Click(object sender, EventArgs e)
         {
-            suporte formSuporte = new suporte();
-            clsEmail.ConnectAndAuthenticate();
-            var (emailName, emailFrom, emailSubjects, emailText, emailUids) = clsEmail.FetchEmail("_Duvida");
-            formSuporte.FormularioPai = this;  // 'this' se refere ao FormPrincipal
-            formSuporte.emailFrom = emailName;
-            formSuporte.emailSubjects = emailSubjects;
-            formSuporte.clsEmail = clsEmail;
-            openChildForm(formSuporte);
+            carregando.FormularioPai = this;
+            carregando.janela = "Suporte1";
+            openChildForm(carregando);
+            
         }
 
         private void btnPerfil_Click(object sender, EventArgs e)

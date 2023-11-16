@@ -187,3 +187,4 @@ D:\TCC_Repositorios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\bin\Debug\Sy
 D:\TCC_Repositorios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\TCC_Repositorios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\bin\Debug\System.ValueTuple.xml
 D:\TCC_Repositorios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.csproj.CopyComplete
+D:\TCC_Repositorios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.Carregando.resources

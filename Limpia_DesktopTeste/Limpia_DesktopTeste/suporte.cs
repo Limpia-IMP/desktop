@@ -14,7 +14,7 @@ namespace Limpia_DesktopTeste
     {
         public ClsEmail clsEmail;
         public principal FormularioPai { get; set; }
-        int btn = 0;
+        
         public List<string> emailFrom;
         public List<string> emailSubjects;
         public suporte()
@@ -58,58 +58,12 @@ namespace Limpia_DesktopTeste
 
         private void btnSuporte_Click(object sender, EventArgs e)
         {
+            Carregando carregando = new Carregando();
             Button button = sender as Button;
-            suporte_personalizado suportePers = new suporte_personalizado();
-            suportePers.FormularioPai = this.FormularioPai;  // Copia a referência do formulário principal
-            
-
-            if (button != null)
-            {
-                
-                switch (button.Name)
-                {
-                    case "btn1":
-                        btn = 0;
-                        break;
-
-                    case "btn2":
-                        btn = 1;
-                        break;
-
-                    case "btn3":
-                        btn = 2;
-                        break;
-
-                    case "btn4":
-                        btn = 3;
-                        break;
-
-                    case "btn5":
-                        btn = 4;
-                        break;
-
-                    case "btn6":
-                        btn = 5;
-                        break;
-
-                    case "btn7":
-                        btn = 6;
-                        break;
-
-                    case "btn8":
-                        btn = 7;
-                        break;
-
-                    case "btn9":
-                        btn = 8;
-                        break;
-                }
-                suportePers.num = btn;
-                suportePers.clsEmail = clsEmail;
-            }
-            
-            FormularioPai.openChildForm(suportePers);
-            this.Close();
+            carregando.button = button;
+            carregando.FormularioPai = FormularioPai;
+            carregando.janela = "Suporte2";
+            FormularioPai.openChildForm(carregando);
         }
 
     }

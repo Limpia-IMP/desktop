@@ -81,6 +81,12 @@
     <Compile Include="BtnLimpia\btnPrincipal.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Carregando.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Carregando.Designer.cs">
+      <DependentUpon>Carregando.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClsBanco.cs" />
     <Compile Include="ClsEmail.cs" />
     <Compile Include="cursos.cs">
@@ -133,6 +139,11 @@
       <DependentUpon>Promo_Oferta_Dialog.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="suporte.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +162,9 @@
     <Compile Include="trabalhos.Designer.cs">
       <DependentUpon>trabalhos.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Carregando.resx">
+      <DependentUpon>Carregando.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="cursos.resx">
       <DependentUpon>cursos.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,14 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="suporte.resx">
       <DependentUpon>suporte.cs</DependentUpon>
     </EmbeddedResource>
@@ -243,6 +252,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ellipse_suporte_verde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limpiaicongota.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

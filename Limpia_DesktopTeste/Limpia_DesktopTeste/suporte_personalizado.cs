@@ -16,9 +16,12 @@ namespace Limpia_DesktopTeste
         public principal FormularioPai { get; set; }
         public ClsEmail clsEmail;
         public int num;
+        public string subject;
+        public string text;
+        public string name;
+        public string from;
 
-        string name, from, subject, text;
-        UniqueId uId;
+        public UniqueId uId;
 
         public suporte_personalizado()
         {
@@ -27,17 +30,12 @@ namespace Limpia_DesktopTeste
         }
         private void suporte_personalizado_Load(object sender, EventArgs e)
         {
-            var (emailName, emailFrom, emailSubjects, emailText, emailUids) = clsEmail.FetchEmail("_Duvida");
-            name = emailName[num];
-            from = emailFrom[num];
-            subject = emailSubjects[num];
-            uId = emailUids[num];
-            DisplayEmails();
+            DisplayEmails(subject, name, text);
         }
 
-        private void DisplayEmails()
+        private void DisplayEmails(string subject, string name, string text)
         {
-            lblTitulo.Text = subject + " - " + name[num];
+            lblTitulo.Text = subject + " - " + name;
             lblTexto.Text = text;
         }
 
@@ -67,28 +65,23 @@ namespace Limpia_DesktopTeste
 
         private void Voltar()
         {
-            suporte form = new suporte();
-            form.FormularioPai = this.FormularioPai;
-            form.clsEmail = this.clsEmail;
-            var (emailName, emailFrom, emailSubjects, emailText, emailUids) = clsEmail.FetchEmail("_Duvida");
-            form.emailFrom = emailName;
-            form.emailSubjects = emailSubjects;
-            FormularioPai.openChildForm(form);
-            this.Close();
+            Carregando carregando = new Carregando();
+            carregando.janela = "Suporte1";
+            carregando.FormularioPai = FormularioPai;
+            FormularioPai.openChildForm(carregando);
         }
 
         private void btnResponder_Click(object sender, EventArgs e)
         {            // Chamando o método de resposta
-            DialogResult result = MessageBox.Show("Tem certeza?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show("Tem certeza que deseja enviar essa resposta?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
             {
 
-                text = txtResposta.Text;
-                clsEmail.SendReply(from, subject, text, uId);
+                string reply = txtResposta.Text;
+                clsEmail.SendReply(from, subject, reply, uId);
                 clsEmail.MarkEmailAsRead(uId);
 
-                clsEmail.Disconnect();
                 Voltar();
             }
         }
