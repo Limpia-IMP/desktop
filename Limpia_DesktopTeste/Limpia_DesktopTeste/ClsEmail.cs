@@ -1,4 +1,5 @@
 ﻿using MailKit.Net.Imap;
+using MailKit.Net.Smtp;
 using MailKit.Search;
 using MailKit;
 using MimeKit;
@@ -33,54 +34,22 @@ namespace Limpia_DesktopTeste
             }
         }
 
-        public (List<string> From, List<string> Subject) FetchEmailsWithSubject(string subjectKeyword)
+        // Método atualizado para retornar também os UniqueIds dos e-mails
+        public (List<string> Name, List<string> From, List<string> Subject, List<string> Text, List<UniqueId> Uids) FetchEmail(string subjectKeyword)
         {
-            var emailFrom = new List<string>();
-            var emailSubjects = new List<string>();
-
-            if (!client.IsConnected)
-                return (emailFrom, emailSubjects);
-
-            var inbox = client.Inbox;
-            inbox.Open(FolderAccess.ReadOnly);
-
-            var query = SearchQuery.SubjectContains(subjectKeyword);
-            var uids = inbox.Search(query);
-
-            foreach (var uid in uids)
-            {
-                var message = inbox.GetMessage(uid);
-                string fromEmail = message.From.Mailboxes.FirstOrDefault()?.Address ?? "Desconhecido";
-                string fromName = ExtractNameFromEmail(fromEmail);
-                string subject = message.Subject.Replace("_Duvida", "");
-                emailFrom.Add(fromName);
-                emailSubjects.Add(subject);
-            }
-
-            inbox.Close();
-            return (emailFrom, emailSubjects);
-        }
-        private string ExtractNameFromEmail(string email)
-        {
-            var namePart = email.Split('@')[0];
-            // Substitui pontos e sublinhados por espaços e capitaliza cada palavra.
-            // Ajuste conforme necessário.
-            return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(namePart.Replace('.', ' ').Replace('_', ' '));
-        }
-
-        public (List<string> From, List<string> Subject, List<String> Text) FetchEmail(string subjectKeyword)
-        {
+            var emailName = new List<string>();
             var emailFrom = new List<string>();
             var emailSubjects = new List<string>();
             var emailText = new List<string>();
+            var emailUids = new List<UniqueId>();
 
             if (!client.IsConnected)
-                return (emailFrom, emailSubjects, emailText);
+                return (emailName,emailFrom, emailSubjects, emailText, emailUids);
 
             var inbox = client.Inbox;
             inbox.Open(FolderAccess.ReadOnly);
 
-            var query = SearchQuery.SubjectContains(subjectKeyword);
+            var query = SearchQuery.SubjectContains(subjectKeyword).And(SearchQuery.NotSeen);
             var uids = inbox.Search(query);
 
             foreach (var uid in uids)
@@ -90,13 +59,54 @@ namespace Limpia_DesktopTeste
                 string fromName = ExtractNameFromEmail(fromEmail);
                 string subject = message.Subject.Replace("_Duvida", "");
                 string text = message.TextBody;
-                emailFrom.Add(fromName);
+                emailName.Add(fromName);
+                emailFrom.Add(fromEmail);
                 emailSubjects.Add(subject);
                 emailText.Add(text);
+                emailUids.Add(uid);
             }
 
             inbox.Close();
-            return (emailFrom, emailSubjects, emailText);
+            return (emailName, emailFrom, emailSubjects, emailText, emailUids);
+        }
+
+        private string ExtractNameFromEmail(string email)
+        {
+            var namePart = email.Split('@')[0];
+            return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(namePart.Replace('.', ' ').Replace('_', ' '));
+        }
+
+        public void SendReply(string toEmail, string subject, string body, UniqueId originalEmailId)
+        {
+            var message = new MimeMessage();
+            message.From.Add(new MailboxAddress("Suporte Limpia", "limpia.suporte@gmail.com"));
+            message.To.Add(new MailboxAddress("", toEmail));
+            message.Subject = subject;
+
+            var builder = new BodyBuilder { TextBody = body };
+            message.Body = builder.ToMessageBody();
+
+            message.InReplyTo = originalEmailId.ToString();
+            message.References.Add(originalEmailId.ToString());
+
+            using (var smtp = new SmtpClient())
+            {
+                smtp.Connect("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
+                smtp.Authenticate("limpia.suporte@gmail.com", "zqxq hagu tqdf zmbh\r\n");
+                smtp.Send(message);
+                smtp.Disconnect(true);
+            }
+        }
+        public void MarkEmailAsRead(UniqueId uid)
+        {
+            if (!client.IsConnected || !client.IsAuthenticated)
+                return;
+
+            var inbox = client.Inbox;
+            inbox.Open(FolderAccess.ReadWrite); // Abre a caixa de entrada para leitura/escrita
+
+            // Marca a mensagem como lida
+            inbox.AddFlags(uid, MessageFlags.Seen, true);
         }
 
         public void Disconnect()

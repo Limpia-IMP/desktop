@@ -93,6 +93,26 @@ namespace Limpia_DesktopTeste.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ellipse_suporte_roxo {
+            get {
+                object obj = ResourceManager.GetObject("ellipse_suporte_roxo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ellipse_suporte_verde {
+            get {
+                object obj = ResourceManager.GetObject("ellipse_suporte_verde", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LimpezaDomestica {
             get {
                 object obj = ResourceManager.GetObject("LimpezaDomestica", resourceCulture);

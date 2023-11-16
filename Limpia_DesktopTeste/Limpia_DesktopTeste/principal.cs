@@ -48,9 +48,10 @@ namespace Limpia_DesktopTeste
         {
             suporte formSuporte = new suporte();
             clsEmail.ConnectAndAuthenticate();
-            var (emailFrom, emailSubjects, emailText) = clsEmail.FetchEmail("_Duvida");
+            var (emailName, emailFrom, emailSubjects, emailText, emailUids) = clsEmail.FetchEmail("_Duvida");
             formSuporte.FormularioPai = this;  // 'this' se refere ao FormPrincipal
-            formSuporte.DisplayEmails(emailFrom, emailSubjects);
+            formSuporte.emailFrom = emailName;
+            formSuporte.emailSubjects = emailSubjects;
             formSuporte.clsEmail = clsEmail;
             openChildForm(formSuporte);
         }

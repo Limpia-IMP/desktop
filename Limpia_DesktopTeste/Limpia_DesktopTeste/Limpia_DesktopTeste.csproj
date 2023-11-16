@@ -238,5 +238,11 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ellipse_suporte_roxo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ellipse_suporte_verde.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

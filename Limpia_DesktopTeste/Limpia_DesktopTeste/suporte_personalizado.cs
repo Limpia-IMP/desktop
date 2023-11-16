@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MailKit;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,9 @@ namespace Limpia_DesktopTeste
         public ClsEmail clsEmail;
         public int num;
 
+        string name, from, subject, text;
+        UniqueId uId;
+
         public suporte_personalizado()
         {
             InitializeComponent();
@@ -23,13 +27,18 @@ namespace Limpia_DesktopTeste
         }
         private void suporte_personalizado_Load(object sender, EventArgs e)
         {
-            var (emailFrom, emailSubjects, emailText) = clsEmail.FetchEmail("_Duvida");
-            DisplayEmails(emailFrom, emailSubjects, emailText);
+            var (emailName, emailFrom, emailSubjects, emailText, emailUids) = clsEmail.FetchEmail("_Duvida");
+            name = emailName[num];
+            from = emailFrom[num];
+            subject = emailSubjects[num];
+            uId = emailUids[num];
+            DisplayEmails();
         }
-        private void DisplayEmails(List<string> emailFrom, List<string> emailSubjects, List<string> emailText)
+
+        private void DisplayEmails()
         {
-            lblTitulo.Text = emailSubjects[num] + " - " + emailFrom[num];
-            lblTexto.Text = emailText[num];
+            lblTitulo.Text = subject + " - " + name[num];
+            lblTexto.Text = text;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -51,24 +60,39 @@ namespace Limpia_DesktopTeste
             panel.Region = new System.Drawing.Region(path);
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnVoltar_Click(object sender, EventArgs e)
         {
+            Voltar();
+        }
+
+        private void Voltar()
+        {
             suporte form = new suporte();
-            FormularioPai.openChildForm(form);
             form.FormularioPai = this.FormularioPai;
-            var (emailFrom, emailSubjects, emailText) = clsEmail.FetchEmail("_Duvida");
-            form.DisplayEmails(emailFrom, emailSubjects);
+            form.clsEmail = this.clsEmail;
+            var (emailName, emailFrom, emailSubjects, emailText, emailUids) = clsEmail.FetchEmail("_Duvida");
+            form.emailFrom = emailName;
+            form.emailSubjects = emailSubjects;
+            FormularioPai.openChildForm(form);
             this.Close();
-        }       
+        }
+
+        private void btnResponder_Click(object sender, EventArgs e)
+        {            // Chamando o método de resposta
+            DialogResult result = MessageBox.Show("Tem certeza?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+
+                text = txtResposta.Text;
+                clsEmail.SendReply(from, subject, text, uId);
+                clsEmail.MarkEmailAsRead(uId);
+
+                clsEmail.Disconnect();
+                Voltar();
+            }
+        }
+
     }
 }
+

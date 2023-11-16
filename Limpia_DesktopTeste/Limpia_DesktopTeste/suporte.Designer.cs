@@ -46,6 +46,8 @@
             this.lblFrom4 = new System.Windows.Forms.Label();
             this.lblFrom3 = new System.Windows.Forms.Label();
             this.lblFrom2 = new System.Windows.Forms.Label();
+            this.lblFrom1 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.btn9 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.btn8 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.btn7 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
@@ -55,8 +57,6 @@
             this.btn3 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.btn2 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.btn1 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
-            this.lblFrom1 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -283,6 +283,28 @@
             this.lblFrom2.TabIndex = 11;
             this.lblFrom2.Text = "Dúvida 2";
             // 
+            // lblFrom1
+            // 
+            this.lblFrom1.AutoSize = true;
+            this.lblFrom1.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFrom1.Location = new System.Drawing.Point(15, 19);
+            this.lblFrom1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFrom1.Name = "lblFrom1";
+            this.lblFrom1.Size = new System.Drawing.Size(62, 18);
+            this.lblFrom1.TabIndex = 1;
+            this.lblFrom1.Text = "Vanessa";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Berlin Sans FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(64, 26);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(104, 24);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "-> Suporte";
+            // 
             // btn9
             // 
             this.btn9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
@@ -469,28 +491,6 @@
             this.btn1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.btnSuporte_Click);
-            // 
-            // lblFrom1
-            // 
-            this.lblFrom1.AutoSize = true;
-            this.lblFrom1.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFrom1.Location = new System.Drawing.Point(15, 19);
-            this.lblFrom1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblFrom1.Name = "lblFrom1";
-            this.lblFrom1.Size = new System.Drawing.Size(62, 18);
-            this.lblFrom1.TabIndex = 1;
-            this.lblFrom1.Text = "Vanessa";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Berlin Sans FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(64, 26);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(104, 24);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "-> Suporte";
             // 
             // suporte
             // 
