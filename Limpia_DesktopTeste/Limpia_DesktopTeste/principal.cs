@@ -12,17 +12,32 @@ namespace Limpia_DesktopTeste
 {
     public partial class principal : Form
     {
-
-        
+        ClsBanco banco = new ClsBanco();
         public principal()
         {
             InitializeComponent();
         }
         private void Principal_Load(object sender, EventArgs e)
         {
+            LoadDataAsync();
             openChildForm(new home());
-            
         }
+
+        private async void LoadDataAsync()
+        {
+            try
+            {
+                await banco.ObterAsync();
+                txtNomeFunc.Text = banco.Nome;
+                txtCodCargo.Text = "#" + banco.IdCargo;// Update UI with the fetched name
+            }
+            catch (Exception ex)
+            {
+                // Handle or log the exception
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
+        }
+
 
         private Form activeForm = null;
         public void openChildForm(Form childForm)
@@ -80,9 +95,10 @@ namespace Limpia_DesktopTeste
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
+            banco.Email = "";
             inicial form = new inicial();
             form.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void btnFecharTela_Click(object sender, EventArgs e)

@@ -37,7 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.btnContinuar = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.panel1.SuspendLayout();
@@ -54,7 +54,7 @@
             this.panel1.Controls.Add(this.btnVoltar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(280, 440);
             this.panel1.TabIndex = 2;
@@ -64,7 +64,7 @@
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(100, 375);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(75, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -88,7 +88,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(28, 23);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(220, 220);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -108,7 +108,7 @@
             this.btnVoltar.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(12)))), ((int)(((byte)(42)))));
             this.btnVoltar.Location = new System.Drawing.Point(77, 279);
-            this.btnVoltar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVoltar.Margin = new System.Windows.Forms.Padding(2);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(123, 48);
             this.btnVoltar.TabIndex = 4;
@@ -150,15 +150,15 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Senha:";
             // 
-            // txtID
+            // txtEmail
             // 
-            this.txtID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtID.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(452, 179);
-            this.txtID.Multiline = true;
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(152, 26);
-            this.txtID.TabIndex = 0;
+            this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEmail.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(452, 179);
+            this.txtEmail.Multiline = true;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(152, 26);
+            this.txtEmail.TabIndex = 0;
             // 
             // txtSenha
             // 
@@ -182,7 +182,7 @@
             this.btnContinuar.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnContinuar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(12)))), ((int)(((byte)(42)))));
             this.btnContinuar.Location = new System.Drawing.Point(426, 279);
-            this.btnContinuar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnContinuar.Margin = new System.Windows.Forms.Padding(2);
             this.btnContinuar.Name = "btnContinuar";
             this.btnContinuar.Size = new System.Drawing.Size(123, 48);
             this.btnContinuar.TabIndex = 2;
@@ -198,12 +198,12 @@
             this.ClientSize = new System.Drawing.Size(668, 440);
             this.Controls.Add(this.btnContinuar);
             this.Controls.Add(this.txtSenha);
-            this.Controls.Add(this.txtID);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -228,7 +228,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtSenha;
         private BtnLimpia.btnPrincipal btnContinuar;
     }

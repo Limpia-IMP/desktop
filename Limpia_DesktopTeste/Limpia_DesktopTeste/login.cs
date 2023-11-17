@@ -30,7 +30,7 @@ namespace Limpia_DesktopTeste
         private void BtnContinuar_Click(object sender, EventArgs e)
         {
             banco.Senha = txtSenha.Text;
-            banco.Id = txtID.Text;
+            banco.Email = txtEmail.Text;
 
             ClsBanco.LoginResult result = banco.Login();
 

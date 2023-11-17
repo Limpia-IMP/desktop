@@ -25,7 +25,7 @@ namespace Limpia_DesktopTeste
             try
             {
                 client.Connect("imap.gmail.com", 993, SecureSocketOptions.SslOnConnect);
-                client.Authenticate("limpia.suporte@gmail.com", "zqxq hagu tqdf zmbh\r\n");
+                client.Authenticate("limpia.suporte@gmail.com", "xggi cpja amfc tlkm");
                 Console.WriteLine("Conexão e autenticação bem-sucedidas");
             }
             catch (Exception ex)
@@ -92,7 +92,7 @@ namespace Limpia_DesktopTeste
             using (var smtp = new SmtpClient())
             {
                 smtp.Connect("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
-                smtp.Authenticate("limpia.suporte@gmail.com", "zqxq hagu tqdf zmbh\r\n");
+                smtp.Authenticate("limpia.suporte@gmail.com", "xggi cpja amfc tlkm");
                 smtp.Send(message);
                 smtp.Disconnect(true);
             }
