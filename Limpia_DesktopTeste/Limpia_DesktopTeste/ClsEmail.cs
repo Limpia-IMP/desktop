@@ -25,7 +25,7 @@ namespace Limpia_DesktopTeste
             try
             {
                 client.Connect("imap.gmail.com", 993, SecureSocketOptions.SslOnConnect);
-                client.Authenticate("limpia.suporte@gmail.com", "zqxq hagu tqdf zmbh\r\n");
+                client.Authenticate("limpia.suporte@gmail.com", "ujgz dqjz ybcb bzvl\r\n");
                 Console.WriteLine("Conexão e autenticação bem-sucedidas");
             }
             catch (Exception ex)
