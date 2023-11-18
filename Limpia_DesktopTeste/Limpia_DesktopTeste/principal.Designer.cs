@@ -36,7 +36,7 @@
             System.Windows.Forms.Button btnLogout;
             System.Windows.Forms.Button btnPromoOfertas;
             this.panelChildForm = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.customTopBar = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnFecharTela = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -57,7 +57,7 @@
             btnLogout = new System.Windows.Forms.Button();
             btnPromoOfertas = new System.Windows.Forms.Button();
             this.panelChildForm.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.customTopBar.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.sidebar.SuspendLayout();
@@ -183,7 +183,7 @@
             // panelChildForm
             // 
             this.panelChildForm.BackColor = System.Drawing.Color.Cornsilk;
-            this.panelChildForm.Controls.Add(this.panel1);
+            this.panelChildForm.Controls.Add(this.customTopBar);
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(195, 0);
             this.panelChildForm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -191,17 +191,20 @@
             this.panelChildForm.Size = new System.Drawing.Size(811, 590);
             this.panelChildForm.TabIndex = 1;
             // 
-            // panel1
+            // customTopBar
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.panel1.Controls.Add(this.btnMinimizar);
-            this.panel1.Controls.Add(this.btnFecharTela);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(811, 40);
-            this.panel1.TabIndex = 1;
+            this.customTopBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.customTopBar.Controls.Add(this.btnMinimizar);
+            this.customTopBar.Controls.Add(this.btnFecharTela);
+            this.customTopBar.Controls.Add(this.label1);
+            this.customTopBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.customTopBar.Location = new System.Drawing.Point(0, 0);
+            this.customTopBar.Name = "customTopBar";
+            this.customTopBar.Size = new System.Drawing.Size(811, 40);
+            this.customTopBar.TabIndex = 1;
+            this.customTopBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.customTopBar_MouseDown);
+            this.customTopBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.customTopBar_MouseMove);
+            this.customTopBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.customTopBar_MouseUp);
             // 
             // btnMinimizar
             // 
@@ -386,8 +389,8 @@
             this.Text = "principal";
             this.Load += new System.EventHandler(this.Principal_Load);
             this.panelChildForm.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.customTopBar.ResumeLayout(false);
+            this.customTopBar.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -411,7 +414,7 @@
         private System.Windows.Forms.Label txtNomeFunc;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel customTopBar;
         private System.Windows.Forms.Button btnMinimizar;
         private System.Windows.Forms.Button btnFecharTela;
         private System.Windows.Forms.Label label1;

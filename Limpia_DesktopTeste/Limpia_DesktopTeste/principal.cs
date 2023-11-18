@@ -13,10 +13,17 @@ namespace Limpia_DesktopTeste
     public partial class principal : Form
     {
         ClsBanco banco = new ClsBanco();
+        private bool dragging = false;
+        private Point dragCursorPoint;
+        private Point dragFormPoint;
         public principal()
         {
             InitializeComponent();
+            this.customTopBar.MouseDown += new MouseEventHandler(customTopBar_MouseDown);
+            this.customTopBar.MouseMove += new MouseEventHandler(customTopBar_MouseMove);
+            this.customTopBar.MouseUp += new MouseEventHandler(customTopBar_MouseUp);
         }
+
         private void Principal_Load(object sender, EventArgs e)
         {
             LoadDataAsync();
@@ -98,7 +105,8 @@ namespace Limpia_DesktopTeste
             banco.Email = "";
             inicial form = new inicial();
             form.Show();
-            this.Close();
+            Close();
+
         }
 
         private void btnFecharTela_Click(object sender, EventArgs e)
@@ -108,6 +116,30 @@ namespace Limpia_DesktopTeste
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void customTopBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                dragging = true;
+                dragCursorPoint = Cursor.Position;
+                dragFormPoint = this.Location;
+            }
+        }
+
+        private void customTopBar_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dragging)
+            {
+                Point dif = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
+                this.Location = Point.Add(dragFormPoint, new Size(dif));
+            }
+        }
+
+        private void customTopBar_MouseUp(object sender, MouseEventArgs e)
+        {
+            dragging = false;
         }
 
     }
