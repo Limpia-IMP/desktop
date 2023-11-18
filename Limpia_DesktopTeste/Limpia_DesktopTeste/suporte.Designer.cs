@@ -98,188 +98,171 @@
             // 
             // lblAssunto9
             // 
-            this.lblAssunto9.AutoSize = true;
             this.lblAssunto9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto9.Location = new System.Drawing.Point(116, 412);
+            this.lblAssunto9.Location = new System.Drawing.Point(171, 412);
             this.lblAssunto9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAssunto9.Name = "lblAssunto9";
-            this.lblAssunto9.Size = new System.Drawing.Size(446, 19);
+            this.lblAssunto9.Size = new System.Drawing.Size(403, 19);
             this.lblAssunto9.TabIndex = 27;
-            this.lblAssunto9.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
+            this.lblAssunto9.Text = "Lorem Ipsum is simply dummy text of the printing";
             // 
             // lblAssunto8
             // 
-            this.lblAssunto8.AutoSize = true;
             this.lblAssunto8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto8.Location = new System.Drawing.Point(116, 363);
+            this.lblAssunto8.Location = new System.Drawing.Point(171, 363);
             this.lblAssunto8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAssunto8.Name = "lblAssunto8";
-            this.lblAssunto8.Size = new System.Drawing.Size(446, 19);
+            this.lblAssunto8.Size = new System.Drawing.Size(403, 19);
             this.lblAssunto8.TabIndex = 26;
-            this.lblAssunto8.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
+            this.lblAssunto8.Text = "Lorem Ipsum is simply dummy text of the printing";
             // 
             // lblAssunto7
             // 
-            this.lblAssunto7.AutoSize = true;
             this.lblAssunto7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto7.Location = new System.Drawing.Point(116, 314);
+            this.lblAssunto7.Location = new System.Drawing.Point(171, 314);
             this.lblAssunto7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAssunto7.Name = "lblAssunto7";
-            this.lblAssunto7.Size = new System.Drawing.Size(446, 19);
+            this.lblAssunto7.Size = new System.Drawing.Size(403, 19);
             this.lblAssunto7.TabIndex = 25;
-            this.lblAssunto7.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
+            this.lblAssunto7.Text = "Lorem Ipsum is simply dummy text of the printing";
             // 
             // lblAssunto6
             // 
-            this.lblAssunto6.AutoSize = true;
             this.lblAssunto6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto6.Location = new System.Drawing.Point(116, 265);
+            this.lblAssunto6.Location = new System.Drawing.Point(171, 265);
             this.lblAssunto6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAssunto6.Name = "lblAssunto6";
-            this.lblAssunto6.Size = new System.Drawing.Size(446, 19);
+            this.lblAssunto6.Size = new System.Drawing.Size(403, 19);
             this.lblAssunto6.TabIndex = 24;
-            this.lblAssunto6.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
+            this.lblAssunto6.Text = "Lorem Ipsum is simply dummy text of the printing";
             // 
             // lblAssunto5
             // 
-            this.lblAssunto5.AutoSize = true;
             this.lblAssunto5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto5.Location = new System.Drawing.Point(116, 216);
+            this.lblAssunto5.Location = new System.Drawing.Point(171, 216);
             this.lblAssunto5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAssunto5.Name = "lblAssunto5";
-            this.lblAssunto5.Size = new System.Drawing.Size(446, 19);
+            this.lblAssunto5.Size = new System.Drawing.Size(403, 19);
             this.lblAssunto5.TabIndex = 23;
-            this.lblAssunto5.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
+            this.lblAssunto5.Text = "Lorem Ipsum is simply dummy text of the printing";
             // 
             // lblAssunto4
             // 
-            this.lblAssunto4.AutoSize = true;
             this.lblAssunto4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto4.Location = new System.Drawing.Point(116, 167);
+            this.lblAssunto4.Location = new System.Drawing.Point(171, 167);
             this.lblAssunto4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAssunto4.Name = "lblAssunto4";
-            this.lblAssunto4.Size = new System.Drawing.Size(446, 19);
+            this.lblAssunto4.Size = new System.Drawing.Size(403, 19);
             this.lblAssunto4.TabIndex = 22;
-            this.lblAssunto4.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
+            this.lblAssunto4.Text = "Lorem Ipsum is simply dummy text of the printing";
             // 
             // lblAssunto3
             // 
-            this.lblAssunto3.AutoSize = true;
             this.lblAssunto3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto3.Location = new System.Drawing.Point(116, 118);
+            this.lblAssunto3.Location = new System.Drawing.Point(171, 118);
             this.lblAssunto3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAssunto3.Name = "lblAssunto3";
-            this.lblAssunto3.Size = new System.Drawing.Size(446, 19);
+            this.lblAssunto3.Size = new System.Drawing.Size(403, 19);
             this.lblAssunto3.TabIndex = 21;
-            this.lblAssunto3.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
+            this.lblAssunto3.Text = "Lorem Ipsum is simply dummy text of the printing";
             // 
             // lblAssunto2
             // 
-            this.lblAssunto2.AutoSize = true;
             this.lblAssunto2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto2.Location = new System.Drawing.Point(116, 69);
+            this.lblAssunto2.Location = new System.Drawing.Point(171, 69);
             this.lblAssunto2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAssunto2.Name = "lblAssunto2";
-            this.lblAssunto2.Size = new System.Drawing.Size(446, 19);
+            this.lblAssunto2.Size = new System.Drawing.Size(403, 19);
             this.lblAssunto2.TabIndex = 20;
-            this.lblAssunto2.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
+            this.lblAssunto2.Text = "Lorem Ipsum is simply dummy text of the printing";
             // 
             // lblAssunto1
             // 
-            this.lblAssunto1.AutoSize = true;
             this.lblAssunto1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto1.Location = new System.Drawing.Point(116, 19);
+            this.lblAssunto1.Location = new System.Drawing.Point(171, 19);
             this.lblAssunto1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAssunto1.Name = "lblAssunto1";
-            this.lblAssunto1.Size = new System.Drawing.Size(446, 19);
+            this.lblAssunto1.Size = new System.Drawing.Size(403, 19);
             this.lblAssunto1.TabIndex = 19;
-            this.lblAssunto1.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
+            this.lblAssunto1.Text = "Lorem Ipsum is simply dummy text of the printing";
             // 
             // lblFrom9
             // 
-            this.lblFrom9.AutoSize = true;
             this.lblFrom9.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFrom9.Location = new System.Drawing.Point(15, 412);
             this.lblFrom9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFrom9.Name = "lblFrom9";
-            this.lblFrom9.Size = new System.Drawing.Size(67, 18);
+            this.lblFrom9.Size = new System.Drawing.Size(139, 18);
             this.lblFrom9.TabIndex = 18;
             this.lblFrom9.Text = "Dúvida 9";
             // 
             // lblFrom8
             // 
-            this.lblFrom8.AutoSize = true;
             this.lblFrom8.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFrom8.Location = new System.Drawing.Point(15, 363);
             this.lblFrom8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFrom8.Name = "lblFrom8";
-            this.lblFrom8.Size = new System.Drawing.Size(66, 18);
+            this.lblFrom8.Size = new System.Drawing.Size(139, 18);
             this.lblFrom8.TabIndex = 17;
             this.lblFrom8.Text = "Dúvida 8";
             // 
             // lblFrom7
             // 
-            this.lblFrom7.AutoSize = true;
             this.lblFrom7.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFrom7.Location = new System.Drawing.Point(15, 314);
             this.lblFrom7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFrom7.Name = "lblFrom7";
-            this.lblFrom7.Size = new System.Drawing.Size(66, 18);
+            this.lblFrom7.Size = new System.Drawing.Size(139, 18);
             this.lblFrom7.TabIndex = 16;
             this.lblFrom7.Text = "Dúvida 7";
             // 
             // lblFrom6
             // 
-            this.lblFrom6.AutoSize = true;
             this.lblFrom6.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFrom6.Location = new System.Drawing.Point(15, 265);
             this.lblFrom6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFrom6.Name = "lblFrom6";
-            this.lblFrom6.Size = new System.Drawing.Size(67, 18);
+            this.lblFrom6.Size = new System.Drawing.Size(139, 18);
             this.lblFrom6.TabIndex = 15;
             this.lblFrom6.Text = "Dúvida 6";
             // 
             // lblFrom5
             // 
-            this.lblFrom5.AutoSize = true;
             this.lblFrom5.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFrom5.Location = new System.Drawing.Point(15, 216);
             this.lblFrom5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFrom5.Name = "lblFrom5";
-            this.lblFrom5.Size = new System.Drawing.Size(67, 18);
+            this.lblFrom5.Size = new System.Drawing.Size(139, 18);
             this.lblFrom5.TabIndex = 14;
             this.lblFrom5.Text = "Dúvida 5";
             // 
             // lblFrom4
             // 
-            this.lblFrom4.AutoSize = true;
             this.lblFrom4.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFrom4.Location = new System.Drawing.Point(15, 167);
             this.lblFrom4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFrom4.Name = "lblFrom4";
-            this.lblFrom4.Size = new System.Drawing.Size(67, 18);
+            this.lblFrom4.Size = new System.Drawing.Size(139, 18);
             this.lblFrom4.TabIndex = 13;
             this.lblFrom4.Text = "Dúvida 4";
             // 
             // lblFrom3
             // 
-            this.lblFrom3.AutoSize = true;
             this.lblFrom3.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFrom3.Location = new System.Drawing.Point(15, 118);
             this.lblFrom3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFrom3.Name = "lblFrom3";
-            this.lblFrom3.Size = new System.Drawing.Size(67, 18);
+            this.lblFrom3.Size = new System.Drawing.Size(139, 18);
             this.lblFrom3.TabIndex = 12;
             this.lblFrom3.Text = "Dúvida 3";
             // 
             // lblFrom2
             // 
-            this.lblFrom2.AutoSize = true;
             this.lblFrom2.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFrom2.Location = new System.Drawing.Point(15, 69);
             this.lblFrom2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFrom2.Name = "lblFrom2";
-            this.lblFrom2.Size = new System.Drawing.Size(67, 18);
+            this.lblFrom2.Size = new System.Drawing.Size(139, 18);
             this.lblFrom2.TabIndex = 11;
             this.lblFrom2.Text = "Dúvida 2";
             // 
@@ -474,12 +457,11 @@
             // 
             // lblFrom1
             // 
-            this.lblFrom1.AutoSize = true;
             this.lblFrom1.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFrom1.Location = new System.Drawing.Point(15, 19);
             this.lblFrom1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFrom1.Name = "lblFrom1";
-            this.lblFrom1.Size = new System.Drawing.Size(62, 18);
+            this.lblFrom1.Size = new System.Drawing.Size(139, 18);
             this.lblFrom1.TabIndex = 1;
             this.lblFrom1.Text = "Vanessa";
             // 
@@ -507,7 +489,6 @@
             this.Name = "suporte";
             this.Load += new System.EventHandler(this.suporte_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
