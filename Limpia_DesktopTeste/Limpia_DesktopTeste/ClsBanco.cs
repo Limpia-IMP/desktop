@@ -109,6 +109,22 @@ namespace Limpia_DesktopTeste
             }
         }
 
+        /*idcursos int not null primary key,
+	valor decimal not null,
+	duracao varchar(10),
+	descricao varchar(250),
+	categoria varchar(50),
+	nome varchar(50)*/
+
+        public class cursos {
+
+            private string idcursos = "";
+            private int valor = 0;
+
+        }
+
+
+
         public class ObterInfo
         {
             private string name = "";
