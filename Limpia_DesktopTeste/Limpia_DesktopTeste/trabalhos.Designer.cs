@@ -47,7 +47,6 @@
             this.lblFrom4 = new System.Windows.Forms.Label();
             this.lblFrom3 = new System.Windows.Forms.Label();
             this.lblFrom2 = new System.Windows.Forms.Label();
-            this.lblFrom1 = new System.Windows.Forms.Label();
             this.btn9 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.btn8 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.btn7 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
@@ -57,6 +56,9 @@
             this.btn3 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.btn2 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.btn1 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
+            this.lblFrom1 = new System.Windows.Forms.Label();
+            this.btnPrincipal1 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
+            this.btnPrincipal2 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,10 +66,9 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Berlin Sans FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(59, 28);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(79, 34);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(122, 24);
+            this.label10.Size = new System.Drawing.Size(156, 31);
             this.label10.TabIndex = 3;
             this.label10.Text = "-> Trabalhos";
             // 
@@ -101,20 +102,19 @@
             this.panel1.Controls.Add(this.btn2);
             this.panel1.Controls.Add(this.btn1);
             this.panel1.Controls.Add(this.lblFrom1);
-            this.panel1.Location = new System.Drawing.Point(62, 71);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(83, 87);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(702, 453);
+            this.panel1.Size = new System.Drawing.Size(936, 558);
             this.panel1.TabIndex = 2;
             // 
             // lblAssunto9
             // 
             this.lblAssunto9.AutoSize = true;
             this.lblAssunto9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto9.Location = new System.Drawing.Point(116, 412);
-            this.lblAssunto9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAssunto9.Location = new System.Drawing.Point(155, 507);
             this.lblAssunto9.Name = "lblAssunto9";
-            this.lblAssunto9.Size = new System.Drawing.Size(446, 19);
+            this.lblAssunto9.Size = new System.Drawing.Size(575, 24);
             this.lblAssunto9.TabIndex = 27;
             this.lblAssunto9.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
             // 
@@ -122,10 +122,9 @@
             // 
             this.lblAssunto8.AutoSize = true;
             this.lblAssunto8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto8.Location = new System.Drawing.Point(116, 363);
-            this.lblAssunto8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAssunto8.Location = new System.Drawing.Point(155, 447);
             this.lblAssunto8.Name = "lblAssunto8";
-            this.lblAssunto8.Size = new System.Drawing.Size(446, 19);
+            this.lblAssunto8.Size = new System.Drawing.Size(575, 24);
             this.lblAssunto8.TabIndex = 26;
             this.lblAssunto8.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
             // 
@@ -133,10 +132,9 @@
             // 
             this.lblAssunto7.AutoSize = true;
             this.lblAssunto7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto7.Location = new System.Drawing.Point(116, 314);
-            this.lblAssunto7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAssunto7.Location = new System.Drawing.Point(155, 386);
             this.lblAssunto7.Name = "lblAssunto7";
-            this.lblAssunto7.Size = new System.Drawing.Size(446, 19);
+            this.lblAssunto7.Size = new System.Drawing.Size(575, 24);
             this.lblAssunto7.TabIndex = 25;
             this.lblAssunto7.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
             // 
@@ -144,10 +142,9 @@
             // 
             this.lblAssunto6.AutoSize = true;
             this.lblAssunto6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto6.Location = new System.Drawing.Point(116, 265);
-            this.lblAssunto6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAssunto6.Location = new System.Drawing.Point(155, 326);
             this.lblAssunto6.Name = "lblAssunto6";
-            this.lblAssunto6.Size = new System.Drawing.Size(446, 19);
+            this.lblAssunto6.Size = new System.Drawing.Size(575, 24);
             this.lblAssunto6.TabIndex = 24;
             this.lblAssunto6.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
             // 
@@ -155,10 +152,9 @@
             // 
             this.lblAssunto5.AutoSize = true;
             this.lblAssunto5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto5.Location = new System.Drawing.Point(116, 216);
-            this.lblAssunto5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAssunto5.Location = new System.Drawing.Point(155, 266);
             this.lblAssunto5.Name = "lblAssunto5";
-            this.lblAssunto5.Size = new System.Drawing.Size(446, 19);
+            this.lblAssunto5.Size = new System.Drawing.Size(575, 24);
             this.lblAssunto5.TabIndex = 23;
             this.lblAssunto5.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
             // 
@@ -166,10 +162,9 @@
             // 
             this.lblAssunto4.AutoSize = true;
             this.lblAssunto4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto4.Location = new System.Drawing.Point(116, 167);
-            this.lblAssunto4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAssunto4.Location = new System.Drawing.Point(155, 206);
             this.lblAssunto4.Name = "lblAssunto4";
-            this.lblAssunto4.Size = new System.Drawing.Size(446, 19);
+            this.lblAssunto4.Size = new System.Drawing.Size(575, 24);
             this.lblAssunto4.TabIndex = 22;
             this.lblAssunto4.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
             // 
@@ -177,10 +172,9 @@
             // 
             this.lblAssunto3.AutoSize = true;
             this.lblAssunto3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto3.Location = new System.Drawing.Point(116, 118);
-            this.lblAssunto3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAssunto3.Location = new System.Drawing.Point(155, 145);
             this.lblAssunto3.Name = "lblAssunto3";
-            this.lblAssunto3.Size = new System.Drawing.Size(446, 19);
+            this.lblAssunto3.Size = new System.Drawing.Size(575, 24);
             this.lblAssunto3.TabIndex = 21;
             this.lblAssunto3.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
             // 
@@ -188,10 +182,9 @@
             // 
             this.lblAssunto2.AutoSize = true;
             this.lblAssunto2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto2.Location = new System.Drawing.Point(116, 69);
-            this.lblAssunto2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAssunto2.Location = new System.Drawing.Point(155, 85);
             this.lblAssunto2.Name = "lblAssunto2";
-            this.lblAssunto2.Size = new System.Drawing.Size(446, 19);
+            this.lblAssunto2.Size = new System.Drawing.Size(575, 24);
             this.lblAssunto2.TabIndex = 20;
             this.lblAssunto2.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
             // 
@@ -199,10 +192,9 @@
             // 
             this.lblAssunto1.AutoSize = true;
             this.lblAssunto1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto1.Location = new System.Drawing.Point(116, 19);
-            this.lblAssunto1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAssunto1.Location = new System.Drawing.Point(155, 23);
             this.lblAssunto1.Name = "lblAssunto1";
-            this.lblAssunto1.Size = new System.Drawing.Size(446, 19);
+            this.lblAssunto1.Size = new System.Drawing.Size(575, 24);
             this.lblAssunto1.TabIndex = 19;
             this.lblAssunto1.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting...";
             // 
@@ -210,10 +202,9 @@
             // 
             this.lblFrom9.AutoSize = true;
             this.lblFrom9.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFrom9.Location = new System.Drawing.Point(15, 412);
-            this.lblFrom9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFrom9.Location = new System.Drawing.Point(20, 507);
             this.lblFrom9.Name = "lblFrom9";
-            this.lblFrom9.Size = new System.Drawing.Size(51, 18);
+            this.lblFrom9.Size = new System.Drawing.Size(65, 23);
             this.lblFrom9.TabIndex = 18;
             this.lblFrom9.Text = "trab_9";
             // 
@@ -221,10 +212,9 @@
             // 
             this.lblFrom8.AutoSize = true;
             this.lblFrom8.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFrom8.Location = new System.Drawing.Point(15, 363);
-            this.lblFrom8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFrom8.Location = new System.Drawing.Point(20, 447);
             this.lblFrom8.Name = "lblFrom8";
-            this.lblFrom8.Size = new System.Drawing.Size(50, 18);
+            this.lblFrom8.Size = new System.Drawing.Size(64, 23);
             this.lblFrom8.TabIndex = 17;
             this.lblFrom8.Text = "trab_8";
             // 
@@ -232,10 +222,9 @@
             // 
             this.lblFrom7.AutoSize = true;
             this.lblFrom7.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFrom7.Location = new System.Drawing.Point(15, 314);
-            this.lblFrom7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFrom7.Location = new System.Drawing.Point(20, 386);
             this.lblFrom7.Name = "lblFrom7";
-            this.lblFrom7.Size = new System.Drawing.Size(50, 18);
+            this.lblFrom7.Size = new System.Drawing.Size(64, 23);
             this.lblFrom7.TabIndex = 16;
             this.lblFrom7.Text = "trab_7";
             // 
@@ -243,10 +232,9 @@
             // 
             this.lblFrom6.AutoSize = true;
             this.lblFrom6.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFrom6.Location = new System.Drawing.Point(15, 265);
-            this.lblFrom6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFrom6.Location = new System.Drawing.Point(20, 326);
             this.lblFrom6.Name = "lblFrom6";
-            this.lblFrom6.Size = new System.Drawing.Size(51, 18);
+            this.lblFrom6.Size = new System.Drawing.Size(65, 23);
             this.lblFrom6.TabIndex = 15;
             this.lblFrom6.Text = "trab_6";
             // 
@@ -254,10 +242,9 @@
             // 
             this.lblFrom5.AutoSize = true;
             this.lblFrom5.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFrom5.Location = new System.Drawing.Point(15, 216);
-            this.lblFrom5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFrom5.Location = new System.Drawing.Point(20, 266);
             this.lblFrom5.Name = "lblFrom5";
-            this.lblFrom5.Size = new System.Drawing.Size(51, 18);
+            this.lblFrom5.Size = new System.Drawing.Size(65, 23);
             this.lblFrom5.TabIndex = 14;
             this.lblFrom5.Text = "trab_5";
             // 
@@ -265,10 +252,9 @@
             // 
             this.lblFrom4.AutoSize = true;
             this.lblFrom4.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFrom4.Location = new System.Drawing.Point(15, 167);
-            this.lblFrom4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFrom4.Location = new System.Drawing.Point(20, 206);
             this.lblFrom4.Name = "lblFrom4";
-            this.lblFrom4.Size = new System.Drawing.Size(51, 18);
+            this.lblFrom4.Size = new System.Drawing.Size(65, 23);
             this.lblFrom4.TabIndex = 13;
             this.lblFrom4.Text = "trab_4";
             // 
@@ -276,10 +262,9 @@
             // 
             this.lblFrom3.AutoSize = true;
             this.lblFrom3.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFrom3.Location = new System.Drawing.Point(15, 118);
-            this.lblFrom3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFrom3.Location = new System.Drawing.Point(20, 145);
             this.lblFrom3.Name = "lblFrom3";
-            this.lblFrom3.Size = new System.Drawing.Size(51, 18);
+            this.lblFrom3.Size = new System.Drawing.Size(64, 23);
             this.lblFrom3.TabIndex = 12;
             this.lblFrom3.Text = "trab_3";
             // 
@@ -287,23 +272,11 @@
             // 
             this.lblFrom2.AutoSize = true;
             this.lblFrom2.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFrom2.Location = new System.Drawing.Point(15, 69);
-            this.lblFrom2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFrom2.Location = new System.Drawing.Point(20, 85);
             this.lblFrom2.Name = "lblFrom2";
-            this.lblFrom2.Size = new System.Drawing.Size(51, 18);
+            this.lblFrom2.Size = new System.Drawing.Size(65, 23);
             this.lblFrom2.TabIndex = 11;
             this.lblFrom2.Text = "trab_2";
-            // 
-            // lblFrom1
-            // 
-            this.lblFrom1.AutoSize = true;
-            this.lblFrom1.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFrom1.Location = new System.Drawing.Point(15, 19);
-            this.lblFrom1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblFrom1.Name = "lblFrom1";
-            this.lblFrom1.Size = new System.Drawing.Size(47, 18);
-            this.lblFrom1.TabIndex = 1;
-            this.lblFrom1.Text = "trab_1";
             // 
             // btn9
             // 
@@ -316,10 +289,10 @@
             this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn9.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btn9.Location = new System.Drawing.Point(578, 405);
-            this.btn9.Margin = new System.Windows.Forms.Padding(2);
+            this.btn9.Location = new System.Drawing.Point(771, 498);
+            this.btn9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn9.Name = "btn9";
-            this.btn9.Size = new System.Drawing.Size(112, 32);
+            this.btn9.Size = new System.Drawing.Size(149, 39);
             this.btn9.TabIndex = 10;
             this.btn9.Text = "veja mais...";
             this.btn9.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
@@ -336,10 +309,10 @@
             this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn8.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btn8.Location = new System.Drawing.Point(578, 356);
-            this.btn8.Margin = new System.Windows.Forms.Padding(2);
+            this.btn8.Location = new System.Drawing.Point(771, 438);
+            this.btn8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn8.Name = "btn8";
-            this.btn8.Size = new System.Drawing.Size(112, 32);
+            this.btn8.Size = new System.Drawing.Size(149, 39);
             this.btn8.TabIndex = 9;
             this.btn8.Text = "veja mais...";
             this.btn8.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
@@ -356,10 +329,10 @@
             this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn7.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btn7.Location = new System.Drawing.Point(578, 307);
-            this.btn7.Margin = new System.Windows.Forms.Padding(2);
+            this.btn7.Location = new System.Drawing.Point(771, 378);
+            this.btn7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn7.Name = "btn7";
-            this.btn7.Size = new System.Drawing.Size(112, 32);
+            this.btn7.Size = new System.Drawing.Size(149, 39);
             this.btn7.TabIndex = 8;
             this.btn7.Text = "veja mais...";
             this.btn7.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
@@ -376,10 +349,10 @@
             this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn6.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btn6.Location = new System.Drawing.Point(578, 258);
-            this.btn6.Margin = new System.Windows.Forms.Padding(2);
+            this.btn6.Location = new System.Drawing.Point(771, 318);
+            this.btn6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(112, 32);
+            this.btn6.Size = new System.Drawing.Size(149, 39);
             this.btn6.TabIndex = 7;
             this.btn6.Text = "veja mais...";
             this.btn6.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
@@ -396,10 +369,10 @@
             this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn5.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btn5.Location = new System.Drawing.Point(578, 209);
-            this.btn5.Margin = new System.Windows.Forms.Padding(2);
+            this.btn5.Location = new System.Drawing.Point(771, 257);
+            this.btn5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(112, 32);
+            this.btn5.Size = new System.Drawing.Size(149, 39);
             this.btn5.TabIndex = 6;
             this.btn5.Text = "veja mais...";
             this.btn5.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
@@ -416,10 +389,10 @@
             this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn4.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btn4.Location = new System.Drawing.Point(578, 160);
-            this.btn4.Margin = new System.Windows.Forms.Padding(2);
+            this.btn4.Location = new System.Drawing.Point(771, 197);
+            this.btn4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(112, 32);
+            this.btn4.Size = new System.Drawing.Size(149, 39);
             this.btn4.TabIndex = 5;
             this.btn4.Text = "veja mais...";
             this.btn4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
@@ -436,10 +409,10 @@
             this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn3.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btn3.Location = new System.Drawing.Point(578, 111);
-            this.btn3.Margin = new System.Windows.Forms.Padding(2);
+            this.btn3.Location = new System.Drawing.Point(771, 137);
+            this.btn3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(112, 32);
+            this.btn3.Size = new System.Drawing.Size(149, 39);
             this.btn3.TabIndex = 4;
             this.btn3.Text = "veja mais...";
             this.btn3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
@@ -456,10 +429,10 @@
             this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btn2.Location = new System.Drawing.Point(578, 62);
-            this.btn2.Margin = new System.Windows.Forms.Padding(2);
+            this.btn2.Location = new System.Drawing.Point(771, 76);
+            this.btn2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(112, 32);
+            this.btn2.Size = new System.Drawing.Size(149, 39);
             this.btn2.TabIndex = 3;
             this.btn2.Text = "veja mais...";
             this.btn2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
@@ -476,25 +449,73 @@
             this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btn1.Location = new System.Drawing.Point(578, 12);
-            this.btn1.Margin = new System.Windows.Forms.Padding(2);
+            this.btn1.Location = new System.Drawing.Point(771, 15);
+            this.btn1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(112, 32);
+            this.btn1.Size = new System.Drawing.Size(149, 39);
             this.btn1.TabIndex = 2;
             this.btn1.Text = "veja mais...";
             this.btn1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.btnTrabalho_Click);
             // 
+            // lblFrom1
+            // 
+            this.lblFrom1.AutoSize = true;
+            this.lblFrom1.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFrom1.Location = new System.Drawing.Point(20, 23);
+            this.lblFrom1.Name = "lblFrom1";
+            this.lblFrom1.Size = new System.Drawing.Size(61, 23);
+            this.lblFrom1.TabIndex = 1;
+            this.lblFrom1.Text = "trab_1";
+            // 
+            // btnPrincipal1
+            // 
+            this.btnPrincipal1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnPrincipal1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnPrincipal1.BorderColor = System.Drawing.Color.Aqua;
+            this.btnPrincipal1.BorderRadius = 40;
+            this.btnPrincipal1.BorderSize = 0;
+            this.btnPrincipal1.FlatAppearance.BorderSize = 0;
+            this.btnPrincipal1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrincipal1.ForeColor = System.Drawing.Color.White;
+            this.btnPrincipal1.Location = new System.Drawing.Point(824, 34);
+            this.btnPrincipal1.Name = "btnPrincipal1";
+            this.btnPrincipal1.Size = new System.Drawing.Size(93, 40);
+            this.btnPrincipal1.TabIndex = 4;
+            this.btnPrincipal1.Text = "btnPrincipal1";
+            this.btnPrincipal1.TextColor = System.Drawing.Color.White;
+            this.btnPrincipal1.UseVisualStyleBackColor = false;
+            // 
+            // btnPrincipal2
+            // 
+            this.btnPrincipal2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnPrincipal2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnPrincipal2.BorderColor = System.Drawing.Color.Aqua;
+            this.btnPrincipal2.BorderRadius = 40;
+            this.btnPrincipal2.BorderSize = 0;
+            this.btnPrincipal2.FlatAppearance.BorderSize = 0;
+            this.btnPrincipal2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrincipal2.ForeColor = System.Drawing.Color.White;
+            this.btnPrincipal2.Location = new System.Drawing.Point(923, 34);
+            this.btnPrincipal2.Name = "btnPrincipal2";
+            this.btnPrincipal2.Size = new System.Drawing.Size(95, 40);
+            this.btnPrincipal2.TabIndex = 5;
+            this.btnPrincipal2.Text = "btnPrincipal2";
+            this.btnPrincipal2.TextColor = System.Drawing.Color.White;
+            this.btnPrincipal2.UseVisualStyleBackColor = false;
+            // 
             // trabalhos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(828, 590);
+            this.ClientSize = new System.Drawing.Size(1104, 726);
+            this.Controls.Add(this.btnPrincipal2);
+            this.Controls.Add(this.btnPrincipal1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "trabalhos";
             this.Text = "trabalhos";
             this.Load += new System.EventHandler(this.trabalhos_Load);
@@ -536,5 +557,7 @@
         private BtnLimpia.btnPrincipal btn2;
         private BtnLimpia.btnPrincipal btn1;
         private System.Windows.Forms.Label lblFrom1;
+        private BtnLimpia.btnPrincipal btnPrincipal1;
+        private BtnLimpia.btnPrincipal btnPrincipal2;
     }
 }
