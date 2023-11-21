@@ -54,9 +54,9 @@
             this.btnInativarPromo = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.grpPublicoPromo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -115,7 +115,7 @@
             // 
             this.dtInicioPromo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtInicioPromo.Location = new System.Drawing.Point(234, 274);
-            this.dtInicioPromo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtInicioPromo.Margin = new System.Windows.Forms.Padding(4);
             this.dtInicioPromo.Name = "dtInicioPromo";
             this.dtInicioPromo.Size = new System.Drawing.Size(77, 22);
             this.dtInicioPromo.TabIndex = 6;
@@ -125,7 +125,7 @@
             // 
             this.dtpValidade.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpValidade.Location = new System.Drawing.Point(336, 274);
-            this.dtpValidade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpValidade.Margin = new System.Windows.Forms.Padding(4);
             this.dtpValidade.Name = "dtpValidade";
             this.dtpValidade.Size = new System.Drawing.Size(77, 22);
             this.dtpValidade.TabIndex = 7;
@@ -160,9 +160,9 @@
             this.grpPublicoPromo.Controls.Add(this.rdoPrestador);
             this.grpPublicoPromo.Controls.Add(this.rdoContratante);
             this.grpPublicoPromo.Location = new System.Drawing.Point(150, 306);
-            this.grpPublicoPromo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpPublicoPromo.Margin = new System.Windows.Forms.Padding(4);
             this.grpPublicoPromo.Name = "grpPublicoPromo";
-            this.grpPublicoPromo.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpPublicoPromo.Padding = new System.Windows.Forms.Padding(4);
             this.grpPublicoPromo.Size = new System.Drawing.Size(260, 37);
             this.grpPublicoPromo.TabIndex = 10;
             this.grpPublicoPromo.TabStop = false;
@@ -172,7 +172,7 @@
             this.rdoTodos.AutoSize = true;
             this.rdoTodos.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoTodos.Location = new System.Drawing.Point(193, 14);
-            this.rdoTodos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdoTodos.Margin = new System.Windows.Forms.Padding(4);
             this.rdoTodos.Name = "rdoTodos";
             this.rdoTodos.Size = new System.Drawing.Size(62, 19);
             this.rdoTodos.TabIndex = 2;
@@ -185,7 +185,7 @@
             this.rdoPrestador.AutoSize = true;
             this.rdoPrestador.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoPrestador.Location = new System.Drawing.Point(112, 14);
-            this.rdoPrestador.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdoPrestador.Margin = new System.Windows.Forms.Padding(4);
             this.rdoPrestador.Name = "rdoPrestador";
             this.rdoPrestador.Size = new System.Drawing.Size(81, 19);
             this.rdoPrestador.TabIndex = 1;
@@ -198,7 +198,7 @@
             this.rdoContratante.AutoSize = true;
             this.rdoContratante.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoContratante.Location = new System.Drawing.Point(8, 12);
-            this.rdoContratante.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdoContratante.Margin = new System.Windows.Forms.Padding(4);
             this.rdoContratante.Name = "rdoContratante";
             this.rdoContratante.Size = new System.Drawing.Size(91, 19);
             this.rdoContratante.TabIndex = 0;
@@ -249,7 +249,7 @@
             "Nordeste",
             "Centro-Oeste"});
             this.comboBox1.Location = new System.Drawing.Point(155, 445);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(258, 24);
             this.comboBox1.TabIndex = 16;
@@ -258,7 +258,7 @@
             // 
             this.txtDescricaoPromo.Enabled = false;
             this.txtDescricaoPromo.Location = new System.Drawing.Point(88, 131);
-            this.txtDescricaoPromo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDescricaoPromo.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescricaoPromo.Multiline = true;
             this.txtDescricaoPromo.Name = "txtDescricaoPromo";
             this.txtDescricaoPromo.Size = new System.Drawing.Size(325, 78);
@@ -268,7 +268,7 @@
             // 
             this.txtTituloPromo.Enabled = false;
             this.txtTituloPromo.Location = new System.Drawing.Point(152, 228);
-            this.txtTituloPromo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTituloPromo.Margin = new System.Windows.Forms.Padding(4);
             this.txtTituloPromo.Name = "txtTituloPromo";
             this.txtTituloPromo.Size = new System.Drawing.Size(261, 22);
             this.txtTituloPromo.TabIndex = 20;
@@ -277,7 +277,7 @@
             // 
             this.txtResponsavelPromo.Enabled = false;
             this.txtResponsavelPromo.Location = new System.Drawing.Point(194, 368);
-            this.txtResponsavelPromo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtResponsavelPromo.Margin = new System.Windows.Forms.Padding(4);
             this.txtResponsavelPromo.Name = "txtResponsavelPromo";
             this.txtResponsavelPromo.Size = new System.Drawing.Size(219, 22);
             this.txtResponsavelPromo.TabIndex = 21;
@@ -286,7 +286,7 @@
             // 
             this.txtCodigoPromo.Enabled = false;
             this.txtCodigoPromo.Location = new System.Drawing.Point(156, 408);
-            this.txtCodigoPromo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodigoPromo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigoPromo.Name = "txtCodigoPromo";
             this.txtCodigoPromo.Size = new System.Drawing.Size(257, 22);
             this.txtCodigoPromo.TabIndex = 22;
@@ -381,6 +381,17 @@
             this.panel2.Size = new System.Drawing.Size(848, 60);
             this.panel2.TabIndex = 0;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Berlin Sans FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(299, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(263, 31);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Oferta Personalizada";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -406,17 +417,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 28;
             this.pictureBox2.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Berlin Sans FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(299, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(263, 31);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Oferta Personalizada";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Promo_Oferta_Dialog
             // 

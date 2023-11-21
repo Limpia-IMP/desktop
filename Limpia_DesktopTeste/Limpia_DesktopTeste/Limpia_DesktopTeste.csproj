@@ -119,6 +119,12 @@
     <Compile Include="perfil.Designer.cs">
       <DependentUpon>perfil.cs</DependentUpon>
     </Compile>
+    <Compile Include="perfil_gerenciamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="perfil_gerenciamento.Designer.cs">
+      <DependentUpon>perfil_gerenciamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="perfil.resx">
       <DependentUpon>perfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="perfil_gerenciamento.resx">
+      <DependentUpon>perfil_gerenciamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="principal.resx">
       <DependentUpon>principal.cs</DependentUpon>

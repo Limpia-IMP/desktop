@@ -236,3 +236,4 @@ C:\Users\DELL\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\o
 C:\Users\DELL\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.pdb
 C:\Users\DELL\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.trabalhos_gerenciamento.resources
 D:\TCC_Repositorios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.trabalhos_gerenciamento.resources
+C:\Users\DELL\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.perfil_gerenciamento.resources
