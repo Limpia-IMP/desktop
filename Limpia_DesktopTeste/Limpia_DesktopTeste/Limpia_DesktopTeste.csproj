@@ -78,6 +78,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adicionar_funcionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adicionar_funcionarios.Designer.cs">
+      <DependentUpon>adicionar_funcionarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="BtnLimpia\btnPrincipal.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -174,6 +180,9 @@
     <Compile Include="trabalhos_gerenciamento.Designer.cs">
       <DependentUpon>trabalhos_gerenciamento.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="adicionar_funcionarios.resx">
+      <DependentUpon>adicionar_funcionarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Carregando.resx">
       <DependentUpon>Carregando.cs</DependentUpon>
     </EmbeddedResource>
