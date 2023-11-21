@@ -22,7 +22,7 @@ namespace Limpia_DesktopTeste
 
         private void Promo_ofertas_Load(object sender, EventArgs e)
         {
-            var promo = banco.Promo_Ofertas();
+            var cursos = banco.cursos();
 
 
             foreach (Control control in this.Controls)
@@ -30,10 +30,10 @@ namespace Limpia_DesktopTeste
                 control.Visible = false;
             }
 
-            for (int i = 0; i < promo.Count && i < this.Controls.Count; i++)
+            for (int i = 0; i < cursos.Count && i < this.Controls.Count; i++)
             {
                 int iAtual = i;
-                var current = promo[i];
+                var current = cursos[i];
                 var control = this.Controls[i];
 
                 control.Visible = true;
@@ -45,29 +45,29 @@ namespace Limpia_DesktopTeste
                         // Considerando que o primeiro controle é uma Label para descrição
                         if (panel.Controls[0] is Label lblDesc)
                         {
-                            lblDesc.Text = current.descricao;
+                            lblDesc.Text = current.Duracao.ToString();
                         }
 
                         // E o segundo controle é uma Label para o nome
                         if (panel.Controls[1] is Label lblName)
                         {
-                            lblName.Text = current.nome;
+                            lblName.Text = current.Nome;
                         }
 
-                        // Atribuir o idpromo ao painel para uso posterior
-                        panel.Name = current.idpromo;
+                        // Atribuir o idcursos ao painel para uso posterior
+                        panel.Name = current.Idcursos;
                     }
                 }
 
                 control.Click += (ee, s) =>
                 {
-                    var promocaoAtual = promo[iAtual];
+                    var cursoAtual = cursos[iAtual];
 
-                    Promo_Oferta_Dialog promo_Oferta_Dialog = new Promo_Oferta_Dialog();
-                    promo_Oferta_Dialog.promocaoAtual = promocaoAtual;
-                    promo_Oferta_Dialog.CarregarDados();
-                    promo_Oferta_Dialog.FormularioPai = this.FormularioPai;  // Copia a referência do formulário principal
-                    FormularioPai.openChildForm(promo_Oferta_Dialog);
+                    CursosDialog cursos_dialog = new CursosDialog();
+                    cursos_dialog.cursosDialog = cursoAtual;
+                    cursos_dialog.CarregarDados();
+                    cursos_dialog.FormularioPai = this.FormularioPai;  // Copia a referência do formulário principal
+                    FormularioPai.openChildForm(cursos_dialog);
                     this.Close();
                 };
             }

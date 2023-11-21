@@ -10,7 +10,7 @@ namespace Limpia_DesktopTeste
 {
     public class ClsBanco
     {
-        private static string SQL_STRING = @"Password=12345; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLSERVER2022"; // SEBASTIAN MUDA DE SQLEXPRESS PARA SQLSERVER2022 E A BEATRIZ O CONTRÁRIO (SENHA TBM!!);-
+        private static string SQL_STRING = @"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLEXPRESS"; // SEBASTIAN MUDA DE SQLEXPRESS PARA SQLSERVER2022 E A BEATRIZ O CONTRÁRIO (SENHA TBM!!);-
 
         //SqlConnection cone = new SqlConnection(@"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLEXPRESS");
         private string senha;
@@ -116,14 +116,38 @@ namespace Limpia_DesktopTeste
 	categoria varchar(50),
 	nome varchar(50)*/
 
-        public class cursos {
+        public class Cursos {
 
             private string idcursos = "";
             private int valor = 0;
+            private int duracao = 0;
+            private string descri = "";
+            private string categoria = "";
+            private string nome = "";
 
+            public string Idcursos { get => idcursos; set => idcursos = value; }
+            public int Valor { get => valor; set => valor = value; }
+            public string Descri { get => descri; set => descri = value; }
+            public string Categoria { get => categoria; set => categoria = value; }
+            public string Nome { get => nome; set => nome = value; }
+            public int Duracao { get => duracao; set => duracao = value; }
         }
 
-
+        public List<Cursos> cursos()
+        {
+            using (SqlConnection connection = new SqlConnection(SQL_STRING))
+            using (SqlCommand cmd = new SqlCommand("select * from tblcursos", connection))
+            {
+                connection.Open();
+                using (var reader = cmd.ExecuteReader())
+                {
+                    var list = new List<Cursos>();
+                    while (reader.Read())
+                        list.Add(new Cursos { Idcursos = reader.GetString(0), Valor = reader.GetInt32(1), Duracao = reader.GetInt32(2), Descri = reader.GetString(3), Categoria = reader.GetString(4), Nome = reader.GetString(5)});
+                    return list;
+                }
+            }
+        }
 
         public class ObterInfo
         {
