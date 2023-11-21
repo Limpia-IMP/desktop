@@ -29,11 +29,11 @@ namespace Limpia_DesktopTeste
             var labelsA = new List<Label> { lblAssunto1, lblAssunto2, lblAssunto3, lblAssunto4, lblAssunto5, lblAssunto6, lblAssunto7, lblAssunto8, lblAssunto9 };
             var buttons = new List<Button> { btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9 };
 
-            if (emailFrom.Count < 9)
+            if (emailFrom.Count < labelsF.Count)
             {
                 // O índice deve começar em 'emailFrom.Count', não em 'emailFrom.Count + 1'
                 // E deve ser menor que 9, já que as listas são indexadas de 0 a 8
-                for (int i = emailFrom.Count; i < 9; i++)
+                for (int i = emailFrom.Count; i < labelsF.Count; i++)
                 {
                     labelsF[i].Hide();
                     labelsA[i].Hide();
@@ -42,7 +42,7 @@ namespace Limpia_DesktopTeste
             }
             else
             {
-                for (int i = emailFrom.Count; i < 9; i++)
+                for (int i = emailFrom.Count; i < labelsF.Count; i++)
                 {
                     labelsF[i].Show();
                     labelsA[i].Show();

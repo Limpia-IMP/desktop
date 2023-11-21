@@ -10,7 +10,7 @@ namespace Limpia_DesktopTeste
 {
     public class ClsBanco
     {
-        private static string SQL_STRING = @"Password=12345; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLSERVER2022"; // SEBASTIAN MUDA DE SQLEXPRESS PARA SQLSERVER2022 E A BEATRIZ O CONTRÁRIO (SENHA TBM!!);-
+        private static string SQL_STRING = @"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLEXPRESS"; // SEBASTIAN MUDA DE SQLEXPRESS PARA SQLSERVER2022 E A BEATRIZ O CONTRÁRIO (SENHA TBM!!);-
 
         //SqlConnection cone = new SqlConnection(@"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLEXPRESS");
         private string senha;
@@ -22,6 +22,9 @@ namespace Limpia_DesktopTeste
 
         public string Nome { get; private set; }
         public string IdCargo { get; private set; }
+        public string status;
+        public List<int> idAnuncio = new List<int>();
+
 
         public ClsBanco()
         {
@@ -90,7 +93,8 @@ namespace Limpia_DesktopTeste
             public DateTime validade_fim { get => valid_fim; set => valid_fim = value; }
         }
 
-        public List<Promo> Promo_Ofertas() {
+        public List<Promo> Promo_Ofertas()
+        {
             using (SqlConnection connection = new SqlConnection(SQL_STRING))
             using (SqlCommand cmd = new SqlCommand("select * from tblpromo", connection))
             {
@@ -144,11 +148,77 @@ namespace Limpia_DesktopTeste
                     }
                 }
             }
-            catch (SqlException ex)
+            catch (SqlException)
             {
-                
+
             }
             return list;
+        }
+        public class Trabalhos
+        {
+            private String titulo;
+            private String nomeContratante;
+            private DateTime data;
+            private Decimal valor;
+            private String cidade;
+            private String endereco;
+            private String estado;
+            private String desc;
+            public string Titulo { get => titulo; set => titulo = value; }
+            public string NomeContratante { get => nomeContratante; set => nomeContratante = value; }
+            public DateTime Data { get => data; set => data = value; }
+            public Decimal Valor { get => valor; set => valor = value; }
+            public string Cidade { get => cidade; set => cidade = value; }
+            public string Endereco { get => endereco; set => endereco = value; }
+            public string Estado { get => estado; set => estado = value; }
+            public string Desc { get => desc; set => desc = value; }
+        }
+
+        public async Task<List<Trabalhos>> trabalhosG()
+        {
+            var list = new List<Trabalhos>();
+            using (SqlConnection connection = new SqlConnection(SQL_STRING))
+            {
+                await connection.OpenAsync();
+                using (SqlCommand cmd = new SqlCommand("select idanuncio from tblanuncio_status where status_anuncio = @Status", connection))
+                {
+                    cmd.Parameters.AddWithValue("@Status", "Aguardando Aprovação");
+                    using (var reader = await cmd.ExecuteReaderAsync())
+                    {
+                        while (await reader.ReadAsync())
+                        {
+                            idAnuncio.Add(reader.GetInt32(0));
+                        }
+                    }
+                }
+
+            foreach (var id in idAnuncio)
+            {
+                    using (SqlCommand cmd2 = new SqlCommand("spBuscarInformacoesAnuncio", connection))
+                    {
+                        cmd2.CommandType = CommandType.StoredProcedure;
+                        cmd2.Parameters.AddWithValue("@idanuncio", id);
+                        using (var reader2 = await cmd2.ExecuteReaderAsync())
+                        {
+                            while (await reader2.ReadAsync())
+                            {
+                                list.Add(new Trabalhos
+                                {
+                                    Titulo = reader2.GetString(0),
+                                    Data = reader2.GetDateTime(1),
+                                    Desc = reader2.GetString(2),
+                                    Valor = reader2.GetDecimal(3),
+                                    NomeContratante = reader2.GetString(4),
+                                    Endereco = reader2.GetString(5) + " Nº " + reader2.GetInt32(6) + ", " + reader2.GetString(7),
+                                    Cidade = reader2.GetString(8),
+                                    Estado = reader2.GetString(9)
+                                });
+                            }
+                        }
+                    }
+                }
+                return list;
+            }
         }
     }
 }
