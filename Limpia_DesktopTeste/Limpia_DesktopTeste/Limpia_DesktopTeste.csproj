@@ -162,6 +162,12 @@
     <Compile Include="trabalhos.Designer.cs">
       <DependentUpon>trabalhos.cs</DependentUpon>
     </Compile>
+    <Compile Include="trabalhos_gerenciamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trabalhos_gerenciamento.Designer.cs">
+      <DependentUpon>trabalhos_gerenciamento.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Carregando.resx">
       <DependentUpon>Carregando.cs</DependentUpon>
     </EmbeddedResource>
@@ -202,6 +208,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="trabalhos.resx">
       <DependentUpon>trabalhos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trabalhos_gerenciamento.resx">
+      <DependentUpon>trabalhos_gerenciamento.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

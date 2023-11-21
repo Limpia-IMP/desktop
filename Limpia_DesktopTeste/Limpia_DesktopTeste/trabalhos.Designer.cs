@@ -47,6 +47,7 @@
             this.lblFrom4 = new System.Windows.Forms.Label();
             this.lblFrom3 = new System.Windows.Forms.Label();
             this.lblFrom2 = new System.Windows.Forms.Label();
+            this.lblFrom1 = new System.Windows.Forms.Label();
             this.btn9 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.btn8 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.btn7 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
@@ -56,7 +57,6 @@
             this.btn3 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.btn2 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.btn1 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
-            this.lblFrom1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -276,6 +276,16 @@
             this.lblFrom2.TabIndex = 11;
             this.lblFrom2.Text = "trab_2";
             // 
+            // lblFrom1
+            // 
+            this.lblFrom1.AutoSize = true;
+            this.lblFrom1.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFrom1.Location = new System.Drawing.Point(20, 23);
+            this.lblFrom1.Name = "lblFrom1";
+            this.lblFrom1.Size = new System.Drawing.Size(61, 23);
+            this.lblFrom1.TabIndex = 1;
+            this.lblFrom1.Text = "trab_1";
+            // 
             // btn9
             // 
             this.btn9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
@@ -455,22 +465,13 @@
             this.btn1.Text = "veja mais...";
             this.btn1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btn1.UseVisualStyleBackColor = false;
-            // 
-            // lblFrom1
-            // 
-            this.lblFrom1.AutoSize = true;
-            this.lblFrom1.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFrom1.Location = new System.Drawing.Point(20, 23);
-            this.lblFrom1.Name = "lblFrom1";
-            this.lblFrom1.Size = new System.Drawing.Size(61, 23);
-            this.lblFrom1.TabIndex = 1;
-            this.lblFrom1.Text = "trab_1";
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // trabalhos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1104, 726);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);

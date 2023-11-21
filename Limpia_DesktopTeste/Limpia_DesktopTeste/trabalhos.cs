@@ -34,5 +34,10 @@ namespace Limpia_DesktopTeste
         {
             SetRoundedEdges(panel1, 30); // 30 é o raio. Ajuste conforme sua necessidade.
         }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

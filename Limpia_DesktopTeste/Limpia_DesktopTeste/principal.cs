@@ -106,7 +106,6 @@ namespace Limpia_DesktopTeste
             inicial form = new inicial();
             form.Show();
             Close();
-
         }
 
         private void btnFecharTela_Click(object sender, EventArgs e)
@@ -127,7 +126,6 @@ namespace Limpia_DesktopTeste
                 dragFormPoint = this.Location;
             }
         }
-
         private void customTopBar_MouseMove(object sender, MouseEventArgs e)
         {
             if (dragging)
@@ -136,11 +134,9 @@ namespace Limpia_DesktopTeste
                 this.Location = Point.Add(dragFormPoint, new Size(dif));
             }
         }
-
         private void customTopBar_MouseUp(object sender, MouseEventArgs e)
         {
             dragging = false;
         }
-
     }
 }

@@ -145,6 +145,7 @@
             this.ClientSize = new System.Drawing.Size(891, 542);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "inicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
