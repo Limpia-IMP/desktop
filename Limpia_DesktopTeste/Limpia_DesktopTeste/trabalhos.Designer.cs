@@ -478,13 +478,14 @@
             this.btnPrincipal1.BorderSize = 0;
             this.btnPrincipal1.FlatAppearance.BorderSize = 0;
             this.btnPrincipal1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrincipal1.ForeColor = System.Drawing.Color.White;
-            this.btnPrincipal1.Location = new System.Drawing.Point(824, 34);
+            this.btnPrincipal1.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrincipal1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btnPrincipal1.Location = new System.Drawing.Point(782, 34);
             this.btnPrincipal1.Name = "btnPrincipal1";
-            this.btnPrincipal1.Size = new System.Drawing.Size(93, 40);
+            this.btnPrincipal1.Size = new System.Drawing.Size(115, 40);
             this.btnPrincipal1.TabIndex = 4;
-            this.btnPrincipal1.Text = "btnPrincipal1";
-            this.btnPrincipal1.TextColor = System.Drawing.Color.White;
+            this.btnPrincipal1.Text = "Aceitos";
+            this.btnPrincipal1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btnPrincipal1.UseVisualStyleBackColor = false;
             // 
             // btnPrincipal2
@@ -496,12 +497,13 @@
             this.btnPrincipal2.BorderSize = 0;
             this.btnPrincipal2.FlatAppearance.BorderSize = 0;
             this.btnPrincipal2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrincipal2.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrincipal2.ForeColor = System.Drawing.Color.White;
-            this.btnPrincipal2.Location = new System.Drawing.Point(923, 34);
+            this.btnPrincipal2.Location = new System.Drawing.Point(902, 34);
             this.btnPrincipal2.Name = "btnPrincipal2";
-            this.btnPrincipal2.Size = new System.Drawing.Size(95, 40);
+            this.btnPrincipal2.Size = new System.Drawing.Size(115, 40);
             this.btnPrincipal2.TabIndex = 5;
-            this.btnPrincipal2.Text = "btnPrincipal2";
+            this.btnPrincipal2.Text = "Recusados";
             this.btnPrincipal2.TextColor = System.Drawing.Color.White;
             this.btnPrincipal2.UseVisualStyleBackColor = false;
             // 
