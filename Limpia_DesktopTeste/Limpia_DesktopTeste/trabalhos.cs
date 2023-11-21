@@ -12,6 +12,7 @@ namespace Limpia_DesktopTeste
 {
     public partial class trabalhos : Form
     {
+        public principal FormularioPai;
         public trabalhos()
         {
             InitializeComponent();
@@ -35,9 +36,11 @@ namespace Limpia_DesktopTeste
             SetRoundedEdges(panel1, 30); // 30 é o raio. Ajuste conforme sua necessidade.
         }
 
-        private void btn1_Click(object sender, EventArgs e)
+        private void btnTrabalho_Click(object sender, EventArgs e)
         {
-
+            trabalhos_gerenciamento gerenciamento = new trabalhos_gerenciamento();
+            gerenciamento.FormularioPai = this.FormularioPai;
+            FormularioPai.openChildForm(gerenciamento);
         }
     }
 }
