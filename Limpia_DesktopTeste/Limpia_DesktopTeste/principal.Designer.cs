@@ -50,6 +50,7 @@
             this.txtCodCargo = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtNomeFunc = new System.Windows.Forms.Label();
+            this.btnAddFunc = new System.Windows.Forms.Button();
             btnTrabalhos = new System.Windows.Forms.Button();
             btnSuporte = new System.Windows.Forms.Button();
             btnPerfil = new System.Windows.Forms.Button();
@@ -75,7 +76,7 @@
             btnTrabalhos.Image = ((System.Drawing.Image)(resources.GetObject("btnTrabalhos.Image")));
             btnTrabalhos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnTrabalhos.Location = new System.Drawing.Point(0, 212);
-            btnTrabalhos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            btnTrabalhos.Margin = new System.Windows.Forms.Padding(4);
             btnTrabalhos.Name = "btnTrabalhos";
             btnTrabalhos.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             btnTrabalhos.Size = new System.Drawing.Size(260, 63);
@@ -95,7 +96,7 @@
             btnSuporte.Image = ((System.Drawing.Image)(resources.GetObject("btnSuporte.Image")));
             btnSuporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnSuporte.Location = new System.Drawing.Point(0, 272);
-            btnSuporte.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            btnSuporte.Margin = new System.Windows.Forms.Padding(4);
             btnSuporte.Name = "btnSuporte";
             btnSuporte.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             btnSuporte.Size = new System.Drawing.Size(260, 63);
@@ -115,7 +116,7 @@
             btnPerfil.Image = ((System.Drawing.Image)(resources.GetObject("btnPerfil.Image")));
             btnPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnPerfil.Location = new System.Drawing.Point(0, 332);
-            btnPerfil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            btnPerfil.Margin = new System.Windows.Forms.Padding(4);
             btnPerfil.Name = "btnPerfil";
             btnPerfil.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             btnPerfil.Size = new System.Drawing.Size(260, 63);
@@ -135,7 +136,7 @@
             btnCursos.Image = ((System.Drawing.Image)(resources.GetObject("btnCursos.Image")));
             btnCursos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnCursos.Location = new System.Drawing.Point(0, 452);
-            btnCursos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            btnCursos.Margin = new System.Windows.Forms.Padding(4);
             btnCursos.Name = "btnCursos";
             btnCursos.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             btnCursos.Size = new System.Drawing.Size(260, 63);
@@ -155,7 +156,7 @@
             btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnLogout.Location = new System.Drawing.Point(0, 512);
-            btnLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            btnLogout.Margin = new System.Windows.Forms.Padding(4);
             btnLogout.Name = "btnLogout";
             btnLogout.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             btnLogout.Size = new System.Drawing.Size(260, 63);
@@ -175,7 +176,7 @@
             btnPromoOfertas.Image = ((System.Drawing.Image)(resources.GetObject("btnPromoOfertas.Image")));
             btnPromoOfertas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnPromoOfertas.Location = new System.Drawing.Point(0, 391);
-            btnPromoOfertas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            btnPromoOfertas.Margin = new System.Windows.Forms.Padding(4);
             btnPromoOfertas.Name = "btnPromoOfertas";
             btnPromoOfertas.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             btnPromoOfertas.Size = new System.Drawing.Size(260, 63);
@@ -205,7 +206,7 @@
             this.customTopBar.Controls.Add(this.label1);
             this.customTopBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.customTopBar.Location = new System.Drawing.Point(0, 0);
-            this.customTopBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.customTopBar.Margin = new System.Windows.Forms.Padding(4);
             this.customTopBar.Name = "customTopBar";
             this.customTopBar.Size = new System.Drawing.Size(1081, 49);
             this.customTopBar.TabIndex = 1;
@@ -222,7 +223,7 @@
             this.btnMinimizar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(59)))), ((int)(((byte)(106)))));
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
             this.btnMinimizar.Location = new System.Drawing.Point(961, 0);
-            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Padding = new System.Windows.Forms.Padding(0, 12, 0, 0);
             this.btnMinimizar.Size = new System.Drawing.Size(60, 49);
@@ -238,7 +239,7 @@
             this.btnFecharTela.Font = new System.Drawing.Font("Berlin Sans FB", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFecharTela.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(59)))), ((int)(((byte)(106)))));
             this.btnFecharTela.Location = new System.Drawing.Point(1021, 0);
-            this.btnFecharTela.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFecharTela.Margin = new System.Windows.Forms.Padding(4);
             this.btnFecharTela.Name = "btnFecharTela";
             this.btnFecharTela.Size = new System.Drawing.Size(60, 49);
             this.btnFecharTela.TabIndex = 1;
@@ -261,10 +262,11 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(59)))), ((int)(((byte)(106)))));
+            this.panel3.Controls.Add(this.btnAddFunc);
             this.panel3.Controls.Add(this.lblMenu);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 98);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(260, 54);
             this.panel3.TabIndex = 1;
@@ -293,7 +295,7 @@
             this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.Location = new System.Drawing.Point(0, 153);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(4);
             this.btnHome.Name = "btnHome";
             this.btnHome.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnHome.Size = new System.Drawing.Size(260, 63);
@@ -308,7 +310,7 @@
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(64, 588);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 123);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -330,7 +332,7 @@
             this.sidebar.Controls.Add(this.sidebar2);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
-            this.sidebar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sidebar.Margin = new System.Windows.Forms.Padding(4);
             this.sidebar.Name = "sidebar";
             this.sidebar.Size = new System.Drawing.Size(260, 726);
             this.sidebar.TabIndex = 0;
@@ -343,7 +345,7 @@
             this.sidebar2.Controls.Add(this.txtNomeFunc);
             this.sidebar2.Dock = System.Windows.Forms.DockStyle.Top;
             this.sidebar2.Location = new System.Drawing.Point(0, 0);
-            this.sidebar2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sidebar2.Margin = new System.Windows.Forms.Padding(4);
             this.sidebar2.Name = "sidebar2";
             this.sidebar2.Size = new System.Drawing.Size(260, 98);
             this.sidebar2.TabIndex = 0;
@@ -352,7 +354,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(205, 34);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(33, 31);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -391,6 +393,25 @@
             this.txtNomeFunc.TabIndex = 9;
             this.txtNomeFunc.Text = "Sebs";
             // 
+            // btnAddFunc
+            // 
+            this.btnAddFunc.FlatAppearance.BorderSize = 0;
+            this.btnAddFunc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddFunc.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddFunc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnAddFunc.Image = ((System.Drawing.Image)(resources.GetObject("btnAddFunc.Image")));
+            this.btnAddFunc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddFunc.Location = new System.Drawing.Point(0, 0);
+            this.btnAddFunc.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddFunc.Name = "btnAddFunc";
+            this.btnAddFunc.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnAddFunc.Size = new System.Drawing.Size(260, 54);
+            this.btnAddFunc.TabIndex = 2;
+            this.btnAddFunc.Text = " Poder Supremo";
+            this.btnAddFunc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAddFunc.UseVisualStyleBackColor = true;
+            this.btnAddFunc.Click += new System.EventHandler(this.btnAddFunc_Click);
+            // 
             // principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -400,7 +421,7 @@
             this.Controls.Add(this.sidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "principal";
@@ -436,5 +457,6 @@
         private System.Windows.Forms.Button btnFecharTela;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label txtCodCargo;
+        private System.Windows.Forms.Button btnAddFunc;
     }
 }

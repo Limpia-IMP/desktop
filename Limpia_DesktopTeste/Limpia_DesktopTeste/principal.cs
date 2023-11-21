@@ -140,5 +140,10 @@ namespace Limpia_DesktopTeste
         {
             dragging = false;
         }
+
+        private void btnAddFunc_Click(object sender, EventArgs e)
+        {
+            openChildForm(new adicionar_funcionarios());
+        }
     }
 }
