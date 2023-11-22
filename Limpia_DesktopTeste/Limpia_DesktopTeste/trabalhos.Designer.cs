@@ -57,8 +57,6 @@
             this.btn2 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.btn1 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.lblTrab1 = new System.Windows.Forms.Label();
-            this.btnPrincipal2 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
-            this.btnPrincipal1 = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -487,54 +485,12 @@
             this.lblTrab1.TabIndex = 1;
             this.lblTrab1.Text = "trab_1";
             // 
-            // btnPrincipal2
-            // 
-            this.btnPrincipal2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnPrincipal2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnPrincipal2.BorderColor = System.Drawing.Color.Aqua;
-            this.btnPrincipal2.BorderRadius = 32;
-            this.btnPrincipal2.BorderSize = 0;
-            this.btnPrincipal2.FlatAppearance.BorderSize = 0;
-            this.btnPrincipal2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrincipal2.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrincipal2.ForeColor = System.Drawing.Color.White;
-            this.btnPrincipal2.Location = new System.Drawing.Point(676, 28);
-            this.btnPrincipal2.Margin = new System.Windows.Forms.Padding(2);
-            this.btnPrincipal2.Name = "btnPrincipal2";
-            this.btnPrincipal2.Size = new System.Drawing.Size(86, 32);
-            this.btnPrincipal2.TabIndex = 5;
-            this.btnPrincipal2.Text = "Recusados";
-            this.btnPrincipal2.TextColor = System.Drawing.Color.White;
-            this.btnPrincipal2.UseVisualStyleBackColor = false;
-            // 
-            // btnPrincipal1
-            // 
-            this.btnPrincipal1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnPrincipal1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnPrincipal1.BorderColor = System.Drawing.Color.Aqua;
-            this.btnPrincipal1.BorderRadius = 32;
-            this.btnPrincipal1.BorderSize = 0;
-            this.btnPrincipal1.FlatAppearance.BorderSize = 0;
-            this.btnPrincipal1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrincipal1.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrincipal1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnPrincipal1.Location = new System.Drawing.Point(586, 28);
-            this.btnPrincipal1.Margin = new System.Windows.Forms.Padding(2);
-            this.btnPrincipal1.Name = "btnPrincipal1";
-            this.btnPrincipal1.Size = new System.Drawing.Size(86, 32);
-            this.btnPrincipal1.TabIndex = 4;
-            this.btnPrincipal1.Text = "Aceitos";
-            this.btnPrincipal1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnPrincipal1.UseVisualStyleBackColor = false;
-            // 
             // trabalhos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(828, 590);
-            this.Controls.Add(this.btnPrincipal2);
-            this.Controls.Add(this.btnPrincipal1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -579,7 +535,5 @@
         private BtnLimpia.btnPrincipal btn2;
         private BtnLimpia.btnPrincipal btn1;
         private System.Windows.Forms.Label lblTrab1;
-        private BtnLimpia.btnPrincipal btnPrincipal2;
-        private BtnLimpia.btnPrincipal btnPrincipal1;
     }
 }

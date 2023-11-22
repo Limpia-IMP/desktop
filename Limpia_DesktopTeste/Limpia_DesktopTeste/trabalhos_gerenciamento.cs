@@ -16,6 +16,7 @@ namespace Limpia_DesktopTeste
         public ClsBanco clsBanco;
         public Button button;
         int btn = 0;
+        int idAnuncio;
         public trabalhos_gerenciamento()
         {
             InitializeComponent();
@@ -23,6 +24,11 @@ namespace Limpia_DesktopTeste
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Voltar();
+        }
+
+        private void Voltar()
         {
             trabalhos trabalhos = new trabalhos();
             trabalhos.FormularioPai = this.FormularioPai;
@@ -45,7 +51,8 @@ namespace Limpia_DesktopTeste
             }
 
             var lst = await clsBanco.trabalhosG();
-            
+
+            idAnuncio = lst[btn].IdAnuncio;
             lblTitulo.Text = lst[btn].Titulo;
             lblNome.Text = lst[btn].NomeContratante;
             lblData.Text = lst[btn].Data.ToString();
@@ -55,5 +62,22 @@ namespace Limpia_DesktopTeste
             lblEstado.Text = lst[btn].Estado;
             lblDesc.Text = lst[btn].Desc;
         }
+
+        private void btnAprovar_Click(object sender, EventArgs e)
+        {
+            int idAnuncioEspecifico = idAnuncio;
+            clsBanco.status = "Aprovado";
+            var resultado = clsBanco.Aprovacao(idAnuncioEspecifico);
+            if (resultado.IsSuccessful)
+            {
+                Voltar();
+            }
+            else
+            {
+                MessageBox.Show("Erro ao aprovar o anúncio.");
+            }
+        }
+
+
     }
 }
