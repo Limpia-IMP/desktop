@@ -102,7 +102,7 @@
             this.panel1.Controls.Add(this.btnAprovar);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(104, 54);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(633, 471);
             this.panel1.TabIndex = 5;
@@ -274,13 +274,14 @@
             this.btnRecusar.Font = new System.Drawing.Font("Berlin Sans FB", 12F);
             this.btnRecusar.ForeColor = System.Drawing.Color.White;
             this.btnRecusar.Location = new System.Drawing.Point(353, 372);
-            this.btnRecusar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRecusar.Margin = new System.Windows.Forms.Padding(2);
             this.btnRecusar.Name = "btnRecusar";
             this.btnRecusar.Size = new System.Drawing.Size(112, 32);
             this.btnRecusar.TabIndex = 12;
             this.btnRecusar.Text = "Recusar";
             this.btnRecusar.TextColor = System.Drawing.Color.White;
             this.btnRecusar.UseVisualStyleBackColor = false;
+            this.btnRecusar.Click += new System.EventHandler(this.btnRecusar_Click);
             // 
             // btnAprovar
             // 
@@ -294,7 +295,7 @@
             this.btnAprovar.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAprovar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btnAprovar.Location = new System.Drawing.Point(155, 372);
-            this.btnAprovar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAprovar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAprovar.Name = "btnAprovar";
             this.btnAprovar.Size = new System.Drawing.Size(122, 32);
             this.btnAprovar.TabIndex = 11;
@@ -310,7 +311,7 @@
             this.panel2.Controls.Add(this.lblTitulo);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(633, 49);
             this.panel2.TabIndex = 0;
@@ -321,7 +322,7 @@
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
             this.btnVoltar.Location = new System.Drawing.Point(4, 6);
-            this.btnVoltar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVoltar.Margin = new System.Windows.Forms.Padding(2);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(38, 37);
             this.btnVoltar.TabIndex = 3;
@@ -330,12 +331,11 @@
             // 
             // lblTitulo
             // 
-            this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(254, 14);
+            this.lblTitulo.Location = new System.Drawing.Point(96, 9);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(163, 21);
+            this.lblTitulo.Size = new System.Drawing.Size(448, 30);
             this.lblTitulo.TabIndex = 3;
             this.lblTitulo.Text = "Nome do Trabalho";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -349,7 +349,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "trabalhos_gerenciamento";
             this.Text = "trabalhos_gerenciamento";
             this.Load += new System.EventHandler(this.trabalhos_gerenciamento_Load);
@@ -358,7 +358,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }

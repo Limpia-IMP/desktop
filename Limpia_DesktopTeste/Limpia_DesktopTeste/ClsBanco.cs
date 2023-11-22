@@ -25,9 +25,10 @@
             public string IdCargo { get; private set; }
             public string status;
             public List<int> idAnuncio = new List<int>();
+            public string msgCadastro;
 
 
-            public ClsBanco()
+        public ClsBanco()
             {
                 senha = "";
             }
@@ -69,6 +70,29 @@
                 public string Message { get; set; }
             }
 
+        public void Cadastrar(string nomeFunc, string emailFunc, string senhaFunc, int codCargo, string rg, string cpf)
+        {
+
+            using (SqlConnection connection = new SqlConnection(SQL_STRING))
+            using (SqlCommand cmd = new SqlCommand("spCadastroFunc", connection))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@nome", nomeFunc);
+                cmd.Parameters.AddWithValue("@cpf", cpf);
+                cmd.Parameters.AddWithValue("@rg", rg);
+                cmd.Parameters.AddWithValue("@idcargo", codCargo);
+                cmd.Parameters.AddWithValue("@email", emailFunc);
+                cmd.Parameters.AddWithValue("@senha", senhaFunc); // Consider hashing this
+                connection.Open();
+                using (SqlDataReader rdr = cmd.ExecuteReader())
+                {
+                    if (rdr.Read())
+                    {
+                        msgCadastro = rdr["message"].ToString();
+                    }
+                }
+            }
+        }
             public class Promo
             {
                 private string idPromo = "";

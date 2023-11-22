@@ -78,6 +78,19 @@ namespace Limpia_DesktopTeste
             }
         }
 
-
+        private void btnRecusar_Click(object sender, EventArgs e)
+        {
+            int idAnuncioEspecifico = idAnuncio;
+            clsBanco.status = "Recusado";
+            var resultado = clsBanco.Aprovacao(idAnuncioEspecifico);
+            if (resultado.IsSuccessful)
+            {
+                Voltar();
+            }
+            else
+            {
+                MessageBox.Show("Erro ao aprovar o anúncio.");
+            }
+        }
     }
 }
