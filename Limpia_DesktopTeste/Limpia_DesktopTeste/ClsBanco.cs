@@ -10,7 +10,7 @@ namespace Limpia_DesktopTeste
 {
     public class ClsBanco
     {
-        private static string SQL_STRING = @"Password=12345; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLSERVER2022"; // SEBASTIAN MUDA DE SQLEXPRESS PARA SQLSERVER2022 E A BEATRIZ O CONTRÁRIO (SENHA TBM!!);-
+        private static string SQL_STRING = @"Password=12345; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLEXPRESS"; // SEBASTIAN MUDA DE SQLEXPRESS PARA SQLSERVER2022 E A BEATRIZ O CONTRÁRIO (SENHA TBM!!);-
 
         //SqlConnection cone = new SqlConnection(@"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLEXPRESS");
         private string senha;
@@ -24,15 +24,13 @@ namespace Limpia_DesktopTeste
         public string IdCargo { get; private set; }
         public string status;
         public List<int> idAnuncio = new List<int>();
-
-
+        SqlConnection connection = new SqlConnection(SQL_STRING);
         public ClsBanco()
         {
             senha = "";
         }
         public LoginResult Login()
         {
-            using (SqlConnection connection = new SqlConnection(SQL_STRING))
             using (SqlCommand cmd = new SqlCommand("login_funcionario", connection))
             {
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -95,7 +93,6 @@ namespace Limpia_DesktopTeste
 
         public List<Promo> Promo_Ofertas()
         {
-            using (SqlConnection connection = new SqlConnection(SQL_STRING))
             using (SqlCommand cmd = new SqlCommand("select * from tblpromo", connection))
             {
                 connection.Open();
@@ -135,7 +132,6 @@ namespace Limpia_DesktopTeste
 
         public List<Cursos> cursos()
         {
-            using (SqlConnection connection = new SqlConnection(SQL_STRING))
             using (SqlCommand cmd = new SqlCommand("select * from tblcursos", connection))
             {
                 connection.Open();
@@ -162,7 +158,6 @@ namespace Limpia_DesktopTeste
             var list = new List<ObterInfo>();
             try
             {
-                using (SqlConnection connection = new SqlConnection(SQL_STRING))
                 using (SqlCommand cmd = new SqlCommand("select nome,idcargo from tblfunc where email = @Email", connection))
                 {
                     cmd.Parameters.AddWithValue("@Email", email);
@@ -199,7 +194,7 @@ namespace Limpia_DesktopTeste
             private String titulo;
             private String nomeContratante;
             private DateTime data;
-            private Decimal valor;
+            private String valor;
             private String cidade;
             private String endereco;
             private String estado;
@@ -207,7 +202,7 @@ namespace Limpia_DesktopTeste
             public string Titulo { get => titulo; set => titulo = value; }
             public string NomeContratante { get => nomeContratante; set => nomeContratante = value; }
             public DateTime Data { get => data; set => data = value; }
-            public Decimal Valor { get => valor; set => valor = value; }
+            public string Valor { get => valor; set => valor = value; }
             public string Cidade { get => cidade; set => cidade = value; }
             public string Endereco { get => endereco; set => endereco = value; }
             public string Estado { get => estado; set => estado = value; }
@@ -217,8 +212,6 @@ namespace Limpia_DesktopTeste
         public async Task<List<Trabalhos>> trabalhosG()
         {
             var list = new List<Trabalhos>();
-            using (SqlConnection connection = new SqlConnection(SQL_STRING))
-            {
                 await connection.OpenAsync();
                 using (SqlCommand cmd = new SqlCommand("select idanuncio from tblanuncio_status where status_anuncio = @Status", connection))
                 {
@@ -246,8 +239,8 @@ namespace Limpia_DesktopTeste
                                 {
                                     Titulo = reader2.GetString(0),
                                     Data = reader2.GetDateTime(1),
-                                    Desc = reader2.GetString(2),
-                                    Valor = reader2.GetDecimal(3),
+                                    Desc = reader2.GetString(3),
+                                    Valor = "R$ " + reader2.GetDecimal(2),
                                     NomeContratante = reader2.GetString(4),
                                     Endereco = reader2.GetString(5) + " Nº " + reader2.GetInt32(6) + ", " + reader2.GetString(7),
                                     Cidade = reader2.GetString(8),
@@ -256,7 +249,6 @@ namespace Limpia_DesktopTeste
                             }
                         }
                     }
-                }
                 return list;
             }
         }

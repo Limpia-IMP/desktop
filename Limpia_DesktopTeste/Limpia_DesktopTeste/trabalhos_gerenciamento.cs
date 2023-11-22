@@ -49,7 +49,7 @@ namespace Limpia_DesktopTeste
             lblTitulo.Text = lst[btn].Titulo;
             lblNome.Text = lst[btn].NomeContratante;
             lblData.Text = lst[btn].Data.ToString();
-            lblValor.Text = "R$ " + lst[btn].Valor;
+            lblValor.Text = lst[btn].Valor;
             lblEndereco.Text = lst[btn].Endereco;
             lblCidade.Text = lst[btn].Cidade;
             lblEstado.Text = lst[btn].Estado;

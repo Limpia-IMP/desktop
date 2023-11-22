@@ -35,8 +35,8 @@
             }
             private async void trabalhos_Load(object sender, EventArgs e)
             {
-                SetRoundedEdges(panel1, 30); // 30 é o raio. Ajuste conforme sua necessidade.
-                var lst = await clsBanco.trabalhosG(); // A função 'trabalhosG' deveria ser 'async', então você precisaria chamar com 'await'
+                SetRoundedEdges(panel1, 30);
+                var lst = await clsBanco.trabalhosG(); 
                 var labelsF = new List<Label> { lblTrab1, lblTrab2, lblTrab3, lblTrab4, lblTrab5, lblTrab6, lblTrab7, lblTrab8, lblTrab9 };
                 var labelsA = new List<Label> { lblTrabDesc1, lblTrabDesc2, lblTrabDesc3, lblTrabDesc4, lblTrabDesc5, lblTrabDesc6, lblTrabDesc7, lblTrabDesc8, lblTrabDesc9 };
                 var buttons = new List<Button> { btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9 };
