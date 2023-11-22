@@ -24,13 +24,15 @@ namespace Limpia_DesktopTeste
         public string IdCargo { get; private set; }
         public string status;
         public List<int> idAnuncio = new List<int>();
-        SqlConnection connection = new SqlConnection(SQL_STRING);
+
+
         public ClsBanco()
         {
             senha = "";
         }
         public LoginResult Login()
         {
+            using (SqlConnection connection = new SqlConnection(SQL_STRING))
             using (SqlCommand cmd = new SqlCommand("login_funcionario", connection))
             {
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -93,6 +95,7 @@ namespace Limpia_DesktopTeste
 
         public List<Promo> Promo_Ofertas()
         {
+            using (SqlConnection connection = new SqlConnection(SQL_STRING))
             using (SqlCommand cmd = new SqlCommand("select * from tblpromo", connection))
             {
                 connection.Open();
@@ -132,6 +135,7 @@ namespace Limpia_DesktopTeste
 
         public List<Cursos> cursos()
         {
+            using (SqlConnection connection = new SqlConnection(SQL_STRING))
             using (SqlCommand cmd = new SqlCommand("select * from tblcursos", connection))
             {
                 connection.Open();
@@ -153,19 +157,20 @@ namespace Limpia_DesktopTeste
             public string nome { get => name; set => name = value; }
             public string idCargo { get => idcargo; set => idcargo = value; }
         }
-        public async Task<List<ObterInfo>> ObterAsync()
+        public List<ObterInfo> ObterAsync()
         {
             var list = new List<ObterInfo>();
             try
             {
+                using (SqlConnection connection = new SqlConnection(SQL_STRING))
                 using (SqlCommand cmd = new SqlCommand("select nome,idcargo from tblfunc where email = @Email", connection))
                 {
                     cmd.Parameters.AddWithValue("@Email", email);
 
-                    await connection.OpenAsync();
-                    using (var reader = await cmd.ExecuteReaderAsync())
+                    connection.Open();
+                    using (var reader = cmd.ExecuteReader())
                     {
-                        while (await reader.ReadAsync())
+                        while (reader.Read())
                         {
                             var info = new ObterInfo
                             {
@@ -212,6 +217,8 @@ namespace Limpia_DesktopTeste
         public async Task<List<Trabalhos>> trabalhosG()
         {
             var list = new List<Trabalhos>();
+            using (SqlConnection connection = new SqlConnection(SQL_STRING))
+            {
                 await connection.OpenAsync();
                 using (SqlCommand cmd = new SqlCommand("select idanuncio from tblanuncio_status where status_anuncio = @Status", connection))
                 {
@@ -249,6 +256,7 @@ namespace Limpia_DesktopTeste
                             }
                         }
                     }
+                }
                 return list;
             }
         }

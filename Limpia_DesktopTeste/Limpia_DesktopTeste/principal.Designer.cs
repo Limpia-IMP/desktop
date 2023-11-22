@@ -41,6 +41,7 @@
             this.btnFecharTela = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnAddFunc = new System.Windows.Forms.Button();
             this.lblMenu = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -50,7 +51,6 @@
             this.txtCodCargo = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtNomeFunc = new System.Windows.Forms.Label();
-            this.btnAddFunc = new System.Windows.Forms.Button();
             btnTrabalhos = new System.Windows.Forms.Button();
             btnSuporte = new System.Windows.Forms.Button();
             btnPerfil = new System.Windows.Forms.Button();
@@ -271,6 +271,25 @@
             this.panel3.Size = new System.Drawing.Size(260, 54);
             this.panel3.TabIndex = 1;
             // 
+            // btnAddFunc
+            // 
+            this.btnAddFunc.FlatAppearance.BorderSize = 0;
+            this.btnAddFunc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddFunc.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddFunc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnAddFunc.Image = ((System.Drawing.Image)(resources.GetObject("btnAddFunc.Image")));
+            this.btnAddFunc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddFunc.Location = new System.Drawing.Point(0, 0);
+            this.btnAddFunc.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddFunc.Name = "btnAddFunc";
+            this.btnAddFunc.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnAddFunc.Size = new System.Drawing.Size(260, 54);
+            this.btnAddFunc.TabIndex = 2;
+            this.btnAddFunc.Text = " Poder Supremo";
+            this.btnAddFunc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAddFunc.UseVisualStyleBackColor = true;
+            this.btnAddFunc.Click += new System.EventHandler(this.btnAddFunc_Click);
+            // 
             // lblMenu
             // 
             this.lblMenu.AutoSize = true;
@@ -368,7 +387,7 @@
             this.txtCodCargo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.txtCodCargo.Location = new System.Drawing.Point(99, 49);
             this.txtCodCargo.Name = "txtCodCargo";
-            this.txtCodCargo.Size = new System.Drawing.Size(83, 26);
+            this.txtCodCargo.Size = new System.Drawing.Size(87, 26);
             this.txtCodCargo.TabIndex = 11;
             this.txtCodCargo.Text = "#115978";
             // 
@@ -392,25 +411,6 @@
             this.txtNomeFunc.Size = new System.Drawing.Size(100, 27);
             this.txtNomeFunc.TabIndex = 9;
             this.txtNomeFunc.Text = "Sebs";
-            // 
-            // btnAddFunc
-            // 
-            this.btnAddFunc.FlatAppearance.BorderSize = 0;
-            this.btnAddFunc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddFunc.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddFunc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.btnAddFunc.Image = ((System.Drawing.Image)(resources.GetObject("btnAddFunc.Image")));
-            this.btnAddFunc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddFunc.Location = new System.Drawing.Point(0, 0);
-            this.btnAddFunc.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAddFunc.Name = "btnAddFunc";
-            this.btnAddFunc.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnAddFunc.Size = new System.Drawing.Size(260, 54);
-            this.btnAddFunc.TabIndex = 2;
-            this.btnAddFunc.Text = " Poder Supremo";
-            this.btnAddFunc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAddFunc.UseVisualStyleBackColor = true;
-            this.btnAddFunc.Click += new System.EventHandler(this.btnAddFunc_Click);
             // 
             // principal
             // 

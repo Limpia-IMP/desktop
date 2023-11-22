@@ -27,20 +27,24 @@ namespace Limpia_DesktopTeste
         private void Principal_Load(object sender, EventArgs e)
         {
             LoadDataAsync();
+            
             openChildForm(new home());
         }
 
-        private async void LoadDataAsync()
+        private void LoadDataAsync()
         {
             try
             {
-                await banco.ObterAsync();
+                banco.ObterAsync();
                 txtNomeFunc.Text = banco.Nome;
-                txtCodCargo.Text = "#" + banco.IdCargo;// Update UI with the fetched name
+                txtCodCargo.Text = "#" + banco.IdCargo;
+                if (banco.IdCargo.Equals("1"))
+                    btnAddFunc.Show();
+                else btnAddFunc.Hide();
+
             }
             catch (Exception ex)
             {
-                // Handle or log the exception
                 MessageBox.Show("An error occurred: " + ex.Message);
             }
         }
