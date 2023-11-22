@@ -84,6 +84,12 @@
     <Compile Include="adicionar_funcionarios.Designer.cs">
       <DependentUpon>adicionar_funcionarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="adm_avisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adm_avisos.Designer.cs">
+      <DependentUpon>adm_avisos.cs</DependentUpon>
+    </Compile>
     <Compile Include="BtnLimpia\btnPrincipal.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -182,6 +188,9 @@
     </Compile>
     <EmbeddedResource Include="adicionar_funcionarios.resx">
       <DependentUpon>adicionar_funcionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adm_avisos.resx">
+      <DependentUpon>adm_avisos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Carregando.resx">
       <DependentUpon>Carregando.cs</DependentUpon>

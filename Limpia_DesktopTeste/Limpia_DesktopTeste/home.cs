@@ -33,7 +33,7 @@ namespace Limpia_DesktopTeste
 
         private void home_Load(object sender, EventArgs e)
         {
-            SetRoundedEdges(panel1, 30); // 30 é o raio. Ajuste conforme sua necessidade.
+            SetRoundedEdges(panel1, 30);
             SetRoundedEdges(panel2, 30); 
             SetRoundedEdges(panel3, 30); 
             SetRoundedEdges(panel4, 30); 

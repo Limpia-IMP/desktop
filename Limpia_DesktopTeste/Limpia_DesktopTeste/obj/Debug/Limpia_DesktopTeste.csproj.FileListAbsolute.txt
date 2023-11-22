@@ -239,3 +239,4 @@ D:\TCC_Repositorios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Li
 C:\Users\DELL\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.perfil_gerenciamento.resources
 D:\TCC_Repositorios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.perfil_gerenciamento.resources
 C:\Users\DELL\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.adicionar_funcionarios.resources
+C:\Users\DELL\Documents\GitHub\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.adm_avisos.resources
