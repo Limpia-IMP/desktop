@@ -1,20 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Reflection.Emit;
 using System.Windows.Forms;
 
 namespace Limpia_DesktopTeste
 {
     public partial class home : Form
     {
+        ClsBanco clsBanco;
         public home()
         {
             InitializeComponent();
+            clsBanco = new ClsBanco();
         }
         public void SetRoundedEdges(Panel panel, int radius)
         {
@@ -33,15 +32,27 @@ namespace Limpia_DesktopTeste
 
         private void home_Load(object sender, EventArgs e)
         {
-            SetRoundedEdges(panel1, 30);
-            SetRoundedEdges(panel2, 30); 
-            SetRoundedEdges(panel3, 30); 
-            SetRoundedEdges(panel4, 30); 
-            SetRoundedEdges(panel5, 30); 
-            SetRoundedEdges(panel6, 30); 
-            SetRoundedEdges(panel7, 30); 
-            SetRoundedEdges(panel8, 30); 
-            SetRoundedEdges(panel9, 30); 
+            var lst = clsBanco.avisosHome();
+            var panel  = new List<Panel> { pan1, pan2, pan3, pan4, pan5, pan6, pan7, pan8, pan9 };
+            for (int i = 0; i < panel.Count(); i++)
+                SetRoundedEdges(panel[i], 30);
+          
+            var lTxt = new List<System.Windows.Forms.Label> { lblTxt1, lblTxt2, lblTxt3, lblTxt4, lblTxt5, lblTxt6, lblTxt7, lblTxt8, lblTxt9 };
+            var lTit = new List<System.Windows.Forms.Label> { lblTitulo1, lblTitulo2, lblTitulo3, lblTitulo4, lblTitulo5, lblTitulo6, lblTitulo7, lblTitulo8, lblTitulo9 };
+            
+            if (lst.Count < panel.Count)
+            {
+                for (int i = lst.Count; i < panel.Count; i++)
+                {
+                    panel[i].Visible = false;
+                }
+            }
+
+            for ( int i = 0; i < lst.Count(); i++) {
+                panel[i].Visible = true;
+                lTxt[i].Text = lst[i].Texto.ToString();
+                lTit[i].Text = lst[i].Titulo.ToString();
+            }
         }
     }
 }

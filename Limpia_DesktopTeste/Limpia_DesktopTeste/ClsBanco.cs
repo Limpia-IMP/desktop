@@ -32,6 +32,7 @@
             {
                 senha = "";
             }
+
             public LoginResult Login()
             {
                 using (SqlConnection connection = new SqlConnection(SQL_STRING))
@@ -64,13 +65,14 @@
                     }
                 }
             }
+
             public class LoginResult
             {
                 public bool IsSuccessful { get; set; }
                 public string Message { get; set; }
             }
 
-        public void Cadastrar(string nomeFunc, string emailFunc, string senhaFunc, int codCargo, string rg, string cpf)
+            public void Cadastrar(string nomeFunc, string emailFunc, string senhaFunc, int codCargo, string rg, string cpf)
         {
 
             using (SqlConnection connection = new SqlConnection(SQL_STRING))
@@ -93,6 +95,43 @@
                 }
             }
         }
+
+            public class Avisos
+            {
+                private int idAviso;
+                private int idFunc;
+                private string titulo;
+                private string texto;
+                private DateTime data;
+
+                public int IdAviso { get => idAviso; set => idAviso = value; }
+                public int IdFunc { get => idFunc; set => idFunc = value; }
+                public string Titulo { get => titulo; set => titulo = value; }
+                public string Texto { get => texto; set => texto = value; }
+                public DateTime Data { get => data; set => data = value; }
+            }
+            
+            public List<Avisos> avisosHome()
+            {
+                using (SqlConnection connection = new SqlConnection(SQL_STRING))
+                using (SqlCommand cmd = new SqlCommand("select * from tblavisos", connection))
+            {
+                connection.Open();
+                using (var reader = cmd.ExecuteReader())
+                {
+                    var list = new List<Avisos>();
+                    while (reader.Read())
+                        list.Add(new Avisos { 
+                            IdAviso = reader.GetInt32(0), 
+                            IdFunc = reader.GetInt32(1), 
+                            Titulo = reader.GetString(2), 
+                            Texto = reader.GetString(3), 
+                            Data = reader.GetDateTime(4) });
+                    return list;
+                }
+            }
+        }
+
             public class Promo
             {
                 private string idPromo = "";
