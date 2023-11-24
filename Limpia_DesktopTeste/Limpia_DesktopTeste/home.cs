@@ -10,6 +10,7 @@ namespace Limpia_DesktopTeste
     public partial class home : Form
     {
         ClsBanco clsBanco;
+        public principal FormularioPai;
         public home()
         {
             InitializeComponent();
@@ -53,6 +54,11 @@ namespace Limpia_DesktopTeste
                 lTxt[i].Text = lst[i].Texto.ToString();
                 lTit[i].Text = lst[i].Titulo.ToString();
             }
+        }
+
+        private void arrow_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

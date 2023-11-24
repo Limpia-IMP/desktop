@@ -30,7 +30,7 @@
         {
             this.label10 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label22 = new System.Windows.Forms.Label();
+            this.lblGenero9 = new System.Windows.Forms.Label();
             this.lblOcup9 = new System.Windows.Forms.Label();
             this.lblGenero8 = new System.Windows.Forms.Label();
             this.lblOcup8 = new System.Windows.Forms.Label();
@@ -98,7 +98,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.panel1.Controls.Add(this.label22);
+            this.panel1.Controls.Add(this.lblGenero9);
             this.panel1.Controls.Add(this.lblOcup9);
             this.panel1.Controls.Add(this.lblGenero8);
             this.panel1.Controls.Add(this.lblOcup8);
@@ -144,21 +144,21 @@
             this.panel1.Controls.Add(this.btn1);
             this.panel1.Controls.Add(this.lblUser1);
             this.panel1.Location = new System.Drawing.Point(64, 88);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(702, 451);
             this.panel1.TabIndex = 4;
             // 
-            // label22
+            // lblGenero9
             // 
-            this.label22.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(331, 412);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(81, 20);
-            this.label22.TabIndex = 45;
-            this.label22.Text = "feminino";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblGenero9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGenero9.Location = new System.Drawing.Point(331, 412);
+            this.lblGenero9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblGenero9.Name = "lblGenero9";
+            this.lblGenero9.Size = new System.Drawing.Size(81, 20);
+            this.lblGenero9.TabIndex = 45;
+            this.lblGenero9.Text = "feminino";
+            this.lblGenero9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblOcup9
             // 
@@ -555,13 +555,14 @@
             this.btn9.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btn9.Location = new System.Drawing.Point(578, 405);
-            this.btn9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn9.Margin = new System.Windows.Forms.Padding(2);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(112, 32);
             this.btn9.TabIndex = 10;
             this.btn9.Text = "veja mais...";
             this.btn9.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btn9.UseVisualStyleBackColor = false;
+            this.btn9.Click += new System.EventHandler(this.btn_Click);
             // 
             // btn8
             // 
@@ -575,13 +576,14 @@
             this.btn8.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btn8.Location = new System.Drawing.Point(578, 356);
-            this.btn8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn8.Margin = new System.Windows.Forms.Padding(2);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(112, 32);
             this.btn8.TabIndex = 9;
             this.btn8.Text = "veja mais...";
             this.btn8.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btn8.UseVisualStyleBackColor = false;
+            this.btn8.Click += new System.EventHandler(this.btn_Click);
             // 
             // btn7
             // 
@@ -595,13 +597,14 @@
             this.btn7.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btn7.Location = new System.Drawing.Point(578, 307);
-            this.btn7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn7.Margin = new System.Windows.Forms.Padding(2);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(112, 32);
             this.btn7.TabIndex = 8;
             this.btn7.Text = "veja mais...";
             this.btn7.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btn7.UseVisualStyleBackColor = false;
+            this.btn7.Click += new System.EventHandler(this.btn_Click);
             // 
             // btn6
             // 
@@ -615,13 +618,14 @@
             this.btn6.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btn6.Location = new System.Drawing.Point(578, 258);
-            this.btn6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn6.Margin = new System.Windows.Forms.Padding(2);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(112, 32);
             this.btn6.TabIndex = 7;
             this.btn6.Text = "veja mais...";
             this.btn6.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btn6.UseVisualStyleBackColor = false;
+            this.btn6.Click += new System.EventHandler(this.btn_Click);
             // 
             // btn5
             // 
@@ -635,13 +639,14 @@
             this.btn5.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btn5.Location = new System.Drawing.Point(578, 209);
-            this.btn5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn5.Margin = new System.Windows.Forms.Padding(2);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(112, 32);
             this.btn5.TabIndex = 6;
             this.btn5.Text = "veja mais...";
             this.btn5.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btn5.UseVisualStyleBackColor = false;
+            this.btn5.Click += new System.EventHandler(this.btn_Click);
             // 
             // btn4
             // 
@@ -655,13 +660,14 @@
             this.btn4.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btn4.Location = new System.Drawing.Point(578, 160);
-            this.btn4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn4.Margin = new System.Windows.Forms.Padding(2);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(112, 32);
             this.btn4.TabIndex = 5;
             this.btn4.Text = "veja mais...";
             this.btn4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btn4.UseVisualStyleBackColor = false;
+            this.btn4.Click += new System.EventHandler(this.btn_Click);
             // 
             // btn3
             // 
@@ -675,13 +681,14 @@
             this.btn3.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btn3.Location = new System.Drawing.Point(578, 111);
-            this.btn3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn3.Margin = new System.Windows.Forms.Padding(2);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(112, 32);
             this.btn3.TabIndex = 4;
             this.btn3.Text = "veja mais...";
             this.btn3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btn3.UseVisualStyleBackColor = false;
+            this.btn3.Click += new System.EventHandler(this.btn_Click);
             // 
             // btn2
             // 
@@ -695,13 +702,14 @@
             this.btn2.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btn2.Location = new System.Drawing.Point(578, 62);
-            this.btn2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn2.Margin = new System.Windows.Forms.Padding(2);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(112, 32);
             this.btn2.TabIndex = 3;
             this.btn2.Text = "veja mais...";
             this.btn2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Click += new System.EventHandler(this.btn_Click);
             // 
             // btn1
             // 
@@ -715,13 +723,14 @@
             this.btn1.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btn1.Location = new System.Drawing.Point(578, 12);
-            this.btn1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn1.Margin = new System.Windows.Forms.Padding(2);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(112, 32);
             this.btn1.TabIndex = 2;
             this.btn1.Text = "veja mais...";
             this.btn1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.btn_Click);
             // 
             // lblUser1
             // 
@@ -742,7 +751,7 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(64, 48);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(702, 32);
             this.panel2.TabIndex = 6;
@@ -800,7 +809,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "perfil";
             this.Text = "perfil";
             this.Load += new System.EventHandler(this.perfil_Load);
@@ -853,7 +862,7 @@
         private System.Windows.Forms.Label lblGenero2;
         private System.Windows.Forms.Label lblOcup2;
         private System.Windows.Forms.Label lblGenero1;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label lblGenero9;
         private System.Windows.Forms.Label lblOcup9;
         private System.Windows.Forms.Label lblGenero8;
         private System.Windows.Forms.Label lblOcup8;

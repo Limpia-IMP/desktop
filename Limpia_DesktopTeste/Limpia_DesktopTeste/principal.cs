@@ -27,8 +27,10 @@ namespace Limpia_DesktopTeste
         private void Principal_Load(object sender, EventArgs e)
         {
             LoadDataAsync();
-            
-            openChildForm(new home());
+
+            home form = new home();
+            form.FormularioPai = this;  
+            openChildForm(form);
         }
 
         private void LoadDataAsync()
@@ -84,7 +86,9 @@ namespace Limpia_DesktopTeste
 
         private void btnPerfil_Click(object sender, EventArgs e)
         {
-            openChildForm(new perfil());
+            perfil form = new perfil();
+            form.FormularioPai = this; 
+            openChildForm(form);
         }
 
         private void btnCursos_Click(object sender, EventArgs e)
@@ -94,15 +98,15 @@ namespace Limpia_DesktopTeste
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            openChildForm(new home());
-            /*parei aqui por preguiça pq não fui feito pra essa vida*/
-            /*tem q trabalhar sebss!!!!*/
+            home form = new home();
+            form.FormularioPai = this;
+            openChildForm(form);
         }
 
         private void btnPromoOfertas_Click_1(object sender, EventArgs e)
         {
             promo_ofertas formPromo = new promo_ofertas();
-            formPromo.FormularioPai = this;  // 'this' se refere ao FormPrincipal
+            formPromo.FormularioPai = this;
             openChildForm(formPromo);
         }
 
