@@ -42,8 +42,6 @@
             this.lblCPF = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
-            this.btnRecusar = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
-            this.btnAprovar = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -54,6 +52,8 @@
             this.lblGen = new System.Windows.Forms.Label();
             this.lblTipo = new System.Windows.Forms.Label();
             this.imgPerfil = new System.Windows.Forms.PictureBox();
+            this.btnRecusar = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
+            this.btnAprovar = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -172,6 +172,7 @@
             this.btnVoltar.Size = new System.Drawing.Size(38, 37);
             this.btnVoltar.TabIndex = 3;
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // lblCPF
             // 
@@ -205,46 +206,6 @@
             this.lblNome.TabIndex = 13;
             this.lblNome.Text = "Sebs";
             this.lblNome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnRecusar
-            // 
-            this.btnRecusar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnRecusar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnRecusar.BorderColor = System.Drawing.Color.Aqua;
-            this.btnRecusar.BorderRadius = 32;
-            this.btnRecusar.BorderSize = 0;
-            this.btnRecusar.FlatAppearance.BorderSize = 0;
-            this.btnRecusar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRecusar.Font = new System.Drawing.Font("Berlin Sans FB", 12F);
-            this.btnRecusar.ForeColor = System.Drawing.Color.White;
-            this.btnRecusar.Location = new System.Drawing.Point(326, 131);
-            this.btnRecusar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnRecusar.Name = "btnRecusar";
-            this.btnRecusar.Size = new System.Drawing.Size(109, 32);
-            this.btnRecusar.TabIndex = 12;
-            this.btnRecusar.Text = "Recusar";
-            this.btnRecusar.TextColor = System.Drawing.Color.White;
-            this.btnRecusar.UseVisualStyleBackColor = false;
-            // 
-            // btnAprovar
-            // 
-            this.btnAprovar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnAprovar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnAprovar.BorderColor = System.Drawing.Color.Azure;
-            this.btnAprovar.BorderRadius = 32;
-            this.btnAprovar.BorderSize = 0;
-            this.btnAprovar.FlatAppearance.BorderSize = 0;
-            this.btnAprovar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAprovar.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAprovar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnAprovar.Location = new System.Drawing.Point(326, 90);
-            this.btnAprovar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAprovar.Name = "btnAprovar";
-            this.btnAprovar.Size = new System.Drawing.Size(109, 32);
-            this.btnAprovar.TabIndex = 11;
-            this.btnAprovar.Text = "Aprovar";
-            this.btnAprovar.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnAprovar.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -369,13 +330,54 @@
             // imgPerfil
             // 
             this.imgPerfil.Image = ((System.Drawing.Image)(resources.GetObject("imgPerfil.Image")));
-            this.imgPerfil.Location = new System.Drawing.Point(187, 70);
+            this.imgPerfil.Location = new System.Drawing.Point(200, 74);
             this.imgPerfil.Margin = new System.Windows.Forms.Padding(2);
             this.imgPerfil.Name = "imgPerfil";
-            this.imgPerfil.Size = new System.Drawing.Size(109, 112);
+            this.imgPerfil.Size = new System.Drawing.Size(122, 113);
             this.imgPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgPerfil.TabIndex = 27;
             this.imgPerfil.TabStop = false;
+            this.imgPerfil.Paint += new System.Windows.Forms.PaintEventHandler(this.imgPerfil_Paint);
+            // 
+            // btnRecusar
+            // 
+            this.btnRecusar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnRecusar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnRecusar.BorderColor = System.Drawing.Color.Aqua;
+            this.btnRecusar.BorderRadius = 32;
+            this.btnRecusar.BorderSize = 0;
+            this.btnRecusar.FlatAppearance.BorderSize = 0;
+            this.btnRecusar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRecusar.Font = new System.Drawing.Font("Berlin Sans FB", 12F);
+            this.btnRecusar.ForeColor = System.Drawing.Color.White;
+            this.btnRecusar.Location = new System.Drawing.Point(326, 131);
+            this.btnRecusar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRecusar.Name = "btnRecusar";
+            this.btnRecusar.Size = new System.Drawing.Size(109, 32);
+            this.btnRecusar.TabIndex = 12;
+            this.btnRecusar.Text = "Excluir Perfil";
+            this.btnRecusar.TextColor = System.Drawing.Color.White;
+            this.btnRecusar.UseVisualStyleBackColor = false;
+            // 
+            // btnAprovar
+            // 
+            this.btnAprovar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnAprovar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnAprovar.BorderColor = System.Drawing.Color.Azure;
+            this.btnAprovar.BorderRadius = 32;
+            this.btnAprovar.BorderSize = 0;
+            this.btnAprovar.FlatAppearance.BorderSize = 0;
+            this.btnAprovar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAprovar.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAprovar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btnAprovar.Location = new System.Drawing.Point(326, 90);
+            this.btnAprovar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAprovar.Name = "btnAprovar";
+            this.btnAprovar.Size = new System.Drawing.Size(109, 32);
+            this.btnAprovar.TabIndex = 11;
+            this.btnAprovar.Text = "Manter Perfil";
+            this.btnAprovar.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btnAprovar.UseVisualStyleBackColor = false;
             // 
             // perfil_gerenciamento
             // 

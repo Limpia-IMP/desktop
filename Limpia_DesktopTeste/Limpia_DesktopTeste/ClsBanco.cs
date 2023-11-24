@@ -361,7 +361,7 @@ namespace Limpia_DesktopTeste
         public class Perfils
         {
             private int idDenuncia;
-            private byte image;
+            private byte[] image;
             private string name;
             private string email;
             private string telefone;
@@ -379,7 +379,7 @@ namespace Limpia_DesktopTeste
             public string Cpf { get => cpf; set => cpf = value; }
             public string Rg { get => rg; set => rg = value; }
             public DateTime DataNasc { get => dataNasc; set => dataNasc = value; }
-            public byte Image { get => image; set => image = value; }
+            public byte[] Image { get => image; set => image = value; }
             public string TipoUser { get => tipoUser; set => tipoUser = value; }
             public int IdDenuncia { get => idDenuncia; set => idDenuncia = value; }
         }
@@ -420,7 +420,8 @@ namespace Limpia_DesktopTeste
                                     DataNasc = reader2.GetDateTime(5),
                                     Cpf = reader2.GetString(6),
                                     Rg = reader2.GetString(7),
-                                    Genero = reader2.GetString(8)
+                                    Genero = reader2.GetString(8),
+                                    Image = (byte[])reader2["foto"]
                                 });
                             }
                         }
@@ -428,6 +429,32 @@ namespace Limpia_DesktopTeste
                 }
                 return list;
             }
+        }
+
+        public class AprovarDenuncias
+        {
+            public bool IsSuccessful { get; set; }
+        }
+        public AprovarDenuncias Aprovar_denuncias(int idAnuncioEspecifico)
+        {
+            using (SqlConnection connection = new SqlConnection(SQL_STRING))
+            {
+                connection.Open();
+                using (SqlCommand cmd2 = new SqlCommand("spAprovarAnuncio", connection))
+                {
+                    cmd2.CommandType = CommandType.StoredProcedure;
+                    cmd2.Parameters.AddWithValue("@idanuncio", idAnuncioEspecifico);
+                    cmd2.Parameters.AddWithValue("@status", status);
+
+                    int affectedRows = cmd2.ExecuteNonQuery();
+                    if (affectedRows == 0)
+                    {
+                        // Nenhuma linha afetada, tratar como erro
+                        return new AprovarDenuncias { IsSuccessful = false };
+                    }
+                }
+            }
+            return new AprovarDenuncias { IsSuccessful = true };
         }
     }    
 }

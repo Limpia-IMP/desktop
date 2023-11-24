@@ -55,7 +55,7 @@ namespace Limpia_DesktopTeste
             idAnuncio = lst[btn].IdAnuncio;
             lblTitulo.Text = lst[btn].Titulo;
             lblNome.Text = lst[btn].NomeContratante;
-            lblData.Text = lst[btn].Data.ToString();
+            lblData.Text = lst[btn].Data.ToString("dd/MM/yyyy");
             lblValor.Text = lst[btn].Valor;
             lblEndereco.Text = lst[btn].Endereco;
             lblCidade.Text = lst[btn].Cidade;

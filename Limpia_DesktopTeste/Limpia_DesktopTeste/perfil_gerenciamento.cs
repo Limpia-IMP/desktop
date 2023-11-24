@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -46,16 +47,38 @@ namespace Limpia_DesktopTeste
             }
 
             var lst = clsBanco.perfilsDenunciados();
+            byte[] imageBytes;
 
             id = lst[btn].IdDenuncia;
             lblNome.Text = lst[btn].Name;
             lblEmail.Text = lst[btn].Email;
             lblTel.Text = lst[btn].Telefone;
             lblTipo.Text = lst[btn].TipoUser;
-            lblDataNasc.Text = lst[btn].DataNasc.ToString();
+            lblDataNasc.Text = lst[btn].DataNasc.ToString("dd/MM/yyyy");
             lblCPF.Text = lst[btn].Cpf;
             lblRG.Text = lst[btn].Rg;
             lblGen.Text = lst[btn].Genero;
+            imageBytes = lst[btn].Image;
+
+            if (imageBytes != null && imageBytes.Length > 0)
+            {
+                using (MemoryStream ms = new MemoryStream(imageBytes))
+                {
+                    Image image = Image.FromStream(ms);
+                    imgPerfil.Image = image;
+                }
+            }
+
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Voltar();
+        }
+
+        private void imgPerfil_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
