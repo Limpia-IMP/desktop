@@ -122,12 +122,14 @@ namespace Limpia_DesktopTeste
                 {
                     var list = new List<Avisos>();
                     while (reader.Read())
-                        list.Add(new Avisos {
+                        list.Add(new Avisos
+                        {
                             IdAviso = reader.GetInt32(0),
                             IdFunc = reader.GetInt32(1),
                             Titulo = reader.GetString(2),
                             Texto = reader.GetString(3),
-                            Data = reader.GetDateTime(4) });
+                            Data = reader.GetDateTime(4)
+                        });
                     return list;
                 }
             }
@@ -431,30 +433,31 @@ namespace Limpia_DesktopTeste
             }
         }
 
-        public class AprovarDenuncias
+        public class ManterPerfil
         {
             public bool IsSuccessful { get; set; }
         }
-        public AprovarDenuncias Aprovar_denuncias(int idAnuncioEspecifico)
-        {
-            using (SqlConnection connection = new SqlConnection(SQL_STRING))
-            {
-                connection.Open();
-                using (SqlCommand cmd2 = new SqlCommand("spAprovarAnuncio", connection))
-                {
-                    cmd2.CommandType = CommandType.StoredProcedure;
-                    cmd2.Parameters.AddWithValue("@idanuncio", idAnuncioEspecifico);
-                    cmd2.Parameters.AddWithValue("@status", status);
 
-                    int affectedRows = cmd2.ExecuteNonQuery();
-                    if (affectedRows == 0)
+        public ManterPerfil manterPerfil(int denuncia)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(SQL_STRING))
+                {
+                    connection.Open();
+                    using (SqlCommand cmd = new SqlCommand("DELETE FROM tblperfil_denunciado WHERE idDenuncia = @idDenuncia", connection))
                     {
-                        // Nenhuma linha afetada, tratar como erro
-                        return new AprovarDenuncias { IsSuccessful = false };
+                        cmd.Parameters.AddWithValue("@idDenuncia", denuncia);
+                        int affectedRows = cmd.ExecuteNonQuery();
+                        bool isSuccessful = affectedRows > 0;
+                        return new ManterPerfil { IsSuccessful = isSuccessful };
                     }
                 }
             }
-            return new AprovarDenuncias { IsSuccessful = true };
+            catch (Exception ex)
+            {
+                return new ManterPerfil { IsSuccessful = false };
+            }
         }
-    }    
+    }
 }

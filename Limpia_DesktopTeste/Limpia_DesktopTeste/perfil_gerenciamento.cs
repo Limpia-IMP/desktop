@@ -17,8 +17,8 @@ namespace Limpia_DesktopTeste
         public principal FormularioPai;
 
         public Button button;
-        int btn = 0;
-        int id = 0;
+        int btn;
+        int id;
         public perfil_gerenciamento()
         {
             InitializeComponent();
@@ -47,6 +47,7 @@ namespace Limpia_DesktopTeste
             }
 
             var lst = clsBanco.perfilsDenunciados();
+            var idDenuncia = clsBanco.idDenuncia;
             byte[] imageBytes;
 
             id = lst[btn].IdDenuncia;
@@ -79,6 +80,22 @@ namespace Limpia_DesktopTeste
         private void imgPerfil_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnAprovar_Click(object sender, EventArgs e)
+        {
+
+            var idDenuncia = clsBanco.idDenuncia;
+            int idEspecifico = idDenuncia[btn];
+            var resultado = clsBanco.manterPerfil(idEspecifico);
+            if (resultado.IsSuccessful)
+            {
+                Voltar();
+            }
+            else
+            {
+                MessageBox.Show("Erro ao manter perfil.");
+            }
         }
     }
 }

@@ -378,6 +378,7 @@
             this.btnAprovar.Text = "Manter Perfil";
             this.btnAprovar.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
             this.btnAprovar.UseVisualStyleBackColor = false;
+            this.btnAprovar.Click += new System.EventHandler(this.btnAprovar_Click);
             // 
             // perfil_gerenciamento
             // 

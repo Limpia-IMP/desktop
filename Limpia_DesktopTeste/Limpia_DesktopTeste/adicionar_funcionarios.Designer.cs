@@ -42,9 +42,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cbCodCargo = new System.Windows.Forms.ComboBox();
-            this.btnAddFunc = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnAddFunc = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -52,14 +52,14 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Berlin Sans FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(219, 28);
+            this.label1.Location = new System.Drawing.Point(232, 23);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(165, 24);
             this.label1.TabIndex = 30;
             this.label1.Text = "Criação de Perfil";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label11
             // 
@@ -187,8 +187,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel1.Controls.Add(this.cbCodCargo);
             this.panel1.Controls.Add(this.btnAddFunc);
+            this.panel1.Controls.Add(this.cbCodCargo);
             this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label6);
@@ -224,17 +224,6 @@
             this.cbCodCargo.Size = new System.Drawing.Size(107, 32);
             this.cbCodCargo.TabIndex = 1;
             // 
-            // btnAddFunc
-            // 
-            this.btnAddFunc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnAddFunc.Location = new System.Drawing.Point(220, 349);
-            this.btnAddFunc.Name = "btnAddFunc";
-            this.btnAddFunc.Size = new System.Drawing.Size(162, 42);
-            this.btnAddFunc.TabIndex = 6;
-            this.btnAddFunc.Text = "Adicionar Perfil";
-            this.btnAddFunc.UseVisualStyleBackColor = false;
-            this.btnAddFunc.Click += new System.EventHandler(this.btnAddFunc_Click);
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -258,6 +247,26 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 51;
             this.pictureBox2.TabStop = false;
+            // 
+            // btnAddFunc
+            // 
+            this.btnAddFunc.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnAddFunc.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnAddFunc.BorderColor = System.Drawing.Color.Aqua;
+            this.btnAddFunc.BorderRadius = 40;
+            this.btnAddFunc.BorderSize = 0;
+            this.btnAddFunc.FlatAppearance.BorderSize = 0;
+            this.btnAddFunc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddFunc.Font = new System.Drawing.Font("Berlin Sans FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddFunc.ForeColor = System.Drawing.Color.White;
+            this.btnAddFunc.Location = new System.Drawing.Point(247, 361);
+            this.btnAddFunc.Name = "btnAddFunc";
+            this.btnAddFunc.Size = new System.Drawing.Size(150, 40);
+            this.btnAddFunc.TabIndex = 44;
+            this.btnAddFunc.Text = "Adicionar Perfil";
+            this.btnAddFunc.TextColor = System.Drawing.Color.White;
+            this.btnAddFunc.UseVisualStyleBackColor = false;
+            this.btnAddFunc.Click += new System.EventHandler(this.btnAddFunc_Click);
             // 
             // adicionar_funcionarios
             // 
@@ -299,7 +308,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button btnAddFunc;
         private System.Windows.Forms.ComboBox cbCodCargo;
+        private BtnLimpia.btnPrincipal btnAddFunc;
     }
 }
