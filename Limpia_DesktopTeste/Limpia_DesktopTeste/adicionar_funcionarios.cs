@@ -17,6 +17,11 @@ namespace Limpia_DesktopTeste
         {
             InitializeComponent();
             clsBanco = new ClsBanco();
+
+            txtCPF.KeyPress += new KeyPressEventHandler(txtCPF_KeyPress);
+            txtCPF.TextChanged += new EventHandler(txtCPF_TextChanged);
+            txtRG.KeyPress += new KeyPressEventHandler(txtRG_KeyPress);
+            txtRG.TextChanged += new EventHandler(txtRG_TextChanged);
         }
 
         private void adicionar_funcionarios_Load(object sender, EventArgs e)
@@ -47,27 +52,122 @@ namespace Limpia_DesktopTeste
             string rg = txtRG.Text;
             string cpf = txtCPF.Text;
             if (nomeFunc != "" && emailFunc != "" && senhaFunc != "" && codCargo != 0 && rg != "" && cpf != "") { 
-                clsBanco.Cadastrar(nomeFunc, emailFunc, senhaFunc, codCargo, rg, cpf);}
+                clsBanco.Cadastrar(nomeFunc, emailFunc, senhaFunc, codCargo, rg, cpf);
+                Limpar();
+            }
             else
                 MessageBox.Show("Preencha todos os campos!");
 
             MessageBox.Show(clsBanco.msgCadastro);
         }
 
-        private void txtCPF_TextChanged(object sender, EventArgs e)
+        private void Limpar()
         {
-            // Criar MaskedTextBox para CPF
-            MaskedTextBox mtbCPF = new MaskedTextBox();
-            mtbCPF.Mask = "000.000.000-00";
-            this.Controls.Add(mtbCPF); // Adiciona ao formulário
+            txtNome.Text = "";
+            txtEmail.Text = "";
+            cbCodCargo.Text = "";
+            txtCPF.Text = "";
+            txtRG.Text = "";
+            txtSenha.Text = "";
 
+            txtNome.Focus();
         }
 
-        private void txtRG_TextChanged(object sender, EventArgs e)
+        private void txtCPF_TextChanged(object sender, EventArgs e)
         {
-            MaskedTextBox mtbRG = new MaskedTextBox();
-            mtbRG.Mask = "00.000.000-0";
-            this.Controls.Add(mtbRG); // Adiciona ao formulário
+            FormatCPF();
+        }
+
+        private void FormatCPF()
+        {
+            string text = txtCPF.Text.Replace(".", "").Replace("-", "").Trim();
+            if (text.Length > 9)
+            {
+                txtCPF.Text = $"{text.Substring(0, 3)}.{text.Substring(3, 3)}.{text.Substring(6, 3)}-{text.Substring(9)}";
+            }
+            else if (text.Length > 6)
+            {
+                txtCPF.Text = $"{text.Substring(0, 3)}.{text.Substring(3, 3)}.{text.Substring(6)}";
+            }
+            else if (text.Length > 3)
+            {
+                txtCPF.Text = $"{text.Substring(0, 3)}.{text.Substring(3)}";
+            }
+            else
+            {
+                txtCPF.Text = text;
+            }
+            txtCPF.SelectionStart = txtCPF.Text.Length;
+        }
+
+            private bool isUpdatingRG = false;
+
+      private void txtRG_TextChanged(object sender, EventArgs e)
+       {
+         if (!isUpdatingRG)
+          {
+           FormatRG();
+          }
+       }
+
+        private void FormatRG()
+        {
+            isUpdatingRG = true;
+
+            string text = txtRG.Text.Replace(".", "").Replace("-", "").Trim();
+            int textLength = text.Length;
+
+            try
+            {
+                if (textLength > 8)
+                {
+                    txtRG.Text = $"{text.Substring(0, 2)}.{text.Substring(2, 3)}.{text.Substring(5, 3)}-{text.Substring(8)}";
+                }
+                else if (textLength > 5)
+                {
+                    txtRG.Text = $"{text.Substring(0, 2)}.{text.Substring(2, 3)}.{text.Substring(5)}";
+                }
+                else if (textLength > 2)
+                {
+                    txtRG.Text = $"{text.Substring(0, 2)}.{text.Substring(2)}";
+                }
+                else
+                {
+                    txtRG.Text = text;
+                }
+
+                txtRG.SelectionStart = txtRG.Text.Length;
+            }
+            finally
+            {
+                isUpdatingRG = false;
+            }
+        }
+
+
+
+        private void txtCPF_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtRG_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void cbCodCargo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
