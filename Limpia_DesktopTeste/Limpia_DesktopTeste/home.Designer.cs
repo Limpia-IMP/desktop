@@ -42,29 +42,29 @@
             this.arrow1 = new System.Windows.Forms.PictureBox();
             this.lblTxt1 = new System.Windows.Forms.Label();
             this.pan5 = new System.Windows.Forms.Panel();
+            this.arrow5 = new System.Windows.Forms.PictureBox();
             this.lblTitulo5 = new System.Windows.Forms.Label();
             this.lblTxt5 = new System.Windows.Forms.Label();
             this.pan6 = new System.Windows.Forms.Panel();
+            this.arrow6 = new System.Windows.Forms.PictureBox();
             this.lblTitulo6 = new System.Windows.Forms.Label();
             this.lblTxt6 = new System.Windows.Forms.Label();
             this.pan4 = new System.Windows.Forms.Panel();
             this.lblTitulo4 = new System.Windows.Forms.Label();
+            this.arrow4 = new System.Windows.Forms.PictureBox();
             this.lblTxt4 = new System.Windows.Forms.Label();
             this.pan8 = new System.Windows.Forms.Panel();
+            this.arrow8 = new System.Windows.Forms.PictureBox();
             this.lblTitulo8 = new System.Windows.Forms.Label();
             this.lblTxt8 = new System.Windows.Forms.Label();
             this.pan9 = new System.Windows.Forms.Panel();
+            this.arrow9 = new System.Windows.Forms.PictureBox();
             this.lblTitulo9 = new System.Windows.Forms.Label();
             this.lblTxt9 = new System.Windows.Forms.Label();
             this.pan7 = new System.Windows.Forms.Panel();
+            this.arrow7 = new System.Windows.Forms.PictureBox();
             this.lblTitulo7 = new System.Windows.Forms.Label();
             this.lblTxt7 = new System.Windows.Forms.Label();
-            this.arrow5 = new System.Windows.Forms.PictureBox();
-            this.arrow6 = new System.Windows.Forms.PictureBox();
-            this.arrow4 = new System.Windows.Forms.PictureBox();
-            this.arrow7 = new System.Windows.Forms.PictureBox();
-            this.arrow8 = new System.Windows.Forms.PictureBox();
-            this.arrow9 = new System.Windows.Forms.PictureBox();
             this.pan3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.arrow3)).BeginInit();
             this.pan2.SuspendLayout();
@@ -72,17 +72,17 @@
             this.pan1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.arrow1)).BeginInit();
             this.pan5.SuspendLayout();
-            this.pan6.SuspendLayout();
-            this.pan4.SuspendLayout();
-            this.pan8.SuspendLayout();
-            this.pan9.SuspendLayout();
-            this.pan7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.arrow5)).BeginInit();
+            this.pan6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.arrow6)).BeginInit();
+            this.pan4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.arrow4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arrow7)).BeginInit();
+            this.pan8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.arrow8)).BeginInit();
+            this.pan9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.arrow9)).BeginInit();
+            this.pan7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.arrow7)).BeginInit();
             this.SuspendLayout();
             // 
             // pan3
@@ -111,6 +111,7 @@
             // 
             // arrow3
             // 
+            this.arrow3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.arrow3.Image = ((System.Drawing.Image)(resources.GetObject("arrow3.Image")));
             this.arrow3.Location = new System.Drawing.Point(30, 120);
             this.arrow3.Margin = new System.Windows.Forms.Padding(2);
@@ -119,6 +120,7 @@
             this.arrow3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.arrow3.TabIndex = 5;
             this.arrow3.TabStop = false;
+            this.arrow3.Click += new System.EventHandler(this.arrow_Click);
             // 
             // lblTxt3
             // 
@@ -157,6 +159,7 @@
             // 
             // arrow2
             // 
+            this.arrow2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.arrow2.Image = ((System.Drawing.Image)(resources.GetObject("arrow2.Image")));
             this.arrow2.Location = new System.Drawing.Point(31, 120);
             this.arrow2.Margin = new System.Windows.Forms.Padding(2);
@@ -165,6 +168,7 @@
             this.arrow2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.arrow2.TabIndex = 3;
             this.arrow2.TabStop = false;
+            this.arrow2.Click += new System.EventHandler(this.arrow_Click);
             // 
             // lblTxt2
             // 
@@ -203,6 +207,7 @@
             // 
             // arrow1
             // 
+            this.arrow1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.arrow1.Image = ((System.Drawing.Image)(resources.GetObject("arrow1.Image")));
             this.arrow1.Location = new System.Drawing.Point(26, 120);
             this.arrow1.Margin = new System.Windows.Forms.Padding(2);
@@ -211,6 +216,7 @@
             this.arrow1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.arrow1.TabIndex = 1;
             this.arrow1.TabStop = false;
+            this.arrow1.Click += new System.EventHandler(this.arrow_Click);
             // 
             // lblTxt1
             // 
@@ -233,6 +239,19 @@
             this.pan5.Name = "pan5";
             this.pan5.Size = new System.Drawing.Size(232, 152);
             this.pan5.TabIndex = 15;
+            // 
+            // arrow5
+            // 
+            this.arrow5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.arrow5.Image = ((System.Drawing.Image)(resources.GetObject("arrow5.Image")));
+            this.arrow5.Location = new System.Drawing.Point(31, 115);
+            this.arrow5.Margin = new System.Windows.Forms.Padding(2);
+            this.arrow5.Name = "arrow5";
+            this.arrow5.Size = new System.Drawing.Size(26, 15);
+            this.arrow5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.arrow5.TabIndex = 8;
+            this.arrow5.TabStop = false;
+            this.arrow5.Click += new System.EventHandler(this.arrow_Click);
             // 
             // lblTitulo5
             // 
@@ -268,6 +287,19 @@
             this.pan6.Name = "pan6";
             this.pan6.Size = new System.Drawing.Size(232, 152);
             this.pan6.TabIndex = 14;
+            // 
+            // arrow6
+            // 
+            this.arrow6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.arrow6.Image = ((System.Drawing.Image)(resources.GetObject("arrow6.Image")));
+            this.arrow6.Location = new System.Drawing.Point(30, 115);
+            this.arrow6.Margin = new System.Windows.Forms.Padding(2);
+            this.arrow6.Name = "arrow6";
+            this.arrow6.Size = new System.Drawing.Size(26, 15);
+            this.arrow6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.arrow6.TabIndex = 7;
+            this.arrow6.TabStop = false;
+            this.arrow6.Click += new System.EventHandler(this.arrow_Click);
             // 
             // lblTitulo6
             // 
@@ -316,6 +348,19 @@
             this.lblTitulo4.TabIndex = 23;
             this.lblTitulo4.Text = "Financeiro";
             // 
+            // arrow4
+            // 
+            this.arrow4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.arrow4.Image = ((System.Drawing.Image)(resources.GetObject("arrow4.Image")));
+            this.arrow4.Location = new System.Drawing.Point(26, 115);
+            this.arrow4.Margin = new System.Windows.Forms.Padding(2);
+            this.arrow4.Name = "arrow4";
+            this.arrow4.Size = new System.Drawing.Size(26, 15);
+            this.arrow4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.arrow4.TabIndex = 6;
+            this.arrow4.TabStop = false;
+            this.arrow4.Click += new System.EventHandler(this.arrow_Click);
+            // 
             // lblTxt4
             // 
             this.lblTxt4.ForeColor = System.Drawing.Color.Black;
@@ -338,6 +383,19 @@
             this.pan8.Name = "pan8";
             this.pan8.Size = new System.Drawing.Size(232, 152);
             this.pan8.TabIndex = 18;
+            // 
+            // arrow8
+            // 
+            this.arrow8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.arrow8.Image = ((System.Drawing.Image)(resources.GetObject("arrow8.Image")));
+            this.arrow8.Location = new System.Drawing.Point(31, 115);
+            this.arrow8.Margin = new System.Windows.Forms.Padding(2);
+            this.arrow8.Name = "arrow8";
+            this.arrow8.Size = new System.Drawing.Size(26, 15);
+            this.arrow8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.arrow8.TabIndex = 26;
+            this.arrow8.TabStop = false;
+            this.arrow8.Click += new System.EventHandler(this.arrow_Click);
             // 
             // lblTitulo8
             // 
@@ -374,6 +432,19 @@
             this.pan9.Size = new System.Drawing.Size(232, 152);
             this.pan9.TabIndex = 17;
             // 
+            // arrow9
+            // 
+            this.arrow9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.arrow9.Image = ((System.Drawing.Image)(resources.GetObject("arrow9.Image")));
+            this.arrow9.Location = new System.Drawing.Point(30, 116);
+            this.arrow9.Margin = new System.Windows.Forms.Padding(2);
+            this.arrow9.Name = "arrow9";
+            this.arrow9.Size = new System.Drawing.Size(26, 15);
+            this.arrow9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.arrow9.TabIndex = 27;
+            this.arrow9.TabStop = false;
+            this.arrow9.Click += new System.EventHandler(this.arrow_Click);
+            // 
             // lblTitulo9
             // 
             this.lblTitulo9.AutoSize = true;
@@ -409,6 +480,19 @@
             this.pan7.Size = new System.Drawing.Size(232, 152);
             this.pan7.TabIndex = 16;
             // 
+            // arrow7
+            // 
+            this.arrow7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.arrow7.Image = ((System.Drawing.Image)(resources.GetObject("arrow7.Image")));
+            this.arrow7.Location = new System.Drawing.Point(26, 115);
+            this.arrow7.Margin = new System.Windows.Forms.Padding(2);
+            this.arrow7.Name = "arrow7";
+            this.arrow7.Size = new System.Drawing.Size(26, 15);
+            this.arrow7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.arrow7.TabIndex = 24;
+            this.arrow7.TabStop = false;
+            this.arrow7.Click += new System.EventHandler(this.arrow_Click);
+            // 
             // lblTitulo7
             // 
             this.lblTitulo7.AutoSize = true;
@@ -431,72 +515,6 @@
             this.lblTxt7.TabIndex = 2;
             this.lblTxt7.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem " +
     "Ipsum has been the industry\'s standard dummy text ever since the 1500s\r\n";
-            // 
-            // arrow5
-            // 
-            this.arrow5.Image = ((System.Drawing.Image)(resources.GetObject("arrow5.Image")));
-            this.arrow5.Location = new System.Drawing.Point(31, 115);
-            this.arrow5.Margin = new System.Windows.Forms.Padding(2);
-            this.arrow5.Name = "arrow5";
-            this.arrow5.Size = new System.Drawing.Size(26, 15);
-            this.arrow5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.arrow5.TabIndex = 8;
-            this.arrow5.TabStop = false;
-            // 
-            // arrow6
-            // 
-            this.arrow6.Image = ((System.Drawing.Image)(resources.GetObject("arrow6.Image")));
-            this.arrow6.Location = new System.Drawing.Point(30, 115);
-            this.arrow6.Margin = new System.Windows.Forms.Padding(2);
-            this.arrow6.Name = "arrow6";
-            this.arrow6.Size = new System.Drawing.Size(26, 15);
-            this.arrow6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.arrow6.TabIndex = 7;
-            this.arrow6.TabStop = false;
-            // 
-            // arrow4
-            // 
-            this.arrow4.Image = ((System.Drawing.Image)(resources.GetObject("arrow4.Image")));
-            this.arrow4.Location = new System.Drawing.Point(26, 115);
-            this.arrow4.Margin = new System.Windows.Forms.Padding(2);
-            this.arrow4.Name = "arrow4";
-            this.arrow4.Size = new System.Drawing.Size(26, 15);
-            this.arrow4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.arrow4.TabIndex = 6;
-            this.arrow4.TabStop = false;
-            // 
-            // arrow7
-            // 
-            this.arrow7.Image = ((System.Drawing.Image)(resources.GetObject("arrow7.Image")));
-            this.arrow7.Location = new System.Drawing.Point(26, 115);
-            this.arrow7.Margin = new System.Windows.Forms.Padding(2);
-            this.arrow7.Name = "arrow7";
-            this.arrow7.Size = new System.Drawing.Size(26, 15);
-            this.arrow7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.arrow7.TabIndex = 24;
-            this.arrow7.TabStop = false;
-            // 
-            // arrow8
-            // 
-            this.arrow8.Image = ((System.Drawing.Image)(resources.GetObject("arrow8.Image")));
-            this.arrow8.Location = new System.Drawing.Point(31, 115);
-            this.arrow8.Margin = new System.Windows.Forms.Padding(2);
-            this.arrow8.Name = "arrow8";
-            this.arrow8.Size = new System.Drawing.Size(26, 15);
-            this.arrow8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.arrow8.TabIndex = 26;
-            this.arrow8.TabStop = false;
-            // 
-            // arrow9
-            // 
-            this.arrow9.Image = ((System.Drawing.Image)(resources.GetObject("arrow9.Image")));
-            this.arrow9.Location = new System.Drawing.Point(30, 116);
-            this.arrow9.Margin = new System.Windows.Forms.Padding(2);
-            this.arrow9.Name = "arrow9";
-            this.arrow9.Size = new System.Drawing.Size(26, 15);
-            this.arrow9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.arrow9.TabIndex = 27;
-            this.arrow9.TabStop = false;
             // 
             // home
             // 
@@ -528,22 +546,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.arrow1)).EndInit();
             this.pan5.ResumeLayout(false);
             this.pan5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.arrow5)).EndInit();
             this.pan6.ResumeLayout(false);
             this.pan6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.arrow6)).EndInit();
             this.pan4.ResumeLayout(false);
             this.pan4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.arrow4)).EndInit();
             this.pan8.ResumeLayout(false);
             this.pan8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.arrow8)).EndInit();
             this.pan9.ResumeLayout(false);
             this.pan9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.arrow9)).EndInit();
             this.pan7.ResumeLayout(false);
             this.pan7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.arrow5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arrow6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arrow4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arrow7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arrow8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arrow9)).EndInit();
             this.ResumeLayout(false);
 
         }

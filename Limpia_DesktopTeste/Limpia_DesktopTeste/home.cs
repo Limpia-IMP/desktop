@@ -58,7 +58,12 @@ namespace Limpia_DesktopTeste
 
         private void arrow_Click(object sender, EventArgs e)
         {
-
+            PictureBox button = sender as PictureBox;
+            adm_avisos form = new adm_avisos();
+            form.Button = button;
+            form.FormularioPai = this.FormularioPai;
+            
+            FormularioPai.openChildForm(form);
         }
     }
 }

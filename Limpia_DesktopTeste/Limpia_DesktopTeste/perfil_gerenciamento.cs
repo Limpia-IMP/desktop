@@ -77,10 +77,6 @@ namespace Limpia_DesktopTeste
             Voltar();
         }
 
-        private void imgPerfil_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void btnAprovar_Click(object sender, EventArgs e)
         {
