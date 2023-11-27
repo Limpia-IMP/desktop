@@ -357,6 +357,7 @@
             this.btnRecusar.Text = "Excluir Perfil";
             this.btnRecusar.TextColor = System.Drawing.Color.White;
             this.btnRecusar.UseVisualStyleBackColor = false;
+            this.btnRecusar.Click += new System.EventHandler(this.btnRecusar_Click);
             // 
             // btnAprovar
             // 

@@ -80,17 +80,33 @@ namespace Limpia_DesktopTeste
 
         private void btnAprovar_Click(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show("Tem certeza que deseja manter esse perfil?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+            if (result == DialogResult.Yes)
+            {
+                var idDenuncia = clsBanco.idDenuncia;
+                int idEspecifico = idDenuncia[btn];
+                var resultado = clsBanco.manterPerfil(idEspecifico);
+                if (resultado.IsSuccessful)
+                {
+                    Voltar();
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao manter perfil.");
+                }
+            }
+        }
+
+        private void btnRecusar_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Tem certeza que deseja excluir esse perfil?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             var idDenuncia = clsBanco.idDenuncia;
             int idEspecifico = idDenuncia[btn];
-            var resultado = clsBanco.manterPerfil(idEspecifico);
-            if (resultado.IsSuccessful)
+            if (result == DialogResult.Yes)
             {
+                clsBanco.DeletarPerfil(idDenuncia: idEspecifico);
                 Voltar();
-            }
-            else
-            {
-                MessageBox.Show("Erro ao manter perfil.");
             }
         }
     }

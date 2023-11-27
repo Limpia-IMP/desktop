@@ -23,10 +23,13 @@ namespace Limpia_DesktopTeste
 
         public string Nome { get; private set; }
         public string IdCargo { get; private set; }
+
+        public int IdFunc { get; private set; } 
         public string status;
         public List<int> idAnuncio = new List<int>();
         public List<int> idDenuncia = new List<int>();
         public string msgCadastro;
+        public string msgDelete;
 
 
         public ClsBanco()
@@ -220,10 +223,12 @@ namespace Limpia_DesktopTeste
         public class ObterInfo
         {
             private string name = "";
+            private int idfunc = 0;
             private string idcargo = "";
 
             public string nome { get => name; set => name = value; }
             public string idCargo { get => idcargo; set => idcargo = value; }
+            public int Idfunc { get => idfunc; set => idfunc = value; }
         }
         public List<ObterInfo> ObterAsync()
         {
@@ -231,7 +236,7 @@ namespace Limpia_DesktopTeste
             try
             {
                 using (SqlConnection connection = new SqlConnection(SQL_STRING))
-                using (SqlCommand cmd = new SqlCommand("select nome,idcargo from tblfunc where email = @Email", connection))
+                using (SqlCommand cmd = new SqlCommand("select nome,idcargo,idfunc from tblfunc where email = @Email", connection))
                 {
                     cmd.Parameters.AddWithValue("@Email", email);
 
@@ -243,7 +248,8 @@ namespace Limpia_DesktopTeste
                             var info = new ObterInfo
                             {
                                 nome = reader.GetString(0),
-                                idCargo = reader.GetInt32(1).ToString()
+                                idCargo = reader.GetInt32(1).ToString(),
+                                Idfunc = reader.GetInt32(2)
                             };
                             list.Add(info);
                         }
@@ -253,6 +259,7 @@ namespace Limpia_DesktopTeste
                     {
                         Nome = list[0].nome;
                         IdCargo = list[0].idCargo;
+                        IdFunc = list[0].Idfunc;
                     }
                 }
             }
@@ -457,6 +464,25 @@ namespace Limpia_DesktopTeste
             catch (Exception ex)
             {
                 return new ManterPerfil { IsSuccessful = false };
+            }
+        }
+
+        public void DeletarPerfil(int idDenuncia)
+        {
+
+            using (SqlConnection connection = new SqlConnection(SQL_STRING))
+            using (SqlCommand cmd = new SqlCommand("sp_DeleteDenunciaEPerfil", connection))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@idDenuncia", idDenuncia);// Consider hashing this
+                connection.Open();
+                using (SqlDataReader rdr = cmd.ExecuteReader())
+                {
+                    if (rdr.Read())
+                    {
+                        msgDelete = rdr["MESSAGE"].ToString();
+                    }
+                }
             }
         }
     }
