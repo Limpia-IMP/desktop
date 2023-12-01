@@ -153,5 +153,12 @@ namespace Limpia_DesktopTeste
         {
             openChildForm(new adicionar_funcionarios());
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            editar_perfil editar_Perfil = new editar_perfil();
+            editar_Perfil.FormularioPai = this;
+            openChildForm(editar_Perfil);
+        }
     }
 }

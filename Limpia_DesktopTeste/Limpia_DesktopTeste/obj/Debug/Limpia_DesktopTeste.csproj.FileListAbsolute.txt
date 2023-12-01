@@ -297,3 +297,5 @@ D:\TCC_Repositorios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Li
 D:\TCC_Repositorios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.csproj.CopyComplete
 D:\TCC_Repositorios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.exe
 D:\TCC_Repositorios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.pdb
+D:\TCC_Repositorios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.ConfirmarSenha.resources
+D:\TCC_Repositorios\desktop\Limpia_DesktopTeste\Limpia_DesktopTeste\obj\Debug\Limpia_DesktopTeste.editar_perfil.resources

@@ -113,6 +113,26 @@ namespace Limpia_DesktopTeste.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon__Edit {
+            get {
+                object obj = ResourceManager.GetObject("icon _Edit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap img_padrao {
+            get {
+                object obj = ResourceManager.GetObject("img_padrao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LimpezaDomestica {
             get {
                 object obj = ResourceManager.GetObject("LimpezaDomestica", resourceCulture);

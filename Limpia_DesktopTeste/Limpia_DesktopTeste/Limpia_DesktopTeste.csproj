@@ -93,6 +93,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConfirmarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmarSenha.Designer.cs">
+      <DependentUpon>ConfirmarSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editar_perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editar_perfil.Designer.cs">
+      <DependentUpon>editar_perfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="adicionar_funcionarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +222,12 @@
     <Compile Include="trabalhos_gerenciamento.Designer.cs">
       <DependentUpon>trabalhos_gerenciamento.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ConfirmarSenha.resx">
+      <DependentUpon>ConfirmarSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editar_perfil.resx">
+      <DependentUpon>editar_perfil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="adicionar_funcionarios.resx">
       <DependentUpon>adicionar_funcionarios.cs</DependentUpon>
     </EmbeddedResource>
@@ -316,6 +334,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\limpiaicongota.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon _Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skull of a Skeleton with Burning Cigarette by Vincent van Gogh [1920x1080] _ Desktop wallpaper art, Cute laptop wallpaper, Skeletons wallpaper aesthetic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_padrao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_padrao1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

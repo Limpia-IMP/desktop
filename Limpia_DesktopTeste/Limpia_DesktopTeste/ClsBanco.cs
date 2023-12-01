@@ -99,6 +99,27 @@ namespace Limpia_DesktopTeste
                 }
             }
         }
+        public void Atualizar(string senha, string alterado, string coluna)
+        {
+
+            using (SqlConnection connection = new SqlConnection(SQL_STRING))
+            using (SqlCommand cmd = new SqlCommand("sp_UptadeFuncionario", connection))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@email", Email);
+                cmd.Parameters.AddWithValue("@senha", senha);
+                cmd.Parameters.AddWithValue("@alterado", alterado);
+                cmd.Parameters.AddWithValue("@colunaAlterado", coluna);
+                connection.Open();
+                using (SqlDataReader rdr = cmd.ExecuteReader())
+                {
+                    if (rdr.Read())
+                    {
+                        msgCadastro = rdr["message"].ToString();
+                    }
+                }
+            }
+        }
 
         public class Avisos
         {
