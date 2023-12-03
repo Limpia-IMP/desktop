@@ -14,18 +14,32 @@ namespace Limpia_DesktopTeste
     {
         public principal FormularioPai { get; set; }
 
-        public ClsBanco.Cursos cursosDialog;
+        public ClsBanco.Cursos cursosAtual;
 
         public void CarregarDados()
         {
-            /*txtTituloPromo.Text = promocaoAtual.nome;
-            dtpValidade.Value = (promocaoAtual.validade_inic);
-            txtDescricaoPromo.Text = promocaoAtual.descricao;*/
+            txtValor.Text = cursosAtual.Nome;
+            txtDuracao.Text = cursosAtual.Duracao;
+            txtDescricao.Text = cursosAtual.Descri;
+            comboBox1.Text = cursosAtual.Categoria.ToString();
         }
 
         public CursosDialog()
         {
             InitializeComponent();
+        }
+
+        private void btnEditarPromo_Click(object sender, EventArgs e)
+        {
+            txtDescricao.Enabled = true;
+            txtValor.Enabled = true;
+            txtDuracao.Enabled = true;
+            comboBox1.Enabled = true;
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

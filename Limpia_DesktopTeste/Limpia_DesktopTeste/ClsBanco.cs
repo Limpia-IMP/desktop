@@ -11,7 +11,7 @@ namespace Limpia_DesktopTeste
 {
     public class ClsBanco
     {
-        private static string SQL_STRING = @"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLEXPRESS"; // SEBASTIAN MUDA DE SQLEXPRESS PARA SQLSERVER2022 E A BEATRIZ O CONTRÁRIO (SENHA TBM!!);-
+        private static string SQL_STRING = @"Password=12345; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLEXPRESS"; // SEBASTIAN MUDA DE SQLEXPRESS PARA SQLSERVER2022 E A BEATRIZ O CONTRÁRIO (SENHA TBM!!);-
 
         //SqlConnection cone = new SqlConnection(@"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLEXPRESS");
         private string senha;
@@ -212,7 +212,7 @@ namespace Limpia_DesktopTeste
 
             private string idcursos = "";
             private int valor = 0;
-            private int duracao = 0;
+            private string duracao = "";
             private string descri = "";
             private string categoria = "";
             private string nome = "";
@@ -222,7 +222,7 @@ namespace Limpia_DesktopTeste
             public string Descri { get => descri; set => descri = value; }
             public string Categoria { get => categoria; set => categoria = value; }
             public string Nome { get => nome; set => nome = value; }
-            public int Duracao { get => duracao; set => duracao = value; }
+            public string Duracao { get => duracao; set => duracao = value; }
         }
 
         public List<Cursos> cursos()
@@ -235,11 +235,52 @@ namespace Limpia_DesktopTeste
                 {
                     var list = new List<Cursos>();
                     while (reader.Read())
-                        list.Add(new Cursos { Idcursos = reader.GetString(0), Valor = reader.GetInt32(1), Duracao = reader.GetInt32(2), Descri = reader.GetString(3), Categoria = reader.GetString(4), Nome = reader.GetString(5) });
+                        list.Add(new Cursos { Idcursos = reader.GetInt32(0).ToString(), Valor = Convert.ToInt32(reader.GetDecimal(1)), Duracao = reader.GetString(2), Descri = reader.GetString(3), Categoria = reader.GetString(4), Nome = reader.GetString(5)});
                     return list;
                 }
             }
         }
+
+        /*public Boolean insertCurso(List<ValueType> listValues)
+        {
+            using (SqlConnection connection = new SqlConnection(SQL_STRING))
+            using (SqlCommand cmd = new SqlCommand("insert values into tblcurso ", connection))
+            {
+                try
+                {
+                    cmd.Parameters.AddWithValue("@table", table);
+                    cmd.Parameters.AddWithValue("@idNome", idNome);
+                    cmd.Parameters.AddWithValue("@idValue", idValue);
+
+                    connection.Open();
+                    return true;
+                }
+                catch (Exception ex) { return false; }
+
+            }
+        }*/
+
+
+        public Boolean deleteInfo(string table, string idNome, string idValue)
+        {
+            using (SqlConnection connection = new SqlConnection(SQL_STRING))
+            using (SqlCommand cmd = new SqlCommand("delete from @table where @idNome = @idValue", connection))
+            {
+                try
+                {
+                    cmd.Parameters.AddWithValue("@table", table);
+                    cmd.Parameters.AddWithValue("@idNome", idNome);
+                    cmd.Parameters.AddWithValue("@idValue", idValue);
+
+                    connection.Open();
+                    return true;
+                }
+                catch (Exception ex) { return false; }
+
+            }
+        }
+
+
 
         public class ObterInfo
         {

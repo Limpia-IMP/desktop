@@ -225,6 +225,9 @@
     <EmbeddedResource Include="ConfirmarSenha.resx">
       <DependentUpon>ConfirmarSenha.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CursosDialog.resx">
+      <DependentUpon>CursosDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="editar_perfil.resx">
       <DependentUpon>editar_perfil.cs</DependentUpon>
     </EmbeddedResource>

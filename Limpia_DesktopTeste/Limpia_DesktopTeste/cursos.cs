@@ -20,7 +20,7 @@ namespace Limpia_DesktopTeste
             InitializeComponent();
         }
 
-        private void Promo_ofertas_Load(object sender, EventArgs e)
+         private void Cursos_Load(object sender, EventArgs e)
         {
             var cursos = banco.cursos();
 
@@ -64,7 +64,7 @@ namespace Limpia_DesktopTeste
                     var cursoAtual = cursos[iAtual];
 
                     CursosDialog cursos_dialog = new CursosDialog();
-                    cursos_dialog.cursosDialog = cursoAtual;
+                    cursos_dialog.cursosAtual = cursoAtual;
                     cursos_dialog.CarregarDados();
                     cursos_dialog.FormularioPai = this.FormularioPai;  // Copia a referência do formulário principal
                     FormularioPai.openChildForm(cursos_dialog);

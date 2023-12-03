@@ -93,7 +93,9 @@ namespace Limpia_DesktopTeste
 
         private void btnCursos_Click(object sender, EventArgs e)
         {
-            openChildForm(new cursos());
+            cursos cursos = new cursos();
+            cursos.FormularioPai = this;
+            openChildForm(cursos);
         }
 
         private void btnHome_Click(object sender, EventArgs e)

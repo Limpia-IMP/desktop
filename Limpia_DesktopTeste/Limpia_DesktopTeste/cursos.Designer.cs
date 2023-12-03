@@ -84,7 +84,7 @@
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.label18.Location = new System.Drawing.Point(20, 68);
+            this.label18.Location = new System.Drawing.Point(52, 67);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(96, 24);
@@ -98,7 +98,7 @@
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(20, 33);
+            this.label17.Location = new System.Drawing.Point(33, 35);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(163, 24);
@@ -159,12 +159,12 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Berlin Sans FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
             this.label12.Location = new System.Drawing.Point(76, 67);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(84, 24);
+            this.label12.Size = new System.Drawing.Size(96, 26);
             this.label12.TabIndex = 6;
             this.label12.Text = "78 horas";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -172,12 +172,12 @@
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Berlin Sans FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.White;
             this.lblTitulo.Location = new System.Drawing.Point(25, 33);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(181, 24);
+            this.lblTitulo.Size = new System.Drawing.Size(195, 26);
             this.lblTitulo.TabIndex = 6;
             this.lblTitulo.Text = "Curso de Manicure";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -425,9 +425,10 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "cursos";
             this.Text = "cursos";
+            this.Load += new System.EventHandler(this.Cursos_Load);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel7.ResumeLayout(false);
