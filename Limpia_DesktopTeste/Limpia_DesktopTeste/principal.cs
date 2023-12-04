@@ -105,13 +105,6 @@ namespace Limpia_DesktopTeste
             openChildForm(form);
         }
 
-        private void btnPromoOfertas_Click_1(object sender, EventArgs e)
-        {
-            promo_ofertas formPromo = new promo_ofertas();
-            formPromo.FormularioPai = this;
-            openChildForm(formPromo);
-        }
-
         private void btnLogout_Click(object sender, EventArgs e)
         {
             banco.Email = "";

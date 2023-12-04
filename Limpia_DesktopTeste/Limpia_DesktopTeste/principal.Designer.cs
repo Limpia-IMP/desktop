@@ -28,32 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(principal));
             System.Windows.Forms.Button btnLogout;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(principal));
             System.Windows.Forms.Button btnCursos;
-            System.Windows.Forms.Button btnPromoOfertas;
             System.Windows.Forms.Button btnPerfil;
             System.Windows.Forms.Button btnSuporte;
             System.Windows.Forms.Button btnTrabalhos;
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.customTopBar = new System.Windows.Forms.Panel();
+            this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnFecharTela = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnAddFunc = new System.Windows.Forms.Button();
             this.lblMenu = new System.Windows.Forms.Label();
             this.sidebar = new System.Windows.Forms.Panel();
-            this.sidebar2 = new System.Windows.Forms.Panel();
-            this.txtCodCargo = new System.Windows.Forms.Label();
-            this.txtNomeFunc = new System.Windows.Forms.Label();
-            this.btnMinimizar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnHome = new System.Windows.Forms.Button();
-            this.btnAddFunc = new System.Windows.Forms.Button();
+            this.sidebar2 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.txtCodCargo = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.txtNomeFunc = new System.Windows.Forms.Label();
             btnLogout = new System.Windows.Forms.Button();
             btnCursos = new System.Windows.Forms.Button();
-            btnPromoOfertas = new System.Windows.Forms.Button();
             btnPerfil = new System.Windows.Forms.Button();
             btnSuporte = new System.Windows.Forms.Button();
             btnTrabalhos = new System.Windows.Forms.Button();
@@ -61,11 +59,106 @@
             this.customTopBar.SuspendLayout();
             this.panel3.SuspendLayout();
             this.sidebar.SuspendLayout();
-            this.sidebar2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.sidebar2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnLogout
+            // 
+            btnLogout.FlatAppearance.BorderSize = 0;
+            btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnLogout.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F);
+            btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
+            btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnLogout.Location = new System.Drawing.Point(0, 387);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            btnLogout.Size = new System.Drawing.Size(195, 51);
+            btnLogout.TabIndex = 7;
+            btnLogout.Text = " Logout";
+            btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            btnLogout.UseVisualStyleBackColor = true;
+            btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // btnCursos
+            // 
+            btnCursos.FlatAppearance.BorderSize = 0;
+            btnCursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnCursos.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F);
+            btnCursos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            btnCursos.Image = ((System.Drawing.Image)(resources.GetObject("btnCursos.Image")));
+            btnCursos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnCursos.Location = new System.Drawing.Point(0, 334);
+            btnCursos.Name = "btnCursos";
+            btnCursos.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            btnCursos.Size = new System.Drawing.Size(195, 51);
+            btnCursos.TabIndex = 6;
+            btnCursos.Text = " Cursos";
+            btnCursos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnCursos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            btnCursos.UseVisualStyleBackColor = true;
+            btnCursos.Click += new System.EventHandler(this.btnCursos_Click);
+            // 
+            // btnPerfil
+            // 
+            btnPerfil.FlatAppearance.BorderSize = 0;
+            btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnPerfil.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F);
+            btnPerfil.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            btnPerfil.Image = ((System.Drawing.Image)(resources.GetObject("btnPerfil.Image")));
+            btnPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnPerfil.Location = new System.Drawing.Point(0, 281);
+            btnPerfil.Name = "btnPerfil";
+            btnPerfil.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            btnPerfil.Size = new System.Drawing.Size(195, 51);
+            btnPerfil.TabIndex = 4;
+            btnPerfil.Text = " Perfil";
+            btnPerfil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnPerfil.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            btnPerfil.UseVisualStyleBackColor = true;
+            btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
+            // 
+            // btnSuporte
+            // 
+            btnSuporte.FlatAppearance.BorderSize = 0;
+            btnSuporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnSuporte.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F);
+            btnSuporte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            btnSuporte.Image = ((System.Drawing.Image)(resources.GetObject("btnSuporte.Image")));
+            btnSuporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnSuporte.Location = new System.Drawing.Point(0, 229);
+            btnSuporte.Name = "btnSuporte";
+            btnSuporte.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            btnSuporte.Size = new System.Drawing.Size(195, 51);
+            btnSuporte.TabIndex = 3;
+            btnSuporte.Text = " Suporte";
+            btnSuporte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnSuporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            btnSuporte.UseVisualStyleBackColor = true;
+            btnSuporte.Click += new System.EventHandler(this.btnSuporte_Click);
+            // 
+            // btnTrabalhos
+            // 
+            btnTrabalhos.FlatAppearance.BorderSize = 0;
+            btnTrabalhos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnTrabalhos.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            btnTrabalhos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            btnTrabalhos.Image = ((System.Drawing.Image)(resources.GetObject("btnTrabalhos.Image")));
+            btnTrabalhos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnTrabalhos.Location = new System.Drawing.Point(0, 177);
+            btnTrabalhos.Name = "btnTrabalhos";
+            btnTrabalhos.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            btnTrabalhos.Size = new System.Drawing.Size(195, 51);
+            btnTrabalhos.TabIndex = 2;
+            btnTrabalhos.Text = " Trabalhos";
+            btnTrabalhos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnTrabalhos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            btnTrabalhos.UseVisualStyleBackColor = true;
+            btnTrabalhos.Click += new System.EventHandler(this.btnTrabalhos_Click);
             // 
             // panelChildForm
             // 
@@ -92,6 +185,22 @@
             this.customTopBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.customTopBar_MouseDown);
             this.customTopBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.customTopBar_MouseMove);
             this.customTopBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.customTopBar_MouseUp);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnMinimizar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
+            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinimizar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(59)))), ((int)(((byte)(106)))));
+            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
+            this.btnMinimizar.Location = new System.Drawing.Point(721, 0);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.btnMinimizar.Size = new System.Drawing.Size(45, 40);
+            this.btnMinimizar.TabIndex = 2;
+            this.btnMinimizar.UseVisualStyleBackColor = true;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // btnFecharTela
             // 
@@ -130,6 +239,24 @@
             this.panel3.Size = new System.Drawing.Size(195, 44);
             this.panel3.TabIndex = 1;
             // 
+            // btnAddFunc
+            // 
+            this.btnAddFunc.FlatAppearance.BorderSize = 0;
+            this.btnAddFunc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddFunc.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddFunc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnAddFunc.Image = ((System.Drawing.Image)(resources.GetObject("btnAddFunc.Image")));
+            this.btnAddFunc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddFunc.Location = new System.Drawing.Point(0, 0);
+            this.btnAddFunc.Name = "btnAddFunc";
+            this.btnAddFunc.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.btnAddFunc.Size = new System.Drawing.Size(195, 44);
+            this.btnAddFunc.TabIndex = 2;
+            this.btnAddFunc.Text = " Poder Supremo";
+            this.btnAddFunc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAddFunc.UseVisualStyleBackColor = true;
+            this.btnAddFunc.Click += new System.EventHandler(this.btnAddFunc_Click);
+            // 
             // lblMenu
             // 
             this.lblMenu.AutoSize = true;
@@ -150,7 +277,6 @@
             this.sidebar.Controls.Add(this.pictureBox1);
             this.sidebar.Controls.Add(btnLogout);
             this.sidebar.Controls.Add(btnCursos);
-            this.sidebar.Controls.Add(btnPromoOfertas);
             this.sidebar.Controls.Add(btnPerfil);
             this.sidebar.Controls.Add(btnSuporte);
             this.sidebar.Controls.Add(btnTrabalhos);
@@ -162,6 +288,35 @@
             this.sidebar.Name = "sidebar";
             this.sidebar.Size = new System.Drawing.Size(195, 590);
             this.sidebar.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(47, 477);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnHome
+            // 
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(0, 125);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.btnHome.Size = new System.Drawing.Size(195, 51);
+            this.btnHome.TabIndex = 1;
+            this.btnHome.Text = " Home";
+            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // sidebar2
             // 
@@ -175,6 +330,18 @@
             this.sidebar2.Size = new System.Drawing.Size(195, 80);
             this.sidebar2.TabIndex = 0;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = global::Limpia_DesktopTeste.Properties.Resources.icon__Edit;
+            this.pictureBox3.Location = new System.Drawing.Point(154, 28);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(26, 28);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 12;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
             // txtCodCargo
             // 
             this.txtCodCargo.AutoSize = true;
@@ -187,6 +354,17 @@
             this.txtCodCargo.TabIndex = 11;
             this.txtCodCargo.Text = "#115978";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(11, 11);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(60, 60);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // txtNomeFunc
             // 
             this.txtNomeFunc.Font = new System.Drawing.Font("Berlin Sans FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -197,206 +375,6 @@
             this.txtNomeFunc.Size = new System.Drawing.Size(75, 22);
             this.txtNomeFunc.TabIndex = 9;
             this.txtNomeFunc.Text = "Sebs";
-            // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnMinimizar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMinimizar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(59)))), ((int)(((byte)(106)))));
-            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(721, 0);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.btnMinimizar.Size = new System.Drawing.Size(45, 40);
-            this.btnMinimizar.TabIndex = 2;
-            this.btnMinimizar.UseVisualStyleBackColor = true;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(48, 478);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnLogout
-            // 
-            btnLogout.FlatAppearance.BorderSize = 0;
-            btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnLogout.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F);
-            btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
-            btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnLogout.Location = new System.Drawing.Point(0, 416);
-            btnLogout.Name = "btnLogout";
-            btnLogout.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            btnLogout.Size = new System.Drawing.Size(195, 51);
-            btnLogout.TabIndex = 7;
-            btnLogout.Text = " Logout";
-            btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            btnLogout.UseVisualStyleBackColor = true;
-            btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
-            // 
-            // btnCursos
-            // 
-            btnCursos.FlatAppearance.BorderSize = 0;
-            btnCursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnCursos.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F);
-            btnCursos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            btnCursos.Image = ((System.Drawing.Image)(resources.GetObject("btnCursos.Image")));
-            btnCursos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnCursos.Location = new System.Drawing.Point(0, 367);
-            btnCursos.Name = "btnCursos";
-            btnCursos.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            btnCursos.Size = new System.Drawing.Size(195, 51);
-            btnCursos.TabIndex = 6;
-            btnCursos.Text = " Cursos";
-            btnCursos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnCursos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            btnCursos.UseVisualStyleBackColor = true;
-            btnCursos.Click += new System.EventHandler(this.btnCursos_Click);
-            // 
-            // btnPromoOfertas
-            // 
-            btnPromoOfertas.FlatAppearance.BorderSize = 0;
-            btnPromoOfertas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnPromoOfertas.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F);
-            btnPromoOfertas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            btnPromoOfertas.Image = ((System.Drawing.Image)(resources.GetObject("btnPromoOfertas.Image")));
-            btnPromoOfertas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnPromoOfertas.Location = new System.Drawing.Point(0, 318);
-            btnPromoOfertas.Name = "btnPromoOfertas";
-            btnPromoOfertas.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            btnPromoOfertas.Size = new System.Drawing.Size(195, 51);
-            btnPromoOfertas.TabIndex = 5;
-            btnPromoOfertas.Text = " Promo e Ofertas";
-            btnPromoOfertas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnPromoOfertas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            btnPromoOfertas.UseVisualStyleBackColor = true;
-            btnPromoOfertas.Click += new System.EventHandler(this.btnPromoOfertas_Click_1);
-            // 
-            // btnPerfil
-            // 
-            btnPerfil.FlatAppearance.BorderSize = 0;
-            btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnPerfil.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F);
-            btnPerfil.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            btnPerfil.Image = ((System.Drawing.Image)(resources.GetObject("btnPerfil.Image")));
-            btnPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnPerfil.Location = new System.Drawing.Point(0, 270);
-            btnPerfil.Name = "btnPerfil";
-            btnPerfil.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            btnPerfil.Size = new System.Drawing.Size(195, 51);
-            btnPerfil.TabIndex = 4;
-            btnPerfil.Text = " Perfil";
-            btnPerfil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnPerfil.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            btnPerfil.UseVisualStyleBackColor = true;
-            btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
-            // 
-            // btnSuporte
-            // 
-            btnSuporte.FlatAppearance.BorderSize = 0;
-            btnSuporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnSuporte.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F);
-            btnSuporte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            btnSuporte.Image = ((System.Drawing.Image)(resources.GetObject("btnSuporte.Image")));
-            btnSuporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnSuporte.Location = new System.Drawing.Point(0, 221);
-            btnSuporte.Name = "btnSuporte";
-            btnSuporte.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            btnSuporte.Size = new System.Drawing.Size(195, 51);
-            btnSuporte.TabIndex = 3;
-            btnSuporte.Text = " Suporte";
-            btnSuporte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnSuporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            btnSuporte.UseVisualStyleBackColor = true;
-            btnSuporte.Click += new System.EventHandler(this.btnSuporte_Click);
-            // 
-            // btnTrabalhos
-            // 
-            btnTrabalhos.FlatAppearance.BorderSize = 0;
-            btnTrabalhos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnTrabalhos.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            btnTrabalhos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            btnTrabalhos.Image = ((System.Drawing.Image)(resources.GetObject("btnTrabalhos.Image")));
-            btnTrabalhos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnTrabalhos.Location = new System.Drawing.Point(0, 172);
-            btnTrabalhos.Name = "btnTrabalhos";
-            btnTrabalhos.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            btnTrabalhos.Size = new System.Drawing.Size(195, 51);
-            btnTrabalhos.TabIndex = 2;
-            btnTrabalhos.Text = " Trabalhos";
-            btnTrabalhos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnTrabalhos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            btnTrabalhos.UseVisualStyleBackColor = true;
-            btnTrabalhos.Click += new System.EventHandler(this.btnTrabalhos_Click);
-            // 
-            // btnHome
-            // 
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
-            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(0, 124);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.btnHome.Size = new System.Drawing.Size(195, 51);
-            this.btnHome.TabIndex = 1;
-            this.btnHome.Text = " Home";
-            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHome.UseVisualStyleBackColor = true;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // btnAddFunc
-            // 
-            this.btnAddFunc.FlatAppearance.BorderSize = 0;
-            this.btnAddFunc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddFunc.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddFunc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.btnAddFunc.Image = ((System.Drawing.Image)(resources.GetObject("btnAddFunc.Image")));
-            this.btnAddFunc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddFunc.Location = new System.Drawing.Point(0, 0);
-            this.btnAddFunc.Name = "btnAddFunc";
-            this.btnAddFunc.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.btnAddFunc.Size = new System.Drawing.Size(195, 44);
-            this.btnAddFunc.TabIndex = 2;
-            this.btnAddFunc.Text = " Poder Supremo";
-            this.btnAddFunc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAddFunc.UseVisualStyleBackColor = true;
-            this.btnAddFunc.Click += new System.EventHandler(this.btnAddFunc_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = global::Limpia_DesktopTeste.Properties.Resources.icon__Edit;
-            this.pictureBox3.Location = new System.Drawing.Point(154, 28);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 12;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(11, 11);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
             // 
             // principal
             // 
@@ -417,9 +395,9 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.sidebar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.sidebar2.ResumeLayout(false);
             this.sidebar2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

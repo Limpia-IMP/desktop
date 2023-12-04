@@ -11,7 +11,7 @@ namespace Limpia_DesktopTeste
 {
     public class ClsBanco
     {
-        private static string SQL_STRING = @"Password=12345; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLEXPRESS"; // SEBASTIAN MUDA DE SQLEXPRESS PARA SQLSERVER2022 E A BEATRIZ O CONTRÁRIO (SENHA TBM!!);-
+        private static string SQL_STRING = @"Password=12345; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLSERVER2022"; // SEBASTIAN MUDA DE SQLEXPRESS PARA SQLSERVER2022 E A BEATRIZ O CONTRÁRIO (SENHA TBM!!);-
 
         //SqlConnection cone = new SqlConnection(@"Password=etesp; Persist Security Info=True; User ID=sa; Initial Catalog=Limpia; Data Source=" + Environment.MachineName + "\\SQLEXPRESS");
         private string senha;
@@ -492,7 +492,9 @@ namespace Limpia_DesktopTeste
                                     Cpf = reader2.GetString(6),
                                     Rg = reader2.GetString(7),
                                     Genero = reader2.GetString(8),
-                                    Image = (byte[])reader2["foto"]
+                                    Image = reader2.IsDBNull(reader2.GetOrdinal("foto"))
+                                    ? null
+                                    : (byte[])reader2["foto"]
                                 });
                             }
                         }

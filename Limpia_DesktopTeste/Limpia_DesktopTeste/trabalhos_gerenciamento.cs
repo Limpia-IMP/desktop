@@ -61,6 +61,8 @@ namespace Limpia_DesktopTeste
             lblCidade.Text = lst[btn].Cidade;
             lblEstado.Text = lst[btn].Estado;
             lblDesc.Text = lst[btn].Desc;
+
+            SetRoundedEdges(panel1, 30);
         }
 
         private void btnAprovar_Click(object sender, EventArgs e)
@@ -91,6 +93,21 @@ namespace Limpia_DesktopTeste
             {
                 MessageBox.Show("Erro ao aprovar o anúncio.");
             }
+        }
+
+        public void SetRoundedEdges(Panel panel, int radius)
+        {
+            System.Drawing.Drawing2D.GraphicsPath path = new System.Drawing.Drawing2D.GraphicsPath();
+            path.StartFigure();
+            path.AddArc(new Rectangle(0, 0, radius, radius), 180, 90);
+            path.AddLine(radius, 0, panel.Width - radius, 0);
+            path.AddArc(new Rectangle(panel.Width - radius, 0, radius, radius), 270, 90);
+            path.AddLine(panel.Width, radius, panel.Width, panel.Height - radius);
+            path.AddArc(new Rectangle(panel.Width - radius, panel.Height - radius, radius, radius), 0, 90);
+            path.AddLine(panel.Width - radius, panel.Height, radius, panel.Height);
+            path.AddArc(new Rectangle(0, panel.Height - radius, radius, radius), 90, 90);
+            path.CloseFigure();
+            panel.Region = new System.Drawing.Region(path);
         }
     }
 }

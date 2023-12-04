@@ -88,10 +88,9 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Berlin Sans FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(62, 7);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(83, 9);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(260, 24);
+            this.label10.Size = new System.Drawing.Size(325, 31);
             this.label10.TabIndex = 5;
             this.label10.Text = "-> Controle de Novos Perfis";
             // 
@@ -143,19 +142,18 @@
             this.panel1.Controls.Add(this.btn2);
             this.panel1.Controls.Add(this.btn1);
             this.panel1.Controls.Add(this.lblUser1);
-            this.panel1.Location = new System.Drawing.Point(64, 88);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(85, 108);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(702, 451);
+            this.panel1.Size = new System.Drawing.Size(936, 555);
             this.panel1.TabIndex = 4;
             // 
             // lblGenero9
             // 
             this.lblGenero9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGenero9.Location = new System.Drawing.Point(331, 412);
-            this.lblGenero9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblGenero9.Location = new System.Drawing.Point(441, 507);
             this.lblGenero9.Name = "lblGenero9";
-            this.lblGenero9.Size = new System.Drawing.Size(81, 20);
+            this.lblGenero9.Size = new System.Drawing.Size(108, 25);
             this.lblGenero9.TabIndex = 45;
             this.lblGenero9.Text = "feminino";
             this.lblGenero9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -164,10 +162,9 @@
             // 
             this.lblOcup9.BackColor = System.Drawing.Color.White;
             this.lblOcup9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOcup9.Location = new System.Drawing.Point(440, 412);
-            this.lblOcup9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblOcup9.Location = new System.Drawing.Point(587, 507);
             this.lblOcup9.Name = "lblOcup9";
-            this.lblOcup9.Size = new System.Drawing.Size(117, 20);
+            this.lblOcup9.Size = new System.Drawing.Size(156, 25);
             this.lblOcup9.TabIndex = 44;
             this.lblOcup9.Text = "contratante";
             this.lblOcup9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -175,10 +172,9 @@
             // lblGenero8
             // 
             this.lblGenero8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGenero8.Location = new System.Drawing.Point(331, 363);
-            this.lblGenero8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblGenero8.Location = new System.Drawing.Point(441, 447);
             this.lblGenero8.Name = "lblGenero8";
-            this.lblGenero8.Size = new System.Drawing.Size(81, 20);
+            this.lblGenero8.Size = new System.Drawing.Size(108, 25);
             this.lblGenero8.TabIndex = 43;
             this.lblGenero8.Text = "feminino";
             this.lblGenero8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -187,10 +183,9 @@
             // 
             this.lblOcup8.BackColor = System.Drawing.Color.White;
             this.lblOcup8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOcup8.Location = new System.Drawing.Point(440, 363);
-            this.lblOcup8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblOcup8.Location = new System.Drawing.Point(587, 447);
             this.lblOcup8.Name = "lblOcup8";
-            this.lblOcup8.Size = new System.Drawing.Size(117, 20);
+            this.lblOcup8.Size = new System.Drawing.Size(156, 25);
             this.lblOcup8.TabIndex = 42;
             this.lblOcup8.Text = "contratante";
             this.lblOcup8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -198,10 +193,9 @@
             // lblGenero7
             // 
             this.lblGenero7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGenero7.Location = new System.Drawing.Point(331, 313);
-            this.lblGenero7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblGenero7.Location = new System.Drawing.Point(441, 385);
             this.lblGenero7.Name = "lblGenero7";
-            this.lblGenero7.Size = new System.Drawing.Size(81, 20);
+            this.lblGenero7.Size = new System.Drawing.Size(108, 25);
             this.lblGenero7.TabIndex = 41;
             this.lblGenero7.Text = "feminino";
             this.lblGenero7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -210,10 +204,9 @@
             // 
             this.lblOcup7.BackColor = System.Drawing.Color.White;
             this.lblOcup7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOcup7.Location = new System.Drawing.Point(440, 313);
-            this.lblOcup7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblOcup7.Location = new System.Drawing.Point(587, 385);
             this.lblOcup7.Name = "lblOcup7";
-            this.lblOcup7.Size = new System.Drawing.Size(117, 20);
+            this.lblOcup7.Size = new System.Drawing.Size(156, 25);
             this.lblOcup7.TabIndex = 40;
             this.lblOcup7.Text = "contratante";
             this.lblOcup7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -221,10 +214,9 @@
             // lblGenero6
             // 
             this.lblGenero6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGenero6.Location = new System.Drawing.Point(331, 264);
-            this.lblGenero6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblGenero6.Location = new System.Drawing.Point(441, 325);
             this.lblGenero6.Name = "lblGenero6";
-            this.lblGenero6.Size = new System.Drawing.Size(81, 20);
+            this.lblGenero6.Size = new System.Drawing.Size(108, 25);
             this.lblGenero6.TabIndex = 39;
             this.lblGenero6.Text = "feminino";
             this.lblGenero6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -233,10 +225,9 @@
             // 
             this.lblOcup6.BackColor = System.Drawing.Color.White;
             this.lblOcup6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOcup6.Location = new System.Drawing.Point(440, 264);
-            this.lblOcup6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblOcup6.Location = new System.Drawing.Point(587, 325);
             this.lblOcup6.Name = "lblOcup6";
-            this.lblOcup6.Size = new System.Drawing.Size(117, 20);
+            this.lblOcup6.Size = new System.Drawing.Size(156, 25);
             this.lblOcup6.TabIndex = 38;
             this.lblOcup6.Text = "prestador";
             this.lblOcup6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -244,10 +235,9 @@
             // lblGenero5
             // 
             this.lblGenero5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGenero5.Location = new System.Drawing.Point(331, 215);
-            this.lblGenero5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblGenero5.Location = new System.Drawing.Point(441, 265);
             this.lblGenero5.Name = "lblGenero5";
-            this.lblGenero5.Size = new System.Drawing.Size(81, 20);
+            this.lblGenero5.Size = new System.Drawing.Size(108, 25);
             this.lblGenero5.TabIndex = 37;
             this.lblGenero5.Text = "feminino";
             this.lblGenero5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -256,10 +246,9 @@
             // 
             this.lblOcup5.BackColor = System.Drawing.Color.White;
             this.lblOcup5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOcup5.Location = new System.Drawing.Point(440, 215);
-            this.lblOcup5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblOcup5.Location = new System.Drawing.Point(587, 265);
             this.lblOcup5.Name = "lblOcup5";
-            this.lblOcup5.Size = new System.Drawing.Size(117, 20);
+            this.lblOcup5.Size = new System.Drawing.Size(156, 25);
             this.lblOcup5.TabIndex = 36;
             this.lblOcup5.Text = "contratante";
             this.lblOcup5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -267,10 +256,9 @@
             // lblGenero4
             // 
             this.lblGenero4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGenero4.Location = new System.Drawing.Point(331, 167);
-            this.lblGenero4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblGenero4.Location = new System.Drawing.Point(441, 206);
             this.lblGenero4.Name = "lblGenero4";
-            this.lblGenero4.Size = new System.Drawing.Size(81, 20);
+            this.lblGenero4.Size = new System.Drawing.Size(108, 25);
             this.lblGenero4.TabIndex = 35;
             this.lblGenero4.Text = "feminino";
             this.lblGenero4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -279,10 +267,9 @@
             // 
             this.lblOcup4.BackColor = System.Drawing.Color.White;
             this.lblOcup4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOcup4.Location = new System.Drawing.Point(440, 167);
-            this.lblOcup4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblOcup4.Location = new System.Drawing.Point(587, 206);
             this.lblOcup4.Name = "lblOcup4";
-            this.lblOcup4.Size = new System.Drawing.Size(117, 20);
+            this.lblOcup4.Size = new System.Drawing.Size(156, 25);
             this.lblOcup4.TabIndex = 34;
             this.lblOcup4.Text = "prestador";
             this.lblOcup4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -290,10 +277,9 @@
             // lblGenero3
             // 
             this.lblGenero3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGenero3.Location = new System.Drawing.Point(331, 117);
-            this.lblGenero3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblGenero3.Location = new System.Drawing.Point(441, 144);
             this.lblGenero3.Name = "lblGenero3";
-            this.lblGenero3.Size = new System.Drawing.Size(81, 20);
+            this.lblGenero3.Size = new System.Drawing.Size(108, 25);
             this.lblGenero3.TabIndex = 33;
             this.lblGenero3.Text = "feminino";
             this.lblGenero3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -302,10 +288,9 @@
             // 
             this.lblOcup3.BackColor = System.Drawing.Color.White;
             this.lblOcup3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOcup3.Location = new System.Drawing.Point(440, 117);
-            this.lblOcup3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblOcup3.Location = new System.Drawing.Point(587, 144);
             this.lblOcup3.Name = "lblOcup3";
-            this.lblOcup3.Size = new System.Drawing.Size(117, 20);
+            this.lblOcup3.Size = new System.Drawing.Size(156, 25);
             this.lblOcup3.TabIndex = 32;
             this.lblOcup3.Text = "contratante";
             this.lblOcup3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -313,10 +298,9 @@
             // lblGenero2
             // 
             this.lblGenero2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGenero2.Location = new System.Drawing.Point(331, 69);
-            this.lblGenero2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblGenero2.Location = new System.Drawing.Point(441, 85);
             this.lblGenero2.Name = "lblGenero2";
-            this.lblGenero2.Size = new System.Drawing.Size(81, 20);
+            this.lblGenero2.Size = new System.Drawing.Size(108, 25);
             this.lblGenero2.TabIndex = 31;
             this.lblGenero2.Text = "feminino";
             this.lblGenero2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -325,10 +309,9 @@
             // 
             this.lblOcup2.BackColor = System.Drawing.Color.White;
             this.lblOcup2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOcup2.Location = new System.Drawing.Point(440, 69);
-            this.lblOcup2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblOcup2.Location = new System.Drawing.Point(587, 85);
             this.lblOcup2.Name = "lblOcup2";
-            this.lblOcup2.Size = new System.Drawing.Size(117, 20);
+            this.lblOcup2.Size = new System.Drawing.Size(156, 25);
             this.lblOcup2.TabIndex = 30;
             this.lblOcup2.Text = "prestador";
             this.lblOcup2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -336,10 +319,9 @@
             // lblGenero1
             // 
             this.lblGenero1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGenero1.Location = new System.Drawing.Point(331, 18);
-            this.lblGenero1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblGenero1.Location = new System.Drawing.Point(441, 22);
             this.lblGenero1.Name = "lblGenero1";
-            this.lblGenero1.Size = new System.Drawing.Size(81, 20);
+            this.lblGenero1.Size = new System.Drawing.Size(108, 25);
             this.lblGenero1.TabIndex = 29;
             this.lblGenero1.Text = "feminino";
             this.lblGenero1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -348,10 +330,9 @@
             // 
             this.lblOcup1.BackColor = System.Drawing.Color.White;
             this.lblOcup1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOcup1.Location = new System.Drawing.Point(440, 18);
-            this.lblOcup1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblOcup1.Location = new System.Drawing.Point(587, 22);
             this.lblOcup1.Name = "lblOcup1";
-            this.lblOcup1.Size = new System.Drawing.Size(117, 20);
+            this.lblOcup1.Size = new System.Drawing.Size(156, 25);
             this.lblOcup1.TabIndex = 28;
             this.lblOcup1.Text = "contratante";
             this.lblOcup1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -360,10 +341,9 @@
             // 
             this.lblEmail9.AutoSize = true;
             this.lblEmail9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail9.Location = new System.Drawing.Point(116, 412);
-            this.lblEmail9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmail9.Location = new System.Drawing.Point(155, 507);
             this.lblEmail9.Name = "lblEmail9";
-            this.lblEmail9.Size = new System.Drawing.Size(185, 19);
+            this.lblEmail9.Size = new System.Drawing.Size(238, 24);
             this.lblEmail9.TabIndex = 27;
             this.lblEmail9.Text = "Lorem Ipsum is simply dum\r\n";
             // 
@@ -371,10 +351,9 @@
             // 
             this.lblEmail8.AutoSize = true;
             this.lblEmail8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail8.Location = new System.Drawing.Point(116, 363);
-            this.lblEmail8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmail8.Location = new System.Drawing.Point(155, 447);
             this.lblEmail8.Name = "lblEmail8";
-            this.lblEmail8.Size = new System.Drawing.Size(185, 19);
+            this.lblEmail8.Size = new System.Drawing.Size(238, 24);
             this.lblEmail8.TabIndex = 26;
             this.lblEmail8.Text = "Lorem Ipsum is simply dum\r\n";
             // 
@@ -382,10 +361,9 @@
             // 
             this.lblEmail7.AutoSize = true;
             this.lblEmail7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail7.Location = new System.Drawing.Point(116, 314);
-            this.lblEmail7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmail7.Location = new System.Drawing.Point(155, 386);
             this.lblEmail7.Name = "lblEmail7";
-            this.lblEmail7.Size = new System.Drawing.Size(185, 19);
+            this.lblEmail7.Size = new System.Drawing.Size(238, 24);
             this.lblEmail7.TabIndex = 25;
             this.lblEmail7.Text = "Lorem Ipsum is simply dum\r\n";
             // 
@@ -393,10 +371,9 @@
             // 
             this.lblEmail6.AutoSize = true;
             this.lblEmail6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail6.Location = new System.Drawing.Point(116, 265);
-            this.lblEmail6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmail6.Location = new System.Drawing.Point(155, 326);
             this.lblEmail6.Name = "lblEmail6";
-            this.lblEmail6.Size = new System.Drawing.Size(185, 19);
+            this.lblEmail6.Size = new System.Drawing.Size(238, 24);
             this.lblEmail6.TabIndex = 24;
             this.lblEmail6.Text = "Lorem Ipsum is simply dum\r\n";
             // 
@@ -404,10 +381,9 @@
             // 
             this.lblEmail5.AutoSize = true;
             this.lblEmail5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail5.Location = new System.Drawing.Point(116, 216);
-            this.lblEmail5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmail5.Location = new System.Drawing.Point(155, 266);
             this.lblEmail5.Name = "lblEmail5";
-            this.lblEmail5.Size = new System.Drawing.Size(185, 19);
+            this.lblEmail5.Size = new System.Drawing.Size(238, 24);
             this.lblEmail5.TabIndex = 23;
             this.lblEmail5.Text = "Lorem Ipsum is simply dum\r\n";
             // 
@@ -415,10 +391,9 @@
             // 
             this.lblEmail4.AutoSize = true;
             this.lblEmail4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail4.Location = new System.Drawing.Point(116, 167);
-            this.lblEmail4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmail4.Location = new System.Drawing.Point(155, 206);
             this.lblEmail4.Name = "lblEmail4";
-            this.lblEmail4.Size = new System.Drawing.Size(185, 19);
+            this.lblEmail4.Size = new System.Drawing.Size(238, 24);
             this.lblEmail4.TabIndex = 22;
             this.lblEmail4.Text = "Lorem Ipsum is simply dum\r\n";
             // 
@@ -426,10 +401,9 @@
             // 
             this.lblEmail3.AutoSize = true;
             this.lblEmail3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail3.Location = new System.Drawing.Point(116, 118);
-            this.lblEmail3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmail3.Location = new System.Drawing.Point(155, 145);
             this.lblEmail3.Name = "lblEmail3";
-            this.lblEmail3.Size = new System.Drawing.Size(185, 19);
+            this.lblEmail3.Size = new System.Drawing.Size(238, 24);
             this.lblEmail3.TabIndex = 21;
             this.lblEmail3.Text = "Lorem Ipsum is simply dum\r\n";
             // 
@@ -437,10 +411,9 @@
             // 
             this.lblEmail2.AutoSize = true;
             this.lblEmail2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail2.Location = new System.Drawing.Point(116, 69);
-            this.lblEmail2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmail2.Location = new System.Drawing.Point(155, 85);
             this.lblEmail2.Name = "lblEmail2";
-            this.lblEmail2.Size = new System.Drawing.Size(185, 19);
+            this.lblEmail2.Size = new System.Drawing.Size(238, 24);
             this.lblEmail2.TabIndex = 20;
             this.lblEmail2.Text = "Lorem Ipsum is simply dum\r\n";
             // 
@@ -448,10 +421,9 @@
             // 
             this.lblEmail1.AutoSize = true;
             this.lblEmail1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail1.Location = new System.Drawing.Point(116, 19);
-            this.lblEmail1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmail1.Location = new System.Drawing.Point(155, 23);
             this.lblEmail1.Name = "lblEmail1";
-            this.lblEmail1.Size = new System.Drawing.Size(185, 19);
+            this.lblEmail1.Size = new System.Drawing.Size(238, 24);
             this.lblEmail1.TabIndex = 19;
             this.lblEmail1.Text = "Lorem Ipsum is simply dum\r\n";
             // 
@@ -459,10 +431,9 @@
             // 
             this.lblUser9.AutoSize = true;
             this.lblUser9.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUser9.Location = new System.Drawing.Point(15, 412);
-            this.lblUser9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUser9.Location = new System.Drawing.Point(20, 507);
             this.lblUser9.Name = "lblUser9";
-            this.lblUser9.Size = new System.Drawing.Size(56, 18);
+            this.lblUser9.Size = new System.Drawing.Size(71, 23);
             this.lblUser9.TabIndex = 18;
             this.lblUser9.Text = "perfil_9";
             // 
@@ -470,10 +441,9 @@
             // 
             this.lblUser8.AutoSize = true;
             this.lblUser8.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUser8.Location = new System.Drawing.Point(15, 363);
-            this.lblUser8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUser8.Location = new System.Drawing.Point(20, 447);
             this.lblUser8.Name = "lblUser8";
-            this.lblUser8.Size = new System.Drawing.Size(55, 18);
+            this.lblUser8.Size = new System.Drawing.Size(70, 23);
             this.lblUser8.TabIndex = 17;
             this.lblUser8.Text = "perfil_8";
             // 
@@ -481,10 +451,9 @@
             // 
             this.lblUser7.AutoSize = true;
             this.lblUser7.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUser7.Location = new System.Drawing.Point(15, 314);
-            this.lblUser7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUser7.Location = new System.Drawing.Point(20, 386);
             this.lblUser7.Name = "lblUser7";
-            this.lblUser7.Size = new System.Drawing.Size(55, 18);
+            this.lblUser7.Size = new System.Drawing.Size(70, 23);
             this.lblUser7.TabIndex = 16;
             this.lblUser7.Text = "perfil_7";
             // 
@@ -492,10 +461,9 @@
             // 
             this.lblUser6.AutoSize = true;
             this.lblUser6.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUser6.Location = new System.Drawing.Point(15, 265);
-            this.lblUser6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUser6.Location = new System.Drawing.Point(20, 326);
             this.lblUser6.Name = "lblUser6";
-            this.lblUser6.Size = new System.Drawing.Size(56, 18);
+            this.lblUser6.Size = new System.Drawing.Size(71, 23);
             this.lblUser6.TabIndex = 15;
             this.lblUser6.Text = "perfil_6";
             // 
@@ -503,10 +471,9 @@
             // 
             this.lblUser5.AutoSize = true;
             this.lblUser5.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUser5.Location = new System.Drawing.Point(15, 216);
-            this.lblUser5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUser5.Location = new System.Drawing.Point(20, 266);
             this.lblUser5.Name = "lblUser5";
-            this.lblUser5.Size = new System.Drawing.Size(56, 18);
+            this.lblUser5.Size = new System.Drawing.Size(71, 23);
             this.lblUser5.TabIndex = 14;
             this.lblUser5.Text = "perfil_5";
             // 
@@ -514,10 +481,9 @@
             // 
             this.lblUser4.AutoSize = true;
             this.lblUser4.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUser4.Location = new System.Drawing.Point(15, 167);
-            this.lblUser4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUser4.Location = new System.Drawing.Point(20, 206);
             this.lblUser4.Name = "lblUser4";
-            this.lblUser4.Size = new System.Drawing.Size(56, 18);
+            this.lblUser4.Size = new System.Drawing.Size(71, 23);
             this.lblUser4.TabIndex = 13;
             this.lblUser4.Text = "perfil_4";
             // 
@@ -525,10 +491,9 @@
             // 
             this.lblUser3.AutoSize = true;
             this.lblUser3.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUser3.Location = new System.Drawing.Point(15, 118);
-            this.lblUser3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUser3.Location = new System.Drawing.Point(20, 145);
             this.lblUser3.Name = "lblUser3";
-            this.lblUser3.Size = new System.Drawing.Size(56, 18);
+            this.lblUser3.Size = new System.Drawing.Size(70, 23);
             this.lblUser3.TabIndex = 12;
             this.lblUser3.Text = "perfil_3";
             // 
@@ -536,10 +501,9 @@
             // 
             this.lblUser2.AutoSize = true;
             this.lblUser2.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUser2.Location = new System.Drawing.Point(15, 69);
-            this.lblUser2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUser2.Location = new System.Drawing.Point(20, 85);
             this.lblUser2.Name = "lblUser2";
-            this.lblUser2.Size = new System.Drawing.Size(56, 18);
+            this.lblUser2.Size = new System.Drawing.Size(71, 23);
             this.lblUser2.TabIndex = 11;
             this.lblUser2.Text = "perfil_2";
             // 
@@ -554,10 +518,10 @@
             this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn9.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btn9.Location = new System.Drawing.Point(578, 405);
-            this.btn9.Margin = new System.Windows.Forms.Padding(2);
+            this.btn9.Location = new System.Drawing.Point(771, 498);
+            this.btn9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn9.Name = "btn9";
-            this.btn9.Size = new System.Drawing.Size(112, 32);
+            this.btn9.Size = new System.Drawing.Size(149, 39);
             this.btn9.TabIndex = 10;
             this.btn9.Text = "veja mais...";
             this.btn9.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
@@ -575,10 +539,10 @@
             this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn8.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btn8.Location = new System.Drawing.Point(578, 356);
-            this.btn8.Margin = new System.Windows.Forms.Padding(2);
+            this.btn8.Location = new System.Drawing.Point(771, 438);
+            this.btn8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn8.Name = "btn8";
-            this.btn8.Size = new System.Drawing.Size(112, 32);
+            this.btn8.Size = new System.Drawing.Size(149, 39);
             this.btn8.TabIndex = 9;
             this.btn8.Text = "veja mais...";
             this.btn8.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
@@ -596,10 +560,10 @@
             this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn7.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btn7.Location = new System.Drawing.Point(578, 307);
-            this.btn7.Margin = new System.Windows.Forms.Padding(2);
+            this.btn7.Location = new System.Drawing.Point(771, 378);
+            this.btn7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn7.Name = "btn7";
-            this.btn7.Size = new System.Drawing.Size(112, 32);
+            this.btn7.Size = new System.Drawing.Size(149, 39);
             this.btn7.TabIndex = 8;
             this.btn7.Text = "veja mais...";
             this.btn7.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
@@ -617,10 +581,10 @@
             this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn6.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btn6.Location = new System.Drawing.Point(578, 258);
-            this.btn6.Margin = new System.Windows.Forms.Padding(2);
+            this.btn6.Location = new System.Drawing.Point(771, 318);
+            this.btn6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(112, 32);
+            this.btn6.Size = new System.Drawing.Size(149, 39);
             this.btn6.TabIndex = 7;
             this.btn6.Text = "veja mais...";
             this.btn6.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
@@ -638,10 +602,10 @@
             this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn5.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btn5.Location = new System.Drawing.Point(578, 209);
-            this.btn5.Margin = new System.Windows.Forms.Padding(2);
+            this.btn5.Location = new System.Drawing.Point(771, 257);
+            this.btn5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(112, 32);
+            this.btn5.Size = new System.Drawing.Size(149, 39);
             this.btn5.TabIndex = 6;
             this.btn5.Text = "veja mais...";
             this.btn5.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
@@ -659,10 +623,10 @@
             this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn4.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btn4.Location = new System.Drawing.Point(578, 160);
-            this.btn4.Margin = new System.Windows.Forms.Padding(2);
+            this.btn4.Location = new System.Drawing.Point(771, 197);
+            this.btn4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(112, 32);
+            this.btn4.Size = new System.Drawing.Size(149, 39);
             this.btn4.TabIndex = 5;
             this.btn4.Text = "veja mais...";
             this.btn4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
@@ -680,10 +644,10 @@
             this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn3.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btn3.Location = new System.Drawing.Point(578, 111);
-            this.btn3.Margin = new System.Windows.Forms.Padding(2);
+            this.btn3.Location = new System.Drawing.Point(771, 137);
+            this.btn3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(112, 32);
+            this.btn3.Size = new System.Drawing.Size(149, 39);
             this.btn3.TabIndex = 4;
             this.btn3.Text = "veja mais...";
             this.btn3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
@@ -701,10 +665,10 @@
             this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btn2.Location = new System.Drawing.Point(578, 62);
-            this.btn2.Margin = new System.Windows.Forms.Padding(2);
+            this.btn2.Location = new System.Drawing.Point(771, 76);
+            this.btn2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(112, 32);
+            this.btn2.Size = new System.Drawing.Size(149, 39);
             this.btn2.TabIndex = 3;
             this.btn2.Text = "veja mais...";
             this.btn2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
@@ -722,10 +686,10 @@
             this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btn1.Location = new System.Drawing.Point(578, 12);
-            this.btn1.Margin = new System.Windows.Forms.Padding(2);
+            this.btn1.Location = new System.Drawing.Point(771, 15);
+            this.btn1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(112, 32);
+            this.btn1.Size = new System.Drawing.Size(149, 39);
             this.btn1.TabIndex = 2;
             this.btn1.Text = "veja mais...";
             this.btn1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
@@ -736,10 +700,9 @@
             // 
             this.lblUser1.AutoSize = true;
             this.lblUser1.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUser1.Location = new System.Drawing.Point(15, 19);
-            this.lblUser1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUser1.Location = new System.Drawing.Point(20, 23);
             this.lblUser1.Name = "lblUser1";
-            this.lblUser1.Size = new System.Drawing.Size(52, 18);
+            this.lblUser1.Size = new System.Drawing.Size(67, 23);
             this.lblUser1.TabIndex = 1;
             this.lblUser1.Text = "perfil_1";
             // 
@@ -750,20 +713,19 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(64, 48);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(85, 59);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(702, 32);
+            this.panel2.Size = new System.Drawing.Size(936, 39);
             this.panel2.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(346, 6);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(461, 7);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 18);
+            this.label4.Size = new System.Drawing.Size(67, 23);
             this.label4.TabIndex = 31;
             this.label4.Text = "gênero";
             // 
@@ -771,10 +733,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(460, 6);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(613, 7);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 18);
+            this.label3.Size = new System.Drawing.Size(90, 23);
             this.label3.TabIndex = 30;
             this.label3.Text = "ocupação";
             // 
@@ -782,10 +743,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(184, 6);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(245, 7);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 18);
+            this.label2.Size = new System.Drawing.Size(55, 23);
             this.label2.TabIndex = 29;
             this.label2.Text = "email";
             // 
@@ -793,23 +753,22 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 6);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(20, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 18);
+            this.label1.Size = new System.Drawing.Size(84, 23);
             this.label1.TabIndex = 28;
             this.label1.Text = "usename";
             // 
             // perfil
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(828, 590);
+            this.ClientSize = new System.Drawing.Size(1104, 726);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "perfil";
             this.Text = "perfil";
             this.Load += new System.EventHandler(this.perfil_Load);
