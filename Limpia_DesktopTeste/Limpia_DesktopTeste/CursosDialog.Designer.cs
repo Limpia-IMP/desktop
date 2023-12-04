@@ -30,12 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CursosDialog));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSalvar = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.txtDuracao = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnEditar = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnExcluir = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtValor = new System.Windows.Forms.TextBox();
@@ -44,9 +47,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnEditarPromo = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
-            this.btnInativarPromo = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
-            this.btnSalvar = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,13 +59,15 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel1.Controls.Add(this.txtNome);
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.btnSalvar);
             this.panel1.Controls.Add(this.txtDuracao);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.btnEditarPromo);
+            this.panel1.Controls.Add(this.btnEditar);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.btnInativarPromo);
+            this.panel1.Controls.Add(this.btnExcluir);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtValor);
@@ -76,10 +80,31 @@
             this.panel1.Size = new System.Drawing.Size(636, 472);
             this.panel1.TabIndex = 29;
             // 
+            // btnSalvar
+            // 
+            this.btnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btnSalvar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btnSalvar.BorderColor = System.Drawing.Color.Aqua;
+            this.btnSalvar.BorderRadius = 32;
+            this.btnSalvar.BorderSize = 0;
+            this.btnSalvar.FlatAppearance.BorderSize = 0;
+            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.ForeColor = System.Drawing.Color.White;
+            this.btnSalvar.Location = new System.Drawing.Point(480, 357);
+            this.btnSalvar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(98, 32);
+            this.btnSalvar.TabIndex = 27;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.TextColor = System.Drawing.Color.White;
+            this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
             // txtDuracao
             // 
             this.txtDuracao.Enabled = false;
-            this.txtDuracao.Location = new System.Drawing.Point(130, 257);
+            this.txtDuracao.Location = new System.Drawing.Point(130, 284);
             this.txtDuracao.Name = "txtDuracao";
             this.txtDuracao.Size = new System.Drawing.Size(194, 20);
             this.txtDuracao.TabIndex = 26;
@@ -119,6 +144,7 @@
             this.btnVoltar.Size = new System.Drawing.Size(34, 37);
             this.btnVoltar.TabIndex = 3;
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // pictureBox1
             // 
@@ -130,6 +156,27 @@
             this.pictureBox1.Size = new System.Drawing.Size(229, 163);
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
+            this.btnEditar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
+            this.btnEditar.BorderColor = System.Drawing.Color.White;
+            this.btnEditar.BorderRadius = 32;
+            this.btnEditar.BorderSize = 0;
+            this.btnEditar.FlatAppearance.BorderSize = 0;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.ForeColor = System.Drawing.Color.Black;
+            this.btnEditar.Location = new System.Drawing.Point(349, 305);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(98, 32);
+            this.btnEditar.TabIndex = 25;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.TextColor = System.Drawing.Color.Black;
+            this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // label2
             // 
@@ -143,12 +190,33 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Descrição do Curso:";
             // 
+            // btnExcluir
+            // 
+            this.btnExcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btnExcluir.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btnExcluir.BorderColor = System.Drawing.Color.Aqua;
+            this.btnExcluir.BorderRadius = 32;
+            this.btnExcluir.BorderSize = 0;
+            this.btnExcluir.FlatAppearance.BorderSize = 0;
+            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.ForeColor = System.Drawing.Color.White;
+            this.btnExcluir.Location = new System.Drawing.Point(480, 305);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(98, 32);
+            this.btnExcluir.TabIndex = 24;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.TextColor = System.Drawing.Color.White;
+            this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(76, 223);
+            this.label3.Location = new System.Drawing.Point(76, 250);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 16);
@@ -160,7 +228,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(62, 259);
+            this.label4.Location = new System.Drawing.Point(62, 286);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(56, 16);
@@ -170,7 +238,7 @@
             // txtValor
             // 
             this.txtValor.Enabled = false;
-            this.txtValor.Location = new System.Drawing.Point(130, 221);
+            this.txtValor.Location = new System.Drawing.Point(130, 248);
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(194, 20);
             this.txtValor.TabIndex = 20;
@@ -195,7 +263,7 @@
             "Limpeza",
             "Consertos",
             "Jardinagem"});
-            this.comboBox1.Location = new System.Drawing.Point(130, 298);
+            this.comboBox1.Location = new System.Drawing.Point(130, 325);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(194, 21);
             this.comboBox1.TabIndex = 16;
@@ -205,7 +273,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label9.Location = new System.Drawing.Point(63, 300);
+            this.label9.Location = new System.Drawing.Point(63, 327);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(62, 16);
@@ -236,67 +304,25 @@
             this.pictureBox2.TabIndex = 31;
             this.pictureBox2.TabStop = false;
             // 
-            // btnEditarPromo
+            // label5
             // 
-            this.btnEditarPromo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.btnEditarPromo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.btnEditarPromo.BorderColor = System.Drawing.Color.White;
-            this.btnEditarPromo.BorderRadius = 32;
-            this.btnEditarPromo.BorderSize = 0;
-            this.btnEditarPromo.FlatAppearance.BorderSize = 0;
-            this.btnEditarPromo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditarPromo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarPromo.ForeColor = System.Drawing.Color.Black;
-            this.btnEditarPromo.Location = new System.Drawing.Point(349, 305);
-            this.btnEditarPromo.Margin = new System.Windows.Forms.Padding(2);
-            this.btnEditarPromo.Name = "btnEditarPromo";
-            this.btnEditarPromo.Size = new System.Drawing.Size(98, 32);
-            this.btnEditarPromo.TabIndex = 25;
-            this.btnEditarPromo.Text = "Editar";
-            this.btnEditarPromo.TextColor = System.Drawing.Color.Black;
-            this.btnEditarPromo.UseVisualStyleBackColor = false;
-            this.btnEditarPromo.Click += new System.EventHandler(this.btnEditarPromo_Click);
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label5.Location = new System.Drawing.Point(76, 220);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(46, 16);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Nome: ";
             // 
-            // btnInativarPromo
+            // txtNome
             // 
-            this.btnInativarPromo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnInativarPromo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnInativarPromo.BorderColor = System.Drawing.Color.Aqua;
-            this.btnInativarPromo.BorderRadius = 32;
-            this.btnInativarPromo.BorderSize = 0;
-            this.btnInativarPromo.FlatAppearance.BorderSize = 0;
-            this.btnInativarPromo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInativarPromo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInativarPromo.ForeColor = System.Drawing.Color.White;
-            this.btnInativarPromo.Location = new System.Drawing.Point(480, 305);
-            this.btnInativarPromo.Margin = new System.Windows.Forms.Padding(2);
-            this.btnInativarPromo.Name = "btnInativarPromo";
-            this.btnInativarPromo.Size = new System.Drawing.Size(98, 32);
-            this.btnInativarPromo.TabIndex = 24;
-            this.btnInativarPromo.Text = "Inativar";
-            this.btnInativarPromo.TextColor = System.Drawing.Color.White;
-            this.btnInativarPromo.UseVisualStyleBackColor = false;
-            // 
-            // btnSalvar
-            // 
-            this.btnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnSalvar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnSalvar.BorderColor = System.Drawing.Color.Aqua;
-            this.btnSalvar.BorderRadius = 32;
-            this.btnSalvar.BorderSize = 0;
-            this.btnSalvar.FlatAppearance.BorderSize = 0;
-            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.ForeColor = System.Drawing.Color.White;
-            this.btnSalvar.Location = new System.Drawing.Point(480, 357);
-            this.btnSalvar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(98, 32);
-            this.btnSalvar.TabIndex = 27;
-            this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.TextColor = System.Drawing.Color.White;
-            this.btnSalvar.UseVisualStyleBackColor = false;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            this.txtNome.Enabled = false;
+            this.txtNome.Location = new System.Drawing.Point(130, 216);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(194, 20);
+            this.txtNome.TabIndex = 29;
             // 
             // CursosDialog
             // 
@@ -327,9 +353,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private BtnLimpia.btnPrincipal btnEditarPromo;
+        private BtnLimpia.btnPrincipal btnEditar;
         private System.Windows.Forms.Label label2;
-        private BtnLimpia.btnPrincipal btnInativarPromo;
+        private BtnLimpia.btnPrincipal btnExcluir;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtValor;
@@ -340,5 +366,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox txtDuracao;
         private BtnLimpia.btnPrincipal btnSalvar;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.Label label5;
     }
 }

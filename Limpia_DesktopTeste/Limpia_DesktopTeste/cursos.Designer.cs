@@ -77,6 +77,7 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(221, 123);
             this.panel5.TabIndex = 18;
+            this.panel5.Click += new System.EventHandler(this.Cursos_Load);
             // 
             // label18
             // 
@@ -117,6 +118,7 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(221, 123);
             this.panel7.TabIndex = 17;
+            this.panel7.Click += new System.EventHandler(this.Cursos_Load);
             // 
             // label16
             // 
@@ -155,6 +157,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(221, 123);
             this.panel2.TabIndex = 15;
+            this.panel2.Click += new System.EventHandler(this.Cursos_Load);
             // 
             // label12
             // 
@@ -193,6 +196,7 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(221, 123);
             this.panel8.TabIndex = 16;
+            this.panel8.Click += new System.EventHandler(this.Cursos_Load);
             // 
             // label14
             // 
@@ -231,6 +235,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(221, 123);
             this.panel3.TabIndex = 14;
+            this.panel3.Click += new System.EventHandler(this.Cursos_Load);
             // 
             // label10
             // 
@@ -269,6 +274,7 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(221, 123);
             this.panel9.TabIndex = 11;
+            this.panel9.Click += new System.EventHandler(this.Cursos_Load);
             // 
             // label6
             // 
@@ -307,6 +313,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(221, 123);
             this.panel4.TabIndex = 13;
+            this.panel4.Click += new System.EventHandler(this.Cursos_Load);
             // 
             // label8
             // 
@@ -345,6 +352,7 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(221, 123);
             this.panel6.TabIndex = 12;
+            this.panel6.Click += new System.EventHandler(this.Cursos_Load);
             // 
             // label4
             // 
@@ -383,6 +391,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(221, 123);
             this.panel1.TabIndex = 10;
+            this.panel1.Click += new System.EventHandler(this.Cursos_Load);
             // 
             // label2
             // 

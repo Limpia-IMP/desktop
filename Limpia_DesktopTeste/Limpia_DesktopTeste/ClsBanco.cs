@@ -165,12 +165,15 @@ namespace Limpia_DesktopTeste
             private string name = "";
             private string desc = "";
             private string codigoPromo = "";
+            
+
 
             private DateTime valid_inic = DateTime.Now;
             private DateTime valid_fim = DateTime.Now;
 
             private int regiao = 0;
             private int publico = 0;
+            private int idFuncPromo = 0;
 
             public string nome { get => name; set => name = value; }
             public string descricao { get => desc; set => desc = value; }
@@ -179,6 +182,8 @@ namespace Limpia_DesktopTeste
 
             public int region { get => regiao; set => regiao = value; }
             public int publ { get => publico; set => publico = value; }
+            public int IdFuncPromo { get => idFuncPromo; set => idFuncPromo = value; }
+
 
             public DateTime validade_inic { get => valid_inic; set => valid_inic = value; }
             public DateTime validade_fim { get => valid_fim; set => valid_fim = value; }
@@ -194,18 +199,37 @@ namespace Limpia_DesktopTeste
                 {
                     var list = new List<Promo>();
                     while (reader.Read())
-                        list.Add(new Promo { nome = reader.GetString(3), descricao = reader.GetString(4), idpromo = reader.GetInt32(0).ToString(), validade_inic = reader.GetDateTime(5), validade_fim = reader.GetDateTime(6), codigo = reader.GetString(7), region = reader.GetInt32(8), publ = reader.GetInt32(9) });
+                        list.Add(new Promo { nome = reader.GetString(3), descricao = reader.GetString(4), idpromo = reader.GetInt32(0).ToString(), validade_inic = reader.GetDateTime(5), validade_fim = reader.GetDateTime(6), codigo = reader.GetString(7), region = reader.GetInt32(8), publ = reader.GetInt32(9), IdFuncPromo = reader.GetInt32(2) });
                     return list;
                 }
             }
         }
+        
+        public SqlDataReader Select(string tbl, string campo, int seCondic, string condic) {
 
-        /*idcursos int not null primary key,
-    valor decimal not null,
-    duracao varchar(10),
-    descricao varchar(250),
-    categoria varchar(50),
-    nome varchar(50)*/
+            SqlConnection connection = new SqlConnection(SQL_STRING);
+            SqlDataReader reader = null;
+                if (seCondic == 1)
+                {//precisa de condição
+                    SqlCommand cmd = new SqlCommand("select @campo from @tbl where @condic ", connection);
+                    
+                        cmd.Parameters.AddWithValue("@campo", campo);
+                        cmd.Parameters.AddWithValue("@tbl", tbl);
+                        cmd.Parameters.AddWithValue("@condic", condic);
+                        connection.Open();
+                        reader = cmd.ExecuteReader();
+                }
+                 else if (seCondic == 0) {
+                    SqlCommand cmd = new SqlCommand("select @campo from @tbl  ", connection);
+
+                        cmd.Parameters.AddWithValue("@campo", campo);
+                        cmd.Parameters.AddWithValue("@tbl", tbl);
+                        connection.Open();
+                        reader = cmd.ExecuteReader();
+                 }
+                return reader;
+        }
+        
 
         public class Cursos
         {
@@ -240,42 +264,61 @@ namespace Limpia_DesktopTeste
                 }
             }
         }
-
-        /*public Boolean insertCurso(List<ValueType> listValues)
+        
+        public Boolean updateCurso(Cursos valores)
         {
             using (SqlConnection connection = new SqlConnection(SQL_STRING))
-            using (SqlCommand cmd = new SqlCommand("insert values into tblcurso ", connection))
+            using (SqlCommand cmd = new SqlCommand("update tblcursos set valor = @valor, duracao = @duracao, descricao = @descricao, categoria = @categoria, nome = @nome where idcursos = @id  ", connection))
             {
                 try
                 {
-                    cmd.Parameters.AddWithValue("@table", table);
-                    cmd.Parameters.AddWithValue("@idNome", idNome);
-                    cmd.Parameters.AddWithValue("@idValue", idValue);
+                    int i = 1;
+                    cmd.Parameters.AddWithValue("@valor", valores.Valor);
+                    cmd.Parameters.AddWithValue("@duracao", valores.Duracao);
+                    cmd.Parameters.AddWithValue("@descricao", valores.Descri);
+                    cmd.Parameters.AddWithValue("@categoria", valores.Categoria);
+                    cmd.Parameters.AddWithValue("@nome", valores.Nome);
+                    cmd.Parameters.AddWithValue("@id",valores.Idcursos);
 
                     connection.Open();
+                    cmd.ExecuteReader();
                     return true;
                 }
-                catch (Exception ex) { return false; }
+                catch { return false; }
 
             }
-        }*/
+        }
 
 
-        public Boolean deleteInfo(string table, string idNome, string idValue)
+        public Boolean deleteInfo(string table, string id)
         {
             using (SqlConnection connection = new SqlConnection(SQL_STRING))
-            using (SqlCommand cmd = new SqlCommand("delete from @table where @idNome = @idValue", connection))
             {
                 try
                 {
-                    cmd.Parameters.AddWithValue("@table", table);
-                    cmd.Parameters.AddWithValue("@idNome", idNome);
-                    cmd.Parameters.AddWithValue("@idValue", idValue);
-
                     connection.Open();
+
+                    using (SqlCommand cmdDeletePromo = new SqlCommand("DELETE FROM tblpromo WHERE idcursos = @id", connection))
+                    {
+                        cmdDeletePromo.Parameters.AddWithValue("@id", id);
+                        cmdDeletePromo.ExecuteNonQuery();
+                    }
+
+                    using (SqlCommand cmdDeletePromo = new SqlCommand("DELETE FROM tblprestador_cursos WHERE idcursos = @id", connection))
+                    {
+                        cmdDeletePromo.Parameters.AddWithValue("@id", id);
+                        cmdDeletePromo.ExecuteNonQuery();
+                    }
+
+                    using (SqlCommand cmdDeleteCurso = new SqlCommand("DELETE FROM tblcursos WHERE idcursos = @id", connection))
+                    {
+                        cmdDeleteCurso.Parameters.AddWithValue("@id", id);
+                        cmdDeleteCurso.ExecuteNonQuery();
+                    }
+
                     return true;
                 }
-                catch (Exception ex) { return false; }
+                catch { return false; }
 
             }
         }

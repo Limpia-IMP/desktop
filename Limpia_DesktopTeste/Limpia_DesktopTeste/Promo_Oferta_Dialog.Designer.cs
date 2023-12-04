@@ -33,7 +33,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.dtInicioPromo = new System.Windows.Forms.DateTimePicker();
+            this.dtpInicioPromo = new System.Windows.Forms.DateTimePicker();
             this.dtpValidade = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -50,13 +50,14 @@
             this.txtResponsavelPromo = new System.Windows.Forms.TextBox();
             this.txtCodigoPromo = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnEditarPromo = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
-            this.btnInativarPromo = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnEditarPromo = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
+            this.btnInativarPromo = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
+            this.btnSalvar = new Limpia_DesktopTeste.BtnLimpia.btnPrincipal();
             this.grpPublicoPromo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -71,7 +72,7 @@
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
             this.btnVoltar.Location = new System.Drawing.Point(5, 6);
-            this.btnVoltar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVoltar.Margin = new System.Windows.Forms.Padding(2);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(34, 37);
             this.btnVoltar.TabIndex = 3;
@@ -114,15 +115,15 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Disponível durante:";
             // 
-            // dtInicioPromo
+            // dtpInicioPromo
             // 
-            this.dtInicioPromo.Enabled = false;
-            this.dtInicioPromo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtInicioPromo.Location = new System.Drawing.Point(176, 223);
-            this.dtInicioPromo.Name = "dtInicioPromo";
-            this.dtInicioPromo.Size = new System.Drawing.Size(59, 20);
-            this.dtInicioPromo.TabIndex = 6;
-            this.dtInicioPromo.Value = new System.DateTime(2023, 10, 18, 16, 30, 40, 0);
+            this.dtpInicioPromo.Enabled = false;
+            this.dtpInicioPromo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpInicioPromo.Location = new System.Drawing.Point(176, 223);
+            this.dtpInicioPromo.Name = "dtpInicioPromo";
+            this.dtpInicioPromo.Size = new System.Drawing.Size(59, 20);
+            this.dtpInicioPromo.TabIndex = 6;
+            this.dtpInicioPromo.Value = new System.DateTime(2023, 10, 18, 16, 30, 40, 0);
             // 
             // dtpValidade
             // 
@@ -164,6 +165,7 @@
             this.grpPublicoPromo.Controls.Add(this.rdoTodos);
             this.grpPublicoPromo.Controls.Add(this.rdoPrestador);
             this.grpPublicoPromo.Controls.Add(this.rdoContratante);
+            this.grpPublicoPromo.Enabled = false;
             this.grpPublicoPromo.Location = new System.Drawing.Point(112, 249);
             this.grpPublicoPromo.Name = "grpPublicoPromo";
             this.grpPublicoPromo.Size = new System.Drawing.Size(195, 30);
@@ -304,49 +306,10 @@
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
-            // btnEditarPromo
-            // 
-            this.btnEditarPromo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.btnEditarPromo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
-            this.btnEditarPromo.BorderColor = System.Drawing.Color.White;
-            this.btnEditarPromo.BorderRadius = 32;
-            this.btnEditarPromo.BorderSize = 0;
-            this.btnEditarPromo.FlatAppearance.BorderSize = 0;
-            this.btnEditarPromo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditarPromo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarPromo.ForeColor = System.Drawing.Color.Black;
-            this.btnEditarPromo.Location = new System.Drawing.Point(349, 290);
-            this.btnEditarPromo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnEditarPromo.Name = "btnEditarPromo";
-            this.btnEditarPromo.Size = new System.Drawing.Size(98, 32);
-            this.btnEditarPromo.TabIndex = 25;
-            this.btnEditarPromo.Text = "Editar";
-            this.btnEditarPromo.TextColor = System.Drawing.Color.Black;
-            this.btnEditarPromo.UseVisualStyleBackColor = false;
-            // 
-            // btnInativarPromo
-            // 
-            this.btnInativarPromo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnInativarPromo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
-            this.btnInativarPromo.BorderColor = System.Drawing.Color.Aqua;
-            this.btnInativarPromo.BorderRadius = 32;
-            this.btnInativarPromo.BorderSize = 0;
-            this.btnInativarPromo.FlatAppearance.BorderSize = 0;
-            this.btnInativarPromo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInativarPromo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInativarPromo.ForeColor = System.Drawing.Color.Black;
-            this.btnInativarPromo.Location = new System.Drawing.Point(480, 290);
-            this.btnInativarPromo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnInativarPromo.Name = "btnInativarPromo";
-            this.btnInativarPromo.Size = new System.Drawing.Size(98, 32);
-            this.btnInativarPromo.TabIndex = 24;
-            this.btnInativarPromo.Text = "Inativar";
-            this.btnInativarPromo.TextColor = System.Drawing.Color.Black;
-            this.btnInativarPromo.UseVisualStyleBackColor = false;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel1.Controls.Add(this.btnSalvar);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnEditarPromo);
@@ -356,7 +319,7 @@
             this.panel1.Controls.Add(this.txtCodigoPromo);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtResponsavelPromo);
-            this.panel1.Controls.Add(this.dtInicioPromo);
+            this.panel1.Controls.Add(this.dtpInicioPromo);
             this.panel1.Controls.Add(this.txtTituloPromo);
             this.panel1.Controls.Add(this.dtpValidade);
             this.panel1.Controls.Add(this.txtDescricaoPromo);
@@ -368,7 +331,7 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Location = new System.Drawing.Point(96, 51);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(636, 472);
             this.panel1.TabIndex = 26;
@@ -380,7 +343,7 @@
             this.panel2.Controls.Add(this.btnVoltar);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(636, 49);
             this.panel2.TabIndex = 0;
@@ -421,6 +384,69 @@
             this.pictureBox2.TabIndex = 28;
             this.pictureBox2.TabStop = false;
             // 
+            // btnEditarPromo
+            // 
+            this.btnEditarPromo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
+            this.btnEditarPromo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(109)))));
+            this.btnEditarPromo.BorderColor = System.Drawing.Color.White;
+            this.btnEditarPromo.BorderRadius = 32;
+            this.btnEditarPromo.BorderSize = 0;
+            this.btnEditarPromo.FlatAppearance.BorderSize = 0;
+            this.btnEditarPromo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditarPromo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarPromo.ForeColor = System.Drawing.Color.Black;
+            this.btnEditarPromo.Location = new System.Drawing.Point(349, 290);
+            this.btnEditarPromo.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEditarPromo.Name = "btnEditarPromo";
+            this.btnEditarPromo.Size = new System.Drawing.Size(98, 32);
+            this.btnEditarPromo.TabIndex = 25;
+            this.btnEditarPromo.Text = "Editar";
+            this.btnEditarPromo.TextColor = System.Drawing.Color.Black;
+            this.btnEditarPromo.UseVisualStyleBackColor = false;
+            this.btnEditarPromo.Click += new System.EventHandler(this.btnEditarPromo_Click);
+            // 
+            // btnInativarPromo
+            // 
+            this.btnInativarPromo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btnInativarPromo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btnInativarPromo.BorderColor = System.Drawing.Color.Aqua;
+            this.btnInativarPromo.BorderRadius = 32;
+            this.btnInativarPromo.BorderSize = 0;
+            this.btnInativarPromo.FlatAppearance.BorderSize = 0;
+            this.btnInativarPromo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInativarPromo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInativarPromo.ForeColor = System.Drawing.Color.Black;
+            this.btnInativarPromo.Location = new System.Drawing.Point(480, 290);
+            this.btnInativarPromo.Margin = new System.Windows.Forms.Padding(2);
+            this.btnInativarPromo.Name = "btnInativarPromo";
+            this.btnInativarPromo.Size = new System.Drawing.Size(98, 32);
+            this.btnInativarPromo.TabIndex = 24;
+            this.btnInativarPromo.Text = "Inativar";
+            this.btnInativarPromo.TextColor = System.Drawing.Color.Black;
+            this.btnInativarPromo.UseVisualStyleBackColor = false;
+            this.btnInativarPromo.Click += new System.EventHandler(this.btnInativarPromo_Click);
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btnSalvar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(87)))), ((int)(((byte)(189)))));
+            this.btnSalvar.BorderColor = System.Drawing.Color.Aqua;
+            this.btnSalvar.BorderRadius = 32;
+            this.btnSalvar.BorderSize = 0;
+            this.btnSalvar.FlatAppearance.BorderSize = 0;
+            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.ForeColor = System.Drawing.Color.Black;
+            this.btnSalvar.Location = new System.Drawing.Point(480, 332);
+            this.btnSalvar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(98, 32);
+            this.btnSalvar.TabIndex = 26;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.TextColor = System.Drawing.Color.Black;
+            this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
             // Promo_Oferta_Dialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -431,7 +457,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Promo_Oferta_Dialog";
             this.Text = "Promo_Oferta_Dialog";
             this.grpPublicoPromo.ResumeLayout(false);
@@ -451,7 +477,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dtInicioPromo;
+        private System.Windows.Forms.DateTimePicker dtpInicioPromo;
         private System.Windows.Forms.DateTimePicker dtpValidade;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -476,5 +502,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
+        private BtnLimpia.btnPrincipal btnSalvar;
     }
 }
